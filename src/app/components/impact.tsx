@@ -5,46 +5,46 @@ import { ArrowRightSvg, DropSvg, StatsSvg, TreeSvg } from "./commonsvg"
 export const Impact = () => {
 
     return (
-        <section className="bg-[rgba(0,89,67,1)] py-14">
-            <div className="w-10/12 flex justify-between items-stretch gap-20 mx-auto">
-                <div className="flex flex-col justify-between items-start pt-10">
-                    <div className="space-y-6">
-                        <h3 className="text-[32px] text-[rgba(0,168,73,1)] leading-8">
+        <section className="bg-[rgba(0,89,67,1)] py-8 md:py-14">
+            <div className="w-11/12 md:w-10/12 flex flex-col-reverse lg:flex-row justify-between items-stretch gap-4 md:gap-12 lg:gap-20 mx-auto">
+                <div className="flex flex-col justify-between items-start gap-10 pt-10">
+                    <div className="space-y-3 md:space-y-6">
+                        <h3 className="text-[22px] md:text-[32px] text-[rgba(0,168,73,1)] leading-8">
                             Environmental impact {" "}
                             <span className="text-white">commitment</span>
                         </h3>
-                        <p className="font-normal text-white text-lg leading-6">
+                        <p className="font-normal text-white md:text-lg leading-6">
                             We measure success not just by treatment efficiency, but by our positive environmental impact. Every facility we power contributes to cleaner water, reduced carbon emissions, and sustainable community development.
                         </p>
                         <div className="flex items-center gap-3">
-                            <OrangeButton text="Sustainability report"/>
+                            <OrangeButton text="Learn more"/>
                             <button
-                            className="flex items-center gap-2 text-white border border-[rgba(0,168,73,1)] rounded-full px-6 py-3">
+                            className="flex items-center gap-2 text-white whitespace-nowrap border border-[rgba(0,168,73,1)] rounded-full px-4 md:px-6 py-2.5 md:py-3">
                                 Sustainability report
                                 <ArrowRightSvg/>
                             </button>
                         </div>
                     </div>
-                    <div className="flex gap-8 font-inter">
-                        <div className="flex flex-col items-start gap-2">
+                    <div className="w-full flex justify-between gap-8 font-inter text-center md:text-start mx-auto lg:mx-0">
+                        <div className="flex flex-col items-center md:items-start gap-2">
                             <StatsSvg/>
-                            <span className="text-2xl font-bold text-[rgba(0,168,73,1)]">Zero</span>
+                            <span className="text-lg md:text-2xl font-bold text-[rgba(0,168,73,1)]">Zero</span>
                             <span className="text-white font-normal text-sm">Environment violations</span>
                         </div>
-                        <div className="flex flex-col items-start gap-2">
+                        <div className="flex flex-col items-center md:items-start gap-2">
                             <DropSvg/>
-                            <span className="text-2xl font-bold text-[rgba(0,168,73,1)]">3.6B</span>
+                            <span className="text-lg md:text-2xl font-bold text-[rgba(0,168,73,1)]">3.6B</span>
                             <span className="text-white font-normal text-sm">Liters treated annually</span>
                         </div>
-                        <div className="flex flex-col items-start gap-2">
+                        <div className="flex flex-col items-center md:items-start gap-2">
                             <TreeSvg/>
-                            <span className="text-2xl font-bold text-[rgba(0,168,73,1)]">15</span>
+                            <span className="text-lg md:text-2xl font-bold text-[rgba(0,168,73,1)]">15</span>
                             <span className="text-white font-normal text-sm">Green certifications</span>
                         </div>
                     </div>
                 </div>
                 <Image
-                className="w-full object-cover"
+                className="w-full md:max-w-[500px] lg:max-w-none object-cover mx-auto"
                 src="/landing/impact.png"
                 alt="SFC"
                 width={100}

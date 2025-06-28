@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import gsap from "gsap"
 
-export const Carousel = () => {
+export const VerticalCarousel = () => {
 
     const cards = ['', '', ''];
 

@@ -8,7 +8,7 @@ import { Success } from "./components/success";
 
 export default function Home() {
   return (
-    <div className="min-h-dvh overflow-hidden">
+    <div className="min-h-dvh w-full overflow-hidden">
       <Hero/>
       <Join/>
       <Advanced/>

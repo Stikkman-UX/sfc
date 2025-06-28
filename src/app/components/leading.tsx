@@ -123,9 +123,9 @@ export const Leading = () => {
         const { tag, title, desc, date, views } = cardData;
 
         return (
-            <div className="space-y-6 bg-[rgba(249,249,249,1)] rounded-tl-2xl rounded-br-2xl px-8 py-6">
+            <div className="w-[290px] shrink-0 border md:w-[400px] lg:w-auto space-y-6 bg-[rgba(249,249,249,1)] rounded-tl-xl md:rounded-tl-2xl rounded-br-xl md:rounded-br-2xl px-6 md:px-8 py-6">
                 <div className="flex justify-between items-start">
-                    <div className=" bg-[rgba(0,89,69,0.1)] p-3 rounded-2xl">
+                    <div className=" bg-[rgba(0,89,69,0.1)] p-2 md:p-3 rounded-xl md:rounded-2xl">
                         {
                             cardData.isVideo
                             ? <VideoSvg/>
@@ -144,7 +144,7 @@ export const Leading = () => {
                     <h6 className="text-[rgba(0,89,67,1)]">
                         { title }
                     </h6>
-                    <p className="text-[rgba(74,85,101,1)] font-normal text-sm">
+                    <p className="hidden md:block text-[rgba(74,85,101,1)] font-normal text-sm">
                         { desc }
                     </p>
                     <div className="flex justify-between items-center text-xs text-[rgba(106,114,130,1)]">
@@ -159,7 +159,7 @@ export const Leading = () => {
                     </div>
                 </div>
                 <div className="flex justify-between items-center pt-4">
-                    <span className="text-sm text-[rgba(54,65,83,1)]">
+                    <span className="text-[11px] md:text-sm text-[rgba(54,65,83,1)]">
                         { cardData.isVideo ? 'Watch now' : 'Read more' }
                     </span>
                     <RedirectSvg/>
@@ -178,7 +178,7 @@ export const Leading = () => {
             <button
             className={`${
                 ActiveFilter === id ? 'bg-[rgba(25,169,72,1)] text-white' : 'bg-white border border-[rgba(229,231,235,1)] text-[rgba(54,65,83,1)]'
-            } text-sm rounded-full px-4 py-3 whitespace-nowrap`}
+            } text-xs md:text-sm rounded-full px-3 md:px-4 py-2 md:py-3 whitespace-nowrap`}
             onClick={handleActive}>
                 { text }
             </button>
@@ -186,24 +186,24 @@ export const Leading = () => {
     }
 
     return (
-        <section className="w-10/12 mx-auto py-20">
-            <div className="flex justify-between gap-4">
-                <div className="w-1/2 space-y-4">
-                    <h4 className="w-2/3 lg:w-1/2 text-[rgba(0,89,67,1)] text-[32px] leading-9">
+        <section className="mx-auto py-20">
+            <div className="w-full md:w-10/12 flex flex-col lg:flex-row justify-between gap-4 mx-auto">
+                <div className="w-11/12 lg:flex-1 md:space-y-4 mx-auto md:mx-0">
+                    <h4 className="w-full lg:w-1/2 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                         <span className="text-[rgba(25,169,72,1)]">Leading</span> industry conversations
                     </h4>
-                    <p className="text-lg font-normal text-[rgba(74,85,101,1)]">
+                    <p className=" md:text-lg font-normal text-[rgba(74,85,101,1)]">
                         Expert insights, research, and analysis on wastewater treatment innovation, sustainability, and the future of water infrastructure in India.
                     </p>
                 </div>
-                <div className="w-1/2 flex justify-end items-end gap-x-4">
+                <div className="disable-scrollbar w-full lg:w-fit flex justify-start lg:justify-end items-center md:items-end gap-x-2 md:gap-x-4 overflow-x-auto px-4 sm:px-7 md:px-0 mx-auto">
                     <FilterBtn id="content" text="All Content" />
                     <FilterBtn id="whitepapers" text="Whitepapers" />
                     <FilterBtn id="webinars" text="Webinars" />
                     <FilterBtn id="reports" text="Industry Reports" />
                 </div>
             </div>
-            <div className="grid grid-cols-3 gap-6 py-20">
+            <div className="disable-scrollbar flex lg:grid lg:grid-cols-3 gap-6 pt-10 md:py-20 px-4 sm:px-7 md:px-16 lg:px-20 overflow-x-auto">
                 {
                     cards[ActiveFilter as keyof typeof cards].map((cardData, i) => {
                         return <LeadingCard key={i} cardData={cardData}/>

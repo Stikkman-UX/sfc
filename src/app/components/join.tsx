@@ -28,7 +28,7 @@ export const Join = () => {
     const AreaCard = ({ id, data, progress, active }: AreaCard) => {
         const { area, plant, capacity } = data;
         return (
-            <div className={`${id} min-w-[340px] space-y-4 rounded-[14px] font-inter ${  active ? 'bg-[rgba(0,168,73,1)] text-white' : 'bg-white text-black border border-[rgba(229,231,235,1)] scale-90'} p-6`}>
+            <div className={`${id} min-w-[340px] max-w-[500px] space-y-4 rounded-[14px] font-inter ${  active ? 'bg-[rgba(0,168,73,1)] text-white' : 'hidden lg:block bg-white text-black border border-[rgba(229,231,235,1)] scale-90'} p-6`}>
                 <div className="flex justify-between gap-6">
                     <div className="flex flex-col">
                         <span className="font-semibold">{ area }</span>
@@ -52,9 +52,9 @@ export const Join = () => {
     }
 
     return (
-        <section className="space-y-32 pb-20">
-            <div className="space-y-10">
-                <p className="w-1/2 text-[rgba(0,168,73,1)] text-[32px] font-medium text-center mx-auto">
+        <section className="space-y-32 pb-8 md:pb-20">
+            <div className="space-y-6 md:space-y-10">
+                <p className="w-11/12 md:w-2/3 lg:w-1/2 text-[rgba(0,168,73,1)] text-2xl md:text-[32px] font-medium text-start md:text-center mx-auto">
                     SFC Environment Technology Ltd. isn’t just a vendor. We’re the invisible infrastructure behind EPC projects across India. With a singular focus on water and wastewater treatment, we empower engineering leaders to deliver high-performance, future-ready utilities.
                 </p>
                 <div className="flex justify-center items-center gap-4">
@@ -67,18 +67,18 @@ export const Join = () => {
                 </div>
             </div>
             <div className="space-y-10">
-                <h4 className="w-2/3 lg:w-1/2 text-center mx-auto text-[rgba(0,89,67,1)] text-[32px] leading-9">
+                <h4 className="w-11/12 md:w-2/3 lg:w-1/2 text-start md:text-center mx-auto text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-7 md:leading-9">
                     <span className="text-[rgba(25,169,72,1)]">200 Million Litres</span> of Wastewater Daily Across India.
                 </h4>
-                <div className="flex justify-around gap-6">
+                <div className="flex flex-col lg:flex-row justify-around gap-6">
                     <Image
-                    className="w-1/2 object-cover rounded-tl-[125px] rounded-br-[125px]"
+                    className="w-11/12 lg:w-1/2 object-cover rounded-tl-[125px] rounded-br-[125px] mx-auto lg:mx-0"
                     src="/landing/map.png"
                     alt="SFC"
                     width={100}
                     height={60}
                     />
-                    <div className="flex flex-col gap-2">
+                    <div className="w-11/12 lg:w-auto flex flex-col items-center gap-2 mx-auto lg:mx-0">
                         <AreaCard
                         id="area1"
                         data={{ area: "Bangalore Urban", plant: "18", capacity: "1.8M"}}

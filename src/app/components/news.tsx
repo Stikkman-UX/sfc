@@ -146,7 +146,7 @@ export const News = () => {
         const { tag, title, desc, date, icon, min, source } = cardData;
 
         return (
-            <div className={`${ isLarge ? 'row-span-2 col-span-2' : 'w-full col-span-1' } h-full font-inter flex flex-col bg-[rgba(249,249,249,1)] rounded-2xl overflow-hidden`}>
+            <div className={`${ isLarge ? 'md:w-auto md:row-span-2 md:col-span-2' : 'md:w-auto md:col-span-1' } w-full sm:w-[340px] shrink-0 font-inter flex flex-col bg-[rgba(249,249,249,1)] rounded-2xl overflow-hidden`}>
                 <div className="relative min-h-[190px] flex-1 flex justify-center items-center bg-[linear-gradient(135deg,rgba(0,89,69,0.1)_0%,rgba(0,168,73,0.1)_100%)] text-xs">
                     <div className="absolute top-0 w-full flex justify-between items-center p-4">
                         <span className="bg-[rgba(0,168,73,1)] text-white rounded-full px-4 py-2">
@@ -160,15 +160,15 @@ export const News = () => {
                         { icon }
                     </div>
                 </div>
-                <div className={`${ isLarge ? 'px-8 py-6' : 'p-6' }`}>
-                    <div className="space-y-4">
-                        <h6 className="text-xl leading-6 text-[rgba(16,24,40,1)] font-bold">
+                <div className={`${ isLarge ? 'p-6 md:px-8 md:py-6' : 'p-6' }`}>
+                    <div className="space-y-2 md:space-y-4">
+                        <h6 className="md:text-xl leading-6 text-[rgba(16,24,40,1)] font-bold">
                             { title }
                         </h6>
-                        <p className="text-[rgba(74,85,101,1)] font-normal">
+                        <p className="text-sm md:text-base text-[rgba(74,85,101,1)] font-normal">
                             { desc }
                         </p>
-                        <div className="flex justify-between items-center text-xs text-[rgba(106,114,130,1)] pt-4">
+                        <div className="flex justify-between items-center text-xs text-[rgba(106,114,130,1)] pt-2 md:pt-4">
                             <span className="flex items-center gap-2">
                                 <DateSvg/>
                                 { min } min read
@@ -178,7 +178,7 @@ export const News = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="flex justify-between items-center pt-8">
+                    <div className="flex justify-between items-center pt-6 md:pt-8">
                         <span className="text-sm text-[rgba(54,65,83,1)]">
                             Read more
                         </span>
@@ -199,7 +199,7 @@ export const News = () => {
             <button
             className={`${
                 ActiveFilter === id ? 'bg-[rgba(25,169,72,1)] text-white' : 'bg-white border border-[rgba(229,231,235,1)] text-[rgba(54,65,83,1)]'
-            } text-sm rounded-full px-6 py-3 whitespace-nowrap capitalize`}
+            } text-xs md:text-sm rounded-full px-3 md:px-4 py-2 md:py-3 whitespace-nowrap capitalize`}
             onClick={handleActive}>
                 { text }
             </button>
@@ -207,17 +207,17 @@ export const News = () => {
     }
 
     return (
-        <section className="w-10/12 mx-auto py-20">
-            <div className="flex justify-between gap-4">
-                <div className="w-1/2 space-y-4">
-                    <h4 className="w-2/3 lg:w-1/2 text-[rgba(0,89,67,1)] text-[32px] leading-9">
+        <section className="md:w-10/12 mx-auto pt-20 md:py-20">
+            <div className="w-full flex flex-col lg:flex-row justify-between gap-4">
+                <div className="w-11/12 md:w-2/3 lg:w-1/2 space-y-2 md:space-y-4 mx-auto md:mx-0">
+                    <h4 className="w-2/3 lg:w-1/2 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                         <span className="text-[rgba(25,169,72,1)]">Latest</span> news & updates
                     </h4>
-                    <p className="text-lg font-normal text-[rgba(74,85,101,1)]">
+                    <p className="text-base md:text-lg font-normal text-[rgba(74,85,101,1)]">
                         Stay updated with our latest achievements, partnerships, and innovations driving India's water treatment industry forward.
                     </p>
                 </div>
-                <div className="w-1/2 flex justify-end items-end gap-x-4">
+                <div className="disable-scrollbar lg:w-1/2 flex justify-start lg:justify-end items-end gap-x-4 overflow-x-auto px-4 sm:px-7 md:px-0">
                     {
                         Object.keys(cards).map((key) => {
                             return <FilterBtn key={key} id={key} text={key} />
@@ -225,7 +225,7 @@ export const News = () => {
                     }
                 </div>
             </div>
-            <div className="grid grid-rows-2 grid-cols-3 gap-8 pt-20 pb-10">
+            <div className="disable-scrollbar flex items-stretch md:grid md:grid-rows-2 gap-8 px-4 sm:px-7 md:px-0 pt-10 md:pt-20 pb-10 overflow-x-auto">
                 {
                     cards[ActiveFilter as keyof typeof cards].map((cardData, i) => {
                         return <NewsCard key={i} cardData={cardData} isLarge={i === 0}/>
