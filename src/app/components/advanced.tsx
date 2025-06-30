@@ -34,7 +34,7 @@ export const Advanced = () => {
                 <h4 className='text-center text-white/80 text-[22px]'>
                     How <span className='text-white'>C-Tech</span> works
                 </h4>
-                {/* <VerticalCarousel/> */}
+                <VerticalCarousel/>
                 <HorizontalCarousel/>
             </div>
         </section>
