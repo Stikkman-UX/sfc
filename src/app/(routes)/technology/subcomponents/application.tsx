@@ -51,7 +51,7 @@ export const Application = () => {
         const { image, tag, title, desc, points } = data;
 
         return (
-            <div className="w-full flex-1 flex flex-col bg-[rgba(249,249,249,1)] rounded-tl-[14px] md:rounded-tl-2xl rounded-br-[14px] md:rounded-br-2xl overflow-hidden">
+            <div className="shrink-0 w-[340px] md:w-[450px] flex flex-col bg-[rgba(249,249,249,1)] rounded-tl-[14px] md:rounded-tl-2xl rounded-br-[14px] md:rounded-br-2xl overflow-hidden">
                 <div className="relative w-full">
                     <Image
                     className="relative max-h-[140px] md:max-h-none w-full object-cover z-10"
@@ -64,9 +64,9 @@ export const Application = () => {
                         { tag }
                     </span>
                 </div>
-                <div className="space-y-8 px-4 md:px-6 py-6">
+                <div className="space-y-5 md:space-y-8 px-4 md:px-6 py-6">
                     <div className="">
-                        <h4 className="font-normal text-[22px] text-[rgba(0,89,69,1)]">
+                        <h4 className="font-normal text-lg md:text-[22px] text-[rgba(0,89,69,1)]">
                             { title }
                         </h4>
                         <p className="hidden md:block text-[rgba(74,85,101,1)] text-sm leading-[22px] font-normal">
@@ -89,13 +89,15 @@ export const Application = () => {
     }
 
     return (
-        <section className="w-10/12 mx-auto mb-20">
-            <h2 className="w-fit text-[32px] text-[rgba(25,169,72,1)]">
-                <span className="text-[rgba(0,89,67,1)]">Application & </span> Use Cases
-            </h2>
-            <p className="w-[500px] font-normal text-lg text-[rgba(74,85,101,1)] pb-20">
-                C-Tech technology adapts to diverse wastewater treatment needs across industries and communities.
-            </p>
+        <section className="mb-20">
+            <div className="w-11/12 md:w-10/12 mx-auto">
+                <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
+                    <span className="text-[rgba(0,89,67,1)]">Application & </span> Use Cases
+                </h2>
+                <p className=" md:w-[500px] font-normal md:text-lg text-[rgba(74,85,101,1)] pb-20">
+                    C-Tech technology adapts to diverse wastewater treatment needs across industries and communities.
+                </p>
+            </div>
             <div className="disable-scrollbar flex lg:justify-center gap-10 overflow-x-auto px-4 sm:px-7 md:px-16 lg:px-0">
                 {
                     cards.map((cardData, i) => {

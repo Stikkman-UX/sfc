@@ -79,23 +79,23 @@ export const Certification = () => {
 
     return (
         <section className="my-20 py-10">
-            <div className="w-10/12 mx-auto">
-                <h2 className="w-fit text-[32px] text-[rgba(25,169,72,1)]">
+            <div className="w-11/12 md:w-10/12 mx-auto">
+                <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
                     Certifications <span className="text-[rgba(0,89,67,1)]">and case studies</span>
                 </h2>
-                <p className="w-[500px] font-normal text-lg text-[rgba(74,85,101,1)] pb-20">
+                <p className="md:w-[500px] font-normal md:text-lg text-[rgba(74,85,101,1)] pb-20">
                     Our systems meet and exceed all national and international standards for quality and environmental compliance.
                 </p>
             </div>
             <div className="disable-scrollbar flex overflow-x-auto px-4 sm:px-7 md:px-16 lg:px-0">
-                <div className="cert-carousel shrink-0 w-full flex items-center justify-around">
+                <div className="cert-carousel shrink-0 w-fit md:w-full flex items-center justify-around gap-4 md:gap-0">
                 {
                     cards.map((cardData, i) => {
                         return <Card key={i} data={cardData} />
                     })
                 }
                 </div>
-                <div className="cert-carousel shrink-0 w-full flex items-center justify-around">
+                <div className="cert-carousel shrink-0 w-fit md:w-full flex items-center justify-around gap-4 md:gap-0">
                 {
                     cards.map((cardData, i) => {
                         return <Card key={i} data={cardData} />

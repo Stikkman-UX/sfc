@@ -72,12 +72,12 @@ export const Faq = () => {
     };
 
     return (
-        <section className="w-[900px] space-y-12 mx-auto my-20 py-10">
-            <div className="space-y-2 text-center">
-                <h2 className="w-fit text-[32px] text-[rgba(25,169,72,1)] mx-auto">
+        <section className="w-11/12 md:w-[900px] space-y-12 mx-auto my-20 py-10">
+            <div className="md:space-y-2 text-start md:text-center">
+                <h2 className="w-full md:w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)] md:mx-auto">
                     <span className="text-[rgba(0,89,67,1)]">Frequently Asked</span> Questions
                 </h2>
-                <p className="font-normal text-lg text-[rgba(74,85,101,1)] mx-auto">
+                <p className="font-normal md:text-lg text-[rgba(74,85,101,1)] mx-auto">
                     Get answers to common questions about C-Tech technology and implementation.
                 </p>
             </div>

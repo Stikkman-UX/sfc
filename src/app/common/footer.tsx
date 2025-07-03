@@ -5,16 +5,16 @@ import Image from "next/image"
 export const Footer = () => {
     return (
         <footer className="">
-            <div className="max-h-[200px] flex justify-center bg-[url('/footer-bg.jpg')] bg-cover bg-no-repeat bg-center py-12">
+            <div className=" md:max-h-[200px] flex justify-center bg-[url('/footer-bg.jpg')] bg-cover bg-no-repeat bg-center py-12">
                 <div className="w-11/12 md:w-10/12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4 mx-auto">
                     <span className="text-[28px] md:text-4xl lg:text-[42px] text-white">
                         Get in touch with us   
                     </span>
-                    <div className="flex gap-3">
+                    <div className="w-fit md:w-[400px] flex gap-3">
                         <OrangeButton text="Call now"/>
                         <button
                         type="button"
-                        className="flex items-center gap-2 text-white border border-white rounded-full px-6 py-3">
+                        className="flex-1 flex justify-center items-center gap-2 text-white border border-white rounded-full px-4 md:px-5 py-2.5">
                             Send a message
                             <ArrowRightSvg/>
                         </button>

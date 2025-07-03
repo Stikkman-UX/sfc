@@ -16,7 +16,7 @@ const Technology = () => {
             <Features/>
             <Application/>
             <Certification/>
-            <Difference/>
+            {/* <Difference/> */}
             <Faq/>
             <Resources/>
         </div>
