@@ -25,7 +25,7 @@ export const Header = () => {
                 <div className="hidden md:flex md:gap-6 lg:gap-10">
                     <Link
                     className=""
-                    href="/">
+                    href="/technology">
                         Technology
                     </Link>
                     <Link

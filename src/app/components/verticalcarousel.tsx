@@ -1,36 +1,22 @@
 'use client'
 import { useEffect } from "react"
 import gsap from "gsap"
-import { DropSvg } from "./commonsvg";
 
-export const VerticalCarousel = () => {
+interface VerticalCarouselProps {
+    cards: {
+        cardNo: string;
+        icon: React.JSX.Element;
+        title: string;
+        desc: string;
+    }[];
+    styling?: {
+        background: string;
+        titleColor: string;
+        descColor: string;
+    };
+}
 
-    const cards = [
-        {
-            cardNo: '01',
-            icon: <DropSvg/>,
-            title: 'Advanced screening',
-            desc: 'Multi-stage filtration removes contaminants and prepares wastewater for biological treatment.'
-        },
-        {
-            cardNo: '02',
-            icon: <DropSvg/>,
-            title: 'Advanced screening',
-            desc: 'Multi-stage filtration removes contaminants and prepares wastewater for biological treatment.'
-        },
-        {
-            cardNo: '03',
-            icon: <DropSvg/>,
-            title: 'Advanced screening',
-            desc: 'Multi-stage filtration removes contaminants and prepares wastewater for biological treatment.'
-        },
-        {
-            cardNo: '04',
-            icon: <DropSvg/>,
-            title: 'Advanced screening',
-            desc: 'Multi-stage filtration removes contaminants and prepares wastewater for biological treatment.'
-        },
-    ];
+export const VerticalCarousel = ({ cards, styling }: VerticalCarouselProps) => {
 
     useEffect(() => {
         const isMobile = false;
@@ -40,30 +26,18 @@ export const VerticalCarousel = () => {
         gsap.set('#card-2', { width: '82%', bottom: '16px', opacity: 0.4, zIndex: '10' });
         gsap.set('#card-3', { width: '72%', bottom: '32px', opacity: 0.2, zIndex: '0' });
 
-        gsap.fromTo(
+        gsap.to(
             '.vertical-carousel',
             {
-                // transform: 'translateY(100%)',
-            },
-            {
-                // transform: 'translateY(0)',
                 scrollTrigger: {
                     trigger: '.vertical-carousel',
                     start: isMobile ? 'top 50%' : '-5% 15%',
                     onEnter: () => {
-                        // const tl = gsap.timeline();
-                        // tl
-                        // .fromTo('#card-0', { transform: 'translateY(100%)' }, { transform: 'translateY(0)', width: isMobile ? '94%' : '100%', bottom: isMobile ? '-8px' : '-16px', zIndex: '30', duration: 1 }, 0)
-                        // .fromTo('#card-1', { transform: 'translateY(100%)' }, { transform: 'translateY(0)', width: isMobile ? '88%' : '92%', bottom: '0px', zIndex: '20', duration: 1 }, 0.2)
-                        // .fromTo('#card-2', { transform: 'translateY(100%)' }, { transform: 'translateY(0)', width: isMobile ? '80%' : '82%', bottom: isMobile ? '8px' : '16px', zIndex: '10', duration: 1 }, 0.4)
-
                         startVerticalCarousel();
                     },
                     once: true,
                 },
-                // duration: 1,
                 // onComplete: isMobile ? startVerticalCarouselMobile : startVerticalCarousel,
-                // onComplete: startVerticalCarousel,
             },
         )
 
@@ -134,17 +108,17 @@ export const VerticalCarousel = () => {
                             <div
                             id={'card-' + i}
                             key={i}
-                            className="absolute flex flex-col items-center gap-8 bg-white rounded-2xl pt-10 pb-20 px-10">
+                            className={`absolute flex flex-col items-center gap-8 ${ styling ? styling.background : 'bg-white' } rounded-2xl pt-10 pb-20 px-10`}>
                                 <div className="relative bg-[rgba(25,169,72,1)] text-white font-inter font-bold text-sm rounded-tl-2xl rounded-br-2xl px-6 py-5">
                                     <div className="absolute -top-1 -right-1 w-4 h-4 bg-[rgba(245,126,37,1)] rounded-full"></div>
                                     { cardNo }
                                 </div>
                                 { icon }
                                 <div className="flex flex-col gap-2 text-center">                              
-                                    <span className="text-[rgba(25,169,72,1)] font-semibold">
+                                    <span className={`${ styling ? styling.titleColor : 'text-[rgba(25,169,72,1)]' } font-semibold`}>
                                         { title }
                                     </span>
-                                    <span className="w-2/3 font-normal text-[rgba(74,85,101,1)] text-sm leading-6 mx-auto">
+                                    <span className={`w-2/3 font-normal text-sm ${ styling ? styling.descColor : 'text-[rgba(74,85,101,1)]' } leading-6 mx-auto`}>
                                         { desc }
                                     </span>
                                 </div>

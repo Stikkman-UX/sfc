@@ -1,8 +1,34 @@
-import Image from 'next/image';
 import { VerticalCarousel } from './verticalcarousel';
 import { HorizontalCarousel } from './HorizontalCarousel';
+import { DropSvg } from './commonsvg';
 
 export const Advanced = () => {
+    const cards = [
+        {
+            cardNo: '01',
+            icon: <DropSvg/>,
+            title: 'Advanced screening',
+            desc: 'Multi-stage filtration removes contaminants and prepares wastewater for biological treatment.'
+        },
+        {
+            cardNo: '02',
+            icon: <DropSvg/>,
+            title: 'Advanced screening',
+            desc: 'Multi-stage filtration removes contaminants and prepares wastewater for biological treatment.'
+        },
+        {
+            cardNo: '03',
+            icon: <DropSvg/>,
+            title: 'Advanced screening',
+            desc: 'Multi-stage filtration removes contaminants and prepares wastewater for biological treatment.'
+        },
+        {
+            cardNo: '04',
+            icon: <DropSvg/>,
+            title: 'Advanced screening',
+            desc: 'Multi-stage filtration removes contaminants and prepares wastewater for biological treatment.'
+        },
+    ];
 
     const PlaySvg = () => {
         return (         
@@ -34,7 +60,7 @@ export const Advanced = () => {
                 <h4 className='text-center text-white/80 text-[22px]'>
                     How <span className='text-white'>C-Tech</span> works
                 </h4>
-                <VerticalCarousel/>
+                <VerticalCarousel cards={cards}/>
                 <HorizontalCarousel/>
             </div>
         </section>
