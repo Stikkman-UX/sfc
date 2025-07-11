@@ -66,6 +66,15 @@ export const ArrowRightSvg = () => {
     )
 }
 
+export const ArrowRightGreenSvg = () => {
+    return (
+        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.5755 7H11.4244" stroke="rgba(0,168,73,1)" strokeWidth="1.12127" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M7.49988 3.07553L11.4243 6.99997L7.49988 10.9244" stroke="rgba(0,168,73,1)" strokeWidth="1.12127" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+    )
+}
+
 export const StatsSvg = () => {
     return (
         <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">

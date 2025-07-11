@@ -30,28 +30,28 @@ export const Header = () => {
                     </Link>
                     <Link
                     className=""
-                    href="/">
+                    href="/thought-leadership">
                         Thought leadership
                     </Link>
                     <Link
                     className=""
-                    href="/">
+                    href="/investors">
                         Investors
                     </Link>
                     <Link
                     className=""
-                    href="/">
+                    href="/about">
                         About
                     </Link>
                     <Link
                     className=""
-                    href="/">
+                    href="/careers">
                         Careers
                     </Link>
                 </div>
                 <Link
                 className="hidden md:inline text-white bg-[rgba(9,151,72,1)] rounded-full px-6 py-2"
-                href="/">
+                href="/contact">
                     Contact us
                 </Link>
                 <button
