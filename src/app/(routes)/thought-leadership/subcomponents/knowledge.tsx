@@ -1,13 +1,13 @@
 'use client';
 import { useState } from "react";
-import { BlogSvg, DateSvg, PdfSvg, RedirectSvg, VideoSvg, ViewsSvg } from "./commonsvg";
+import { BlogSvg, DateSvg, PdfSvg, RedirectSvg, VideoSvg, ViewsSvg } from "@/app/components/commonsvg";
 
 interface  FilterBtn {
     id: string;
     text: string;
 }
 
-interface LeadingCard {
+interface KnowledgeCard {
     cardData: {
         tag: string,
         title: string,
@@ -19,7 +19,7 @@ interface LeadingCard {
     }
 }
 
-export const Leading = () => {
+export const Knowledge = () => {
     const [ActiveFilter, setActiveFilter] = useState<string>('content');
 
     const cards = {
@@ -119,7 +119,7 @@ export const Leading = () => {
         ],
     };
 
-    const LeadingCard = ({ cardData }: LeadingCard) => {
+    const KnowledgeCard = ({ cardData }: KnowledgeCard) => {
         const { tag, title, desc, date, views } = cardData;
 
         return (
@@ -187,13 +187,15 @@ export const Leading = () => {
 
     return (
         <section className="mx-auto py-20">
-            <div className="w-full md:w-10/12 flex flex-col lg:flex-row justify-between gap-4 mx-auto">
+            <div className="w-full md:w-10/12 flex flex-col lg:flex-row justify-between gap-10 mx-auto">
                 <div className="w-11/12 lg:flex-1 md:space-y-4 mx-auto md:mx-0">
                     <h4 className="w-full lg:w-1/2 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
-                        <span className="text-[rgba(25,169,72,1)]">Leading</span> industry conversations
+                        <span className="text-[rgba(25,169,72,1)]">
+                            Knowledge
+                        </span> library
                     </h4>
                     <p className=" md:text-lg font-normal text-[rgba(74,85,101,1)]">
-                        Expert insights, research, and analysis on wastewater treatment innovation, sustainability, and the future of water infrastructure in India.
+                        Explore our comprehensive collection of research, insights, and industry analysis.
                     </p>
                 </div>
                 <div className="disable-scrollbar w-full lg:w-fit flex justify-start lg:justify-end items-center md:items-end gap-x-2 md:gap-x-4 overflow-x-auto px-4 sm:px-7 md:px-0 mx-auto">
@@ -206,7 +208,7 @@ export const Leading = () => {
             <div className="disable-scrollbar lg:w-10/12 flex lg:grid lg:grid-cols-3 gap-6 pt-10 md:py-20 px-4 sm:px-7 md:px-16 lg:px-0 overflow-x-auto lg:mx-auto">
                 {
                     cards[ActiveFilter as keyof typeof cards].map((cardData, i) => {
-                        return <LeadingCard key={i} cardData={cardData}/>
+                        return <KnowledgeCard key={i} cardData={cardData}/>
                     })
                 }
             </div>

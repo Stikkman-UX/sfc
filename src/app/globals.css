@@ -66,6 +66,18 @@ button:hover{
   transition: all 1s;
 }
 
+/* thought leadership page innovation showcase carousel */
+
+/* .showcase-inactive-1, .showcase-inactive-2 {
+  box-shadow: 0px 3.82px 235.96px 0px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-active {
+  scale: 1.15;
+  box-shadow: 0px 3.74px 230.91px -10.28px rgba(0, 0, 0, 0.09);
+  z-index: 50;
+} */
+
 .disable-scrollbar::-webkit-scrollbar {
   display: none;
 }
