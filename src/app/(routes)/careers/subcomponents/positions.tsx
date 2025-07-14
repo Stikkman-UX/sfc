@@ -178,8 +178,8 @@ export const Positions = () => {
                     Discover exciting opportunities to make an impact in India's water infrastructure sector
                 </p>
             </div>
-            <div className="bottom-shadow flex flex-col-reverse gap-6 sm:gap-4 justify-between items-center px-6 py-8 rounded-2xl">
-                <div className="disable-scrollbar w-full lg:w-fit flex justify-start lg:justify-end items-center md:items-end gap-x-2 md:gap-x-4 overflow-x-auto px-4 sm:px-7 md:px-0">
+            <div className="bottom-shadow flex flex-col-reverse md:flex-row gap-6 md:gap-4 justify-between items-center px-6 py-8 rounded-2xl">
+                <div className="disable-scrollbar w-full sm:w-fit flex justify-start lg:justify-end items-center md:items-end gap-x-2 md:gap-x-4 overflow-x-auto px-4 sm:px-7 md:px-0">
                     <FilterBtn id="opening" text="All Opening" />
                     <FilterBtn id="sales" text="Sales" />
                     <FilterBtn id="marketing" text="Marketing" />

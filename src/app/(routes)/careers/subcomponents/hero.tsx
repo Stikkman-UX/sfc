@@ -3,7 +3,7 @@ import { OrangeButton } from "@/app/common/orangebutton"
 import gsap from "gsap"
 import { useEffect } from "react"
 
-export const Hero = () => {
+export const  Hero = () => {
 
     useEffect(() => {
         const mm = gsap.matchMedia();
@@ -47,7 +47,7 @@ export const Hero = () => {
                 </div>
             </div>
             <div className="w-full sm:w-10/12 max-w-[1000px] flex pt-16 sm:pt-28 pb-28 sm:pb-36 mx-auto text-white overflow-hidden">
-                <div className="carousel-container w-fit flex items-center justify-between">
+                <div className="carousel-container w-fit sm:w-full flex items-center justify-between">
                     <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
                         <span className="font-semibold text-2xl">
                             500+
@@ -84,7 +84,7 @@ export const Hero = () => {
                         </span>
                     </div>
                 </div>
-                <div className="carousel-container w-fit flex items-center justify-between">
+                <div className="carousel-container sm:hidden w-fit flex items-center justify-between">
                     <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
                         <span className="font-semibold text-2xl">
                             500+
