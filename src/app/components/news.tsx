@@ -147,7 +147,7 @@ export const News = () => {
 
         return (
             <div className={`${ isLarge ? 'md:w-auto md:row-span-2 md:col-span-2' : 'md:w-auto md:col-span-1' } w-full sm:w-[340px] shrink-0 font-inter flex flex-col bg-[rgba(249,249,249,1)] rounded-2xl overflow-hidden`}>
-                <div className="relative min-h-[190px] flex-1 flex justify-center items-center bg-[linear-gradient(135deg,rgba(0,89,69,0.1)_0%,rgba(0,168,73,0.1)_100%)] text-xs">
+                <div className="relative  min-h-[200px] h-[240px] flex-1 flex justify-center items-center bg-[linear-gradient(135deg,rgba(0,89,69,0.1)_0%,rgba(0,168,73,0.1)_100%)] text-xs">
                     <div className="absolute top-0 w-full flex justify-between items-center p-4">
                         <span className="bg-[rgba(0,168,73,1)] text-white rounded-full px-4 py-2">
                             { tag }

@@ -10,18 +10,18 @@ export const Features = () => {
     const data = {
         'feature-1': {
             icon: <ShieldSvg/>,
-            title: "Biological selector zone",
-            desc: "C-Tech's multi-cell biological selector distinguishes it from others. It uses Return Activated Sludge (RAS) pumps to recycle Mixed Liquor Suspended Solids. This ensures excellent sludge settling under various conditions. A Sludge Volume Index (SVI) as low as 40 mL/g shows its effectiveness. The anaerobic conditions also aid in phosphorous removal, improving wastewater treatment."
+            title: "Decanter",
+            desc: "The C-Tech decanter removes treated wastewater supernatant with precision, ensuring no inflow, floating matter, or disturbed solids. VFD-controlled for accuracy, it prepares the basin for seamless recycling."
         },
         'feature-2': {
             icon: <DropSvg/>,
-            title: "Biological selector zone",
-            desc: "C-Tech's multi-cell biological selector distinguishes it from others. It uses Return Activated Sludge (RAS) pumps to recycle Mixed Liquor Suspended Solids. This ensures excellent sludge settling under various conditions. A Sludge Volume Index (SVI) as low as 40 mL/g shows its effectiveness. The anaerobic conditions also aid in phosphorous removal, improving wastewater treatment."
+            title: "Diffusers",
+            desc: " Fine bubble polyurethane membrane diffusers ensure efficient oxygen transfer, with adjustable air grids for uniform distribution. Manufactured in-house under EDI Inc. USA’s license, we provide complete systems and replacement parts."
         },
         'feature-3': {
             icon: <ShieldSvg/>,
-            title: "Biological selector zone",
-            desc: "C-Tech's multi-cell biological selector distinguishes it from others. It uses Return Activated Sludge (RAS) pumps to recycle Mixed Liquor Suspended Solids. This ensures excellent sludge settling under various conditions. A Sludge Volume Index (SVI) as low as 40 mL/g shows its effectiveness. The anaerobic conditions also aid in phosphorous removal, improving wastewater treatment."
+            title: "Programmer login controller",
+            desc: "Our in-house designed PLCs automate STP operations, optimizing processes like pumping, aeration, and filtration for efficiency, consistent quality, real-time monitoring, and reduced manpower, ensuring sustainable wastewater treatment compliance. "
         },
         'feature-4': {
             icon: <DropSvg/>,
@@ -90,17 +90,17 @@ export const Features = () => {
         <section className="mb-40">
             <div className="w-11/12 md:w-10/12 mx-auto">
                 <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
-                    <span className="text-[rgba(0,89,67,1)]">C-Tech </span>features
+                    <span className="text-[rgba(0,89,67,1)]">Key components </span> of C-Tech
                 </h2>
                 <p className="w-full md:w-[500px] font-normal md:text-lg text-[rgba(74,85,101,1)] pb-20">
                     Comprehensive equipment package designed for optimal performance and longevity.
                 </p>
                 <div className="flex-1 flex flex-col-reverse md:flex-row justify-between items-center gap-2 md:pe-10">
                     <div className="disable-scrollbar w-full flex md:flex-col gap-4 overflow-x-auto py-6 md:py-0">
-                        <FeatureBtn id="feature-1" text="Biological selector zone" icon={<ShieldSvg/>}/>
-                        <FeatureBtn id="feature-2" text="Biological processing" icon={<ShieldSvg/>}/>
-                        <FeatureBtn id="feature-3" text="Smart Monitoring" icon={<ShieldSvg/>}/>
-                        <FeatureBtn id="feature-4" text="Quality Assurance" icon={<ShieldSvg/>}/>
+                        <FeatureBtn id="feature-1" text="Decanter" icon={<ShieldSvg/>}/>
+                        <FeatureBtn id="feature-2" text="Diffusers" icon={<ShieldSvg/>}/>
+                        <FeatureBtn id="feature-3" text="Programmer login controller" icon={<ShieldSvg/>}/>
+                        {/* <FeatureBtn id="feature-4" text="Quality Assurance" icon={<ShieldSvg/>}/> */}
                     </div>
                     <div className="feature-border relative shrink-0 w-full md:w-1/2 max-w-[500px] h-fit">
                         <div className="w-full relative rounded-tl-[115px] md:rounded-tl-[125px] rounded-br-[115px] md:rounded-br-[125px] overflow-hidden z-50">

@@ -21,11 +21,11 @@ export const VerticalCarousel = ({ cards, styling }: VerticalCarouselProps) => {
     useEffect(() => {
         const isMobile = false;
 
-        gsap.set('#card-0', { width: '100%', bottom: '-16px', opacity: 1, zIndex: '30' });
-        gsap.set('#card-1', { width: '92%', bottom: '0px', opacity: 0.7, zIndex: '20' });
-        gsap.set('#card-2', { width: '82%', bottom: '16px', opacity: 0.4, zIndex: '10' });
-        gsap.set('#card-3', { width: '72%', bottom: '32px', opacity: 0.2, zIndex: '0' });
-
+        gsap.set('#card-0', { width: '100%', bottom: '-32px', opacity: 1, zIndex: '40' });
+        gsap.set('#card-1', { width: '92%', bottom: '-16px', opacity: 0.7, zIndex: '30' });
+        gsap.set('#card-2', { width: '82%', bottom: '0px', opacity: 0.4, zIndex: '20' });
+        gsap.set('#card-3', { width: '72%', bottom: '16px', opacity: 0.2, zIndex: '10' });
+        gsap.set('#card-4', { width: '62%', bottom: '32px', opacity: 0, zIndex: '0' }); 
         gsap.to(
             '.vertical-carousel',
             {
@@ -71,6 +71,13 @@ export const VerticalCarousel = ({ cards, styling }: VerticalCarouselProps) => {
             .fromTo('#card-3', { width: '100%', bottom: '-16px' }, { width: '92%', bottom: '0px', opacity: 0.7, zIndex: '20', immediateRender: false }, 5)
             .fromTo('#card-3', { width: '92%', bottom: '0px' }, { width: '82%', bottom: '16px', opacity: 0.4, zIndex: '10', immediateRender: false}, 7.5)
             .fromTo('#card-3', { width: '82%', bottom: '16px' }, { width: '72%', bottom: '32px', opacity: 0.2, zIndex: '0', immediateRender: false }, 10);
+
+            tl
+            .fromTo('#card-4', { width: '62%', bottom: '32px', zIndex: '0' }, {  width: '72%', bottom: '32px', zIndex: '0', opacity: 0, ease: "power1.out" }, 2.3)
+            .fromTo('#card-4', { width: '72%', bottom: '-160px', opacity: 1, zIndex: '30' }, { width: '100%', bottom: '-16px', opacity: 1, zIndex: '30', immediateRender: false }, 2.5)
+            .fromTo('#card-4', { width: '90%', bottom: '-16px' }, { width: '92%', bottom: '0px', opacity: 0.7, zIndex: '20', immediateRender: false }, 5)
+            .fromTo('#card-4', { width: '100%', bottom: '0px' }, { width: '82%', bottom: '16px', opacity: 0.4, zIndex: '10', immediateRender: false}, 7.5)
+            .fromTo('#card-4', { width: '92%', bottom: '16px' }, { width: '72%', bottom: '32px', opacity: 0.2, zIndex: '0', immediateRender: false }, 10);
         }
 
     //     function startVerticalCarouselMobile() {

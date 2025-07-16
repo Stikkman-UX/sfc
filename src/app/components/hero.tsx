@@ -59,7 +59,7 @@ export const Hero = () => {
             </div>
             <div className="relative w-11/12 md:w-auto flex flex-col items-start md:items-center space-y-6 md:space-y-8 pt-60 md:pt-0 z-20 mx-auto md:mx-0">
                 <h1 className=" md:w-[600px] mx-auto text-start md:text-center text-[38px] md:text-[50px] leading-12 md:leading-14 text-[rgba(0,89,67,1)]">
-                    Powering India's <span className="text-[rgba(25,169,72,1)]">sustainable</span> water future.
+                    Your wastewater vision is our <span className="text-[rgba(25,169,72,1)]">responsibility</span>
                 </h1>
                 <OrangeButton text="Explore our technology"/>
             </div>

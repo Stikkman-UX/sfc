@@ -54,8 +54,11 @@ export const Join = () => {
     return (
         <section className="space-y-32 pb-8 md:pb-20">
             <div className="space-y-6 md:space-y-10">
-                <p className="w-11/12 md:w-2/3 lg:w-1/2 text-[rgba(0,168,73,1)] text-2xl md:text-[32px] font-medium text-start md:text-center mx-auto">
-                    SFC Environment Technology Ltd. isn’t just a vendor. We’re the invisible infrastructure behind EPC projects across India. With a singular focus on water and wastewater treatment, we empower engineering leaders to deliver high-performance, future-ready utilities.
+                <p className="w-10/12  text-[rgba(0,168,73,1)] text-2xl md:text-[32px] font-medium text-start md:text-center mx-auto">
+SFC relentlessly strives to enable your vision of a successful wastewater business that also is committed to safeguarding the environment. Trusted by customers across the nation, we embed simplicity, adaptability, and long-term reliability into every wastewater system. 
+</p>
+                <p className="w-10/12  text-[rgba(0,168,73,1)] text-2xl md:text-[32px] font-medium text-start md:text-center mx-auto">
+Our innovative technologies are designed for precision and optimised performance, making operations seamless even in the most complex environments, be it any region, any shape, or any scale. 
                 </p>
                 <div className="flex justify-center items-center gap-4">
                     <OrangeButton text="Join the tribe"/>
@@ -68,7 +71,7 @@ export const Join = () => {
             </div>
             <div className="space-y-10">
                 <h4 className="w-11/12 md:w-2/3 lg:w-1/2 text-start md:text-center mx-auto text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-7 md:leading-9">
-                    <span className="text-[rgba(25,169,72,1)]">200 Million Litres</span> of Wastewater Daily Across India.
+                    Treating over  <span className="text-[rgba(25,169,72,1)]">15,000 million litres</span> of sewage every single day across geographies. 
                 </h4>
                 <div className="flex flex-col lg:flex-row justify-around gap-6">
                     <Image

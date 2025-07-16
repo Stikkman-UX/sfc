@@ -11,7 +11,9 @@ export const Hero = () => {
                 that move the industry forward
             </h2>
             <span className=" font-normal text-lg leading-7 text-[rgba(77,77,77,0.7)]">
-                Shaping the future of water treatment through innovative thinking, cutting-edge research, and industry expertise that drives sustainable solutions.
+               <b>Insights that shape the future of Wastewater Technology</b><br></br>
+Where innovation, research, perspectives and thought leadership drive change. 
+
             </span>
             <div className="w-full xl:w-fit flex flex-col sm:flex-row items-center gap-3 pt-6">
                 <OrangeButton text="Explore Insights" fullWidth/>

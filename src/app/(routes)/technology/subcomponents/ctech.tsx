@@ -87,16 +87,18 @@ export const Ctech = () => {
     }
 
     return (
-        <section className="ctech-section space-y-20 my-40">
-            <h2 className="w-fit text-[32px] text-[rgba(25,169,72,1)] mx-auto">
-               How the <span className="text-[rgba(0,89,67,1)]">C-Tech works</span>
+        <section className="ctech-section  my-40 md:text-center ">
+            <h2 className="w-fit text-[32px] text-[rgba(25,169,72,1)] mx-auto mb-5">
+                The <span className="text-[rgba(0,89,67,1)]">C-Tech</span> Edge
             </h2>
+            <p className="w-full font-normal md:text-lg text-[rgba(74,85,101,1)] pb-20 d-flex">
+                Distinguished by its Exceptional 98% Treatment Efficiency, Surpassing Conventional Methods.</p>
             <div className="w-11/12 md:w-10/12 flex flex-col lg:flex-row justify-center items-center mx-auto">
                 <div className="w-[340px] sm:w-[400px] tech-left translate-y-10 lg:translate-y-0 lg:translate-x-20 relative shrink-0 z-10">
                     <div className="absolute left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-0 top-1/2 -translate-y-1/2 h-[110%] flex lg:flex-col justify-between gap-2 z-20">
-                        <FeatureCard text="Outstanding Performance"/>
-                        <FeatureCard text="Load Flexibility"/>
-                        <FeatureCard text="Power Savings"/>
+                        <FeatureCard text="Outstanding performance"/>
+                        <FeatureCard text="Load flexibility"/>
+                        <FeatureCard text="Power savings"/>
                     </div>
                     <Image
                     className="h-80 w-auto rotate-90 lg:rotate-0 object-cover z-10"
@@ -126,9 +128,9 @@ export const Ctech = () => {
                     height={60}
                     />
                     <div className="absolute bottom-0 lg:bottom-auto lg:top-1/2 lg:-translate-y-1/2 lg:right-0 h-[110%] flex lg:flex-col lg:justify-between items-end gap-2 z-20">
-                        <FeatureCard text="Energy Generation"/>
-                        <FeatureCard text="Full Automation"/>
-                        <FeatureCard text="Substantial Land Saving"/>
+                        <FeatureCard text="Energy generation"/>
+                        <FeatureCard text="Full automation"/>
+                        <FeatureCard text="Substantial land saving"/>
                     </div>
                 </div>
             </div>

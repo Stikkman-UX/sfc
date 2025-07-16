@@ -117,33 +117,33 @@ export const HorizontalCarousel = () => {
                 <Card
                 id="inactive-slide-2"
                 icon={<NewsSvg1/>}
-                value="25+"
-                title="EPC Partners"
-                subtitle="Leading engineering companies"/>
+                value="20+"
+                title="Years of Experience"
+                subtitle=""/>
                 <Card
                 id="inactive-slide-1"
                 icon={<NewsSvg1/>}
-                value="10M+"
-                title="Lives Served"
-                subtitle="Daily treatment capacity"/>
+                value="1,200+"
+                title="reference plants"
+                subtitle=""/>
                 <Card
                 id="active-slide"
                 icon={<NewsSvg1/>}
-                value="25+"
-                title="EPC Partners"
-                subtitle="Leading engineering companies"/>
+                value="650"
+                title="commissioned plants"
+                subtitle=""/>
                 <Card
                 id="inactive-slide-3"
                 icon={<NewsSvg1/>}
-                value="10M+"
-                title="Lives Served"
-                subtitle="Daily treatment capacity"/>
+                value="12,000+"
+                title="MLD Cumulative Capacity"
+                subtitle=""/>
                 <Card
                 id="inactive-slide-4"
                 icon={<NewsSvg1/>}
-                value="25+"
-                title="EPC Partners"
-                subtitle="Leading engineering companies"/>
+                value="20+"
+                title="Years of Experience"
+                subtitle=""/>
             </div>
         )
     }

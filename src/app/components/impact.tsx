@@ -14,7 +14,10 @@ export const Impact = () => {
                             <span className="text-white">commitment</span>
                         </h3>
                         <p className="font-normal text-white md:text-lg leading-6">
-                            We measure success not just by treatment efficiency, but by our positive environmental impact. Every facility we power contributes to cleaner water, reduced carbon emissions, and sustainable community development.
+                        At SFC, we’re committed to pioneering sustainable solutions in environmental technology. From minimizing waste to optimizing energy use, sustainability is integrated into every aspect of our operations. We actively engage in environmental education and community outreach, inspiring positive change for a greener future.
+                        </p>
+                        <p className="font-normal text-white md:text-lg leading-6">
+                        Sustainability is not just a goal; it’s a guiding principle that shapes our vision for a brighter, greener future. Together, we’re not only advancing technology; we’re building a world where innovation and environmental stewardship go hand in hand, ensuring a sustainable legacy for generations to come.
                         </p>
                         <div className="flex items-center gap-3">
                             <OrangeButton text="Learn more"/>
