@@ -1,21 +1,48 @@
-/* font onest */
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
-/* font inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* font work sans */
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
+
+
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+:root {
+  --heading-font: "Basic", sans-serif;
+  --body-font: "Work Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font) !important;
+  font-weight: bold;
+}
+
+h1 > span, h2 > span, h3 > span, h4 > span, h5 > span, h6 > span
+{
+    font-family: var(--heading-font) !important;
+  font-weight: bold;
+}
+a {
+  font-family: var(--heading-font);
+}
+
+p, span, li {
+  font-family: var(--body-font);
+}
+
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-inter: "Inter", sans-serif;
+  --: "Work Sans", sans-serif;
 
 }
 
@@ -28,7 +55,7 @@
 
 body {
   background: white;
-  font-family: "Onest", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -54,13 +81,34 @@ button:hover{
   z-index: 50;
   transition: all 1s;
 }
-
+.header-items a {
+    font-size: 15px;
+    font-weight: 500;
+}
 .inactive-slide-1, .inactive-slide-3{
   scale: 0.8;
   opacity: 0.3;
   transition: all 1s;
 }
+.product-list {
+    padding-left: 0px;
+}
 
+.product-list li svg {
+    min-width: 15px;
+    min-height: 15px;
+    object-fit: contain;
+    margin: 0;
+    position: relative;
+    top: 2px;
+}
+.product-list li {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    column-gap: 7px;
+    margin-bottom: 3px;
+}
 .inactive-slide-2, .inactive-slide-4{
   scale: 0.6;
   opacity: 0.1;
@@ -111,4 +159,75 @@ button:hover{
 
 .disable-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+
+.join-section:before {
+    content: "";
+    background: linear-gradient(360deg, #ffffff, #ffffff00);
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.join-section {
+    position: relative;
+}
+
+.faded p {
+  color: #00000025; /* Tailwind gray-400 */
+  transition: color 0.8s ease-in-out;
+}
+
+.faded.in-view p {
+  color: #00A849; /* Your green */
+}
+
+.curve-image {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.bordered-btn:hover {
+    background-color: #F57E25;
+    color: #fff;
+    transition: .2s ease-in;
+}
+.orange-btn, .bordered-btn, .g-bordered-btn, .g-bordered-btn svg path, .w-btn
+{
+   transition: .2s ease-in;
+}
+.orange-btn:hover
+{
+     background-color: #fff;
+    color: #F57E25;
+    border-color: #F57E25;
+    transition: .2s ease-in;
+}
+
+.g-bordered-btn:hover
+{
+     background-color: #00a849;
+    color: #fff;
+    border-color: #00a849;
+    transition: .2s ease-in;
+}
+
+.g-bordered-btn:hover svg path, .w-btn:hover svg path
+{
+     stroke: #fff;
+     transition: .2s ease-in;
+}
+
+.w-btn:hover
+{
+     background-color: #00a849;
+    color: #fff;
+    border-color: #00a849;
+    transition: .2s ease-in;
 }

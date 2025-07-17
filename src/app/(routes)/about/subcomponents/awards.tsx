@@ -33,7 +33,7 @@ export const Awards = () => {
 
     const Card = ({ src }: CardProps) => {
         return (
-            <div className="w-[290px] shrink-0 h-full flex flex-col justify-start gap-4 bg-[rgba(249,249,249,1)] font-inter rounded-lg px-4 py-8">
+            <div className="w-[290px] shrink-0 h-full flex flex-col justify-start gap-4 bg-[rgba(249,249,249,1)]  rounded-lg px-4 py-8">
                 <Image
                 className={`w-full object-cover rounded-[9px] mt-2 mx-auto`}
                 src={src}

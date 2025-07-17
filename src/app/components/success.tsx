@@ -72,7 +72,7 @@ export const Success = () => {
                     width={100}
                     height={60}
                     />
-                    <div className="absolute bottom-0 font-inter text-white w-full h-1/2 md:h-1/3 flex flex-col justify-end items-end bg-gradient-to-t from-black to-black/0 px-6 md:px-10 pb-3 z-20">
+                    <div className="absolute bottom-0  text-white w-full h-1/2 md:h-1/3 flex flex-col justify-end items-end bg-gradient-to-t from-black to-black/0 px-6 md:px-10 pb-3 z-20">
                         <span className="font-bold text-[21px] md:text-2xl">25 MLD</span>
                         <span className="font-normal text-[10.5px] md:text-xs">Daily capacity</span>
                     </div>
@@ -82,7 +82,7 @@ export const Success = () => {
                         <div className="h-fit bg-[rgba(0,89,69,0.1)] rounded-lg p-2">
                             <DropSvg/>
                         </div>
-                        <div className="font-inter">
+                        <div className="">
                             <h6 className="font-bold text-[rgba(16,24,40,1)]">
                                 { title }
                             </h6>
@@ -92,7 +92,7 @@ export const Success = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="flex justify-between font-inter">
+                    <div className="flex justify-between ">
                         <div className="flex flex-col items-start gap-2">
                             <ViewsSvg/>
                             <span className="font-semibold text-sm md:text-base text-[rgba(16,24,40,0.73)]">{ populationServed }</span>

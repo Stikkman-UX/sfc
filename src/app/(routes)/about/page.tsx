@@ -4,6 +4,7 @@ import { ChangeMakers } from "./subcomponents/change"
 import { Hero } from "./subcomponents/hero"
 import { Story } from "./subcomponents/story"
 import { Values } from "./subcomponents/values"
+import Timeline from "./subcomponents/timeline"
 
 const About = () => {
 
@@ -11,6 +12,7 @@ const About = () => {
         <div className="overflow-hidden">
             <Hero/>
             <Story/>
+            <Timeline/>
             <Values/>
             <ChangeMakers/>
             <Awards/>

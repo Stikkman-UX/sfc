@@ -49,7 +49,7 @@ export const Certification = () => {
 
     const Card = ({ data }: CardProps) => {
         return (
-            <div className="w-[260px] h-full flex flex-col justify-start gap-4 bg-[rgba(249,249,249,1)] font-inter rounded-lg px-4 py-2.5">
+            <div className="w-[260px] h-full flex flex-col justify-start gap-4 bg-[rgba(249,249,249,1)]  rounded-lg px-4 py-2.5">
                 <span className="w-fit text-[rgba(245,126,37,0.8)] text-xs rounded-full border border-[rgba(245,126,37,0.8)] px-2 py-0.5">
                     { data.isCaseStudy ? 'Case study' : 'certificate' }
                 </span>

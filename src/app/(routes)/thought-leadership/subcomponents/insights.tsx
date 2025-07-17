@@ -110,7 +110,7 @@ export const Insights = () => {
                     height={60}
                     />
                     <div className="absolute top-4 w-full flex justify-between items-center px-4 z-20">
-                        <span className="bg-[rgba(0,168,73,1)] font-inter text-white text-xs px-2 py-0.5 rounded-full">
+                        <span className="bg-[rgba(0,168,73,1)]  text-white text-xs px-2 py-0.5 rounded-full">
                             { tag }
                         </span>
                         <div className="bg-black/20 backdrop-blur-sm rounded-full p-2"><EyeSvg/></div>

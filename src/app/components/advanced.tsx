@@ -71,7 +71,7 @@ export const Advanced = () => {
             operational simplicity, and compact design.
           </p>
           <button
-            className="flex items-center gap-2 text-[rgba(25,169,72,1)] text-xs md:text-base bg-white rounded-full px-6 py-3 mt-4 md:mt-2"
+            className="flex w-btn items-center gap-2 text-[rgba(25,169,72,1)] text-xs md:text-base bg-white rounded-full px-6 py-3 mt-4 md:mt-2"
             type="button"
           >
             <PlaySvg />
@@ -79,7 +79,7 @@ export const Advanced = () => {
           </button>
         </div>
       </div>
-      <div className=" bg-[linear-gradient(122.87deg,#00A849_8.69%,#005945_100.52%)] py-12">
+     <div className="bg-[linear-gradient(to_right,_#B7D433_0%,_#00A849_100%)] py-12">
         <h4 className="text-center text-white/80 text-[22px] md:mb-[120px]">
           C-Tech <span className="text-white">Features</span> 
         </h4>

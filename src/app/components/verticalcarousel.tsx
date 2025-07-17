@@ -116,7 +116,7 @@ export const VerticalCarousel = ({ cards, styling }: VerticalCarouselProps) => {
                             id={'card-' + i}
                             key={i}
                             className={`absolute flex flex-col items-center gap-8 ${ styling ? styling.background : 'bg-white' } rounded-2xl pt-10 pb-20 px-10`}>
-                                <div className="relative bg-[rgba(25,169,72,1)] text-white font-inter font-bold text-sm rounded-tl-2xl rounded-br-2xl px-6 py-5">
+                                <div className="relative bg-[rgba(25,169,72,1)] text-white  font-bold text-sm rounded-tl-2xl rounded-br-2xl px-6 py-5">
                                     <div className="absolute -top-1 -right-1 w-4 h-4 bg-[rgba(245,126,37,1)] rounded-full"></div>
                                     { cardNo }
                                 </div>

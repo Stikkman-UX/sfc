@@ -152,11 +152,11 @@ export const Positions = () => {
                 </div>
                 <div className="w-full md:w-fit flex items-center gap-3">
                     <button
-                    className="flex-1 w-full sm:w-fit flex justify-center items-center gap-2 text-[rgba(0,168,73,1)] whitespace-nowrap border border-[rgba(0,168,73,1)] rounded-full px-4 md:px-5 py-2.5">
+                    className="flex-1 w-full sm:w-fit flex justify-center items-center gap-2 g-bordered-btn text-[rgba(0,168,73,1)] whitespace-nowrap border border-[rgba(0,168,73,1)] rounded-full px-4 md:px-5 py-2.5">
                         View Details  
                     </button>
                     <button
-                    className={`w-fit flex justify-center items-center gap-2 text-white bg-[rgba(245,126,37,1)] border border-[rgba(245,126,37,1)] rounded-full whitespace-nowrap px-4 md:px-5 py-2.5`}>
+                    className={`w-fit flex justify-center items-center gap-2 orange-btn text-white bg-[rgba(245,126,37,1)] border border-[rgba(245,126,37,1)] rounded-full whitespace-nowrap px-4 md:px-5 py-2.5`}>
                         Apply Now
                         <ArrowRightSvg/>
                     </button>

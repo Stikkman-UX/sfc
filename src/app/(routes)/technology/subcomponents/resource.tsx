@@ -51,8 +51,8 @@ export const Resources = () => {
                 <div className="bg-[rgba(0,168,73,0.1)] rounded-full p-3">
                     { icon }
                 </div>
-                <span className="font-inter font-normal text-[rgba(0,89,69,1)] mt-2">{ title }</span>
-                <span className="font-inter font-normal text-sm text-[rgba(74,85,101,1)] mb-2">
+                <span className=" font-normal text-[rgba(0,89,69,1)] mt-2">{ title }</span>
+                <span className=" font-normal text-sm text-[rgba(74,85,101,1)] mb-2">
                     { type }{" "}
                     &#9679;{" "}
                     { mb }{" "}

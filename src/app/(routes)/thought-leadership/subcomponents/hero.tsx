@@ -18,7 +18,7 @@ Where innovation, research, perspectives and thought leadership drive change.
             <div className="w-full xl:w-fit flex flex-col sm:flex-row items-center gap-3 pt-6">
                 <OrangeButton text="Explore Insights" fullWidth/>
                 <button
-                className="flex-1 w-full sm:w-fit flex justify-center items-center gap-2 text-[rgba(0,168,73,1)] whitespace-nowrap border border-[rgba(0,168,73,1)] rounded-full px-4 md:px-5 py-2.5">
+                className="flex-1 w-full g-bordered-btn sm:w-fit flex justify-center items-center gap-2 text-[rgba(0,168,73,1)] whitespace-nowrap border border-[rgba(0,168,73,1)] rounded-full px-4 md:px-5 py-2.5">
                     Download Resources
                     <ArrowRightGreenSvg/>
                 </button>

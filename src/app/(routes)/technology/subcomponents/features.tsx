@@ -53,39 +53,7 @@ export const Features = () => {
         )
     }
 
-    useEffect(() => {
-        const scrollTrigger = {
-            trigger: '.feature-border',
-            start: "top 50%",
-        };
-
-        gsap.to(
-            '.feature-border-1',
-            {
-                scale: 1.26,
-                duration: 1,
-                scrollTrigger
-            }
-        );
-        gsap.to(
-            '.feature-border-2',
-            {
-                scale: 1.18,
-                duration: 1,
-                scrollTrigger
-            }
-        );
-        gsap.to(
-            '.feature-border-3',
-            {
-                scale: 1.08,
-                duration: 1,
-                scrollTrigger
-            }
-        );
-
-    }, [])
-
+    
     return (
         <section className="mb-40">
             <div className="w-11/12 md:w-10/12 mx-auto">

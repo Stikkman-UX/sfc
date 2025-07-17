@@ -1,6 +1,7 @@
 import { Application } from "./subcomponents/application"
 import { Certification } from "./subcomponents/certification"
 import { Ctech } from "./subcomponents/ctech"
+import { Product } from "./subcomponents/products"
 import { Difference } from "./subcomponents/difference"
 import { Faq } from "./subcomponents/faq"
 import { Features } from "./subcomponents/features"
@@ -15,6 +16,7 @@ const Technology = () => {
             <Ctech/>
             <Features/>
             <Application/>
+            <Product/>
             <Certification/>
             {/* <Difference/> */}
             <Faq/>

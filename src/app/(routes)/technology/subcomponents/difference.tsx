@@ -7,7 +7,7 @@ export const Difference = () => {
                 <h2 className="text-[32px]">
                     C-Tech <span className="text-white/80">vs Conventional Systems</span>
                 </h2>
-                <p className="font-normal text-lg font-inter">
+                <p className="font-normal text-lg ">
                     See how C-Tech technology outperforms traditional wastewater treatment methods.
                 </p>
             </div>

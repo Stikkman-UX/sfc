@@ -130,7 +130,7 @@ export const Overview = () => {
                         </span>
                     </div>
                     <button
-                    className="w-full flex justify-center items-center gap-5 text-[rgba(0,168,73,1)] font-inter text-[15px] border-2 border-[rgba(0,168,73,1)] rounded-full px-2 py-1"
+                    className="w-full flex justify-center items-center gap-5 text-[rgba(0,168,73,1)]  text-[15px] border-2 border-[rgba(0,168,73,1)] rounded-full px-2 py-1"
                     type="button">
                         Contact now
                         <RedirectSvg/>
@@ -140,7 +140,7 @@ export const Overview = () => {
                     <span className="text-[rgba(0,89,69,1)] text-2xl">
                         Quick Actions
                     </span>
-                    <div className="space-y-2.5 font-inter text-[15px] text-[rgba(15,23,42,1)]">
+                    <div className="space-y-2.5  text-[15px] text-[rgba(15,23,42,1)]">
                         <button
                         className="w-full flex items-center gap-3 bg-white border border-[rgba(226,232,240,1)] rounded-xl px-2 py-1"
                         type="button">

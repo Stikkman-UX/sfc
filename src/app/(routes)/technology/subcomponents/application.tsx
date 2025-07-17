@@ -60,7 +60,7 @@ export const Application = () => {
                     width={100}
                     height={60}
                     />
-                    <span className="absolute bottom-4 left-4 bg-[rgba(245,126,37,1)] font-inter text-white text-xs rounded-full px-2 py-0.5 z-20">
+                    <span className="absolute bottom-4 left-4 bg-[rgba(245,126,37,1)]  text-white text-xs rounded-full px-2 py-0.5 z-20">
                         { tag }
                     </span>
                 </div>

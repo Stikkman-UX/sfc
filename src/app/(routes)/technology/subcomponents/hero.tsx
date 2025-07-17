@@ -9,10 +9,42 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const Hero = () => {
 
+
+
+      useEffect(() => {
+        const mm = gsap.matchMedia();
+    
+        mm.add(
+          {
+            isMobile: "(min-width: 360px) and (max-width: 640px)",
+            isDesktop: "(min-width: 640px)",
+          },
+          (context) => {
+            const conditions = context.conditions || {};
+            const isMobile = conditions.isMobile ?? false;
+            const isDesktop = conditions.isDesktop ?? false;
+    
+            const el = document.querySelector(
+              ".carousel-container"
+            ) as HTMLDivElement;
+            const width = el.scrollWidth;
+    
+            if (isMobile) {
+              const tl = gsap.timeline({ repeat: -1 });
+              tl.to(".carousel-container", {
+                x: "-100%",
+                duration: 10,
+                ease: "linear",
+              });
+            }
+          }
+        );
+      }, []);
+
     useEffect(() => {
         const scrollTrigger = {
             trigger: ".tech-hero",
-            start: "bottom 50%",
+            start: "bottom 70%",
         };
 
         gsap.to(
@@ -53,16 +85,18 @@ export const Hero = () => {
     }, [])
 
     return (
-        <section className="tech-hero relative bg-[rgba(0,168,73,1)] text-white md:rounded-br-[260px] pt-52 pb-40 md:py-48">
-            <div className="w-11/12 md:w-[700px] flex flex-col items-start md:items-center gap-4 text-start md:text-center mx-auto">
-                <span className="font-inter text-xs bg-white/20 rounded-full px-3 py-1 border border-white/30">
+        <section className="tech-hero relative bg-[rgba(0,168,73,1)] text-white md:rounded-br-[260px] pt-52 pt-35 pb-20 md:pt-48 md:pb-25">
+            <div className="w-11/12 md:w-[1000px] flex flex-col items-start md:items-center gap-4 text-start md:text-center mx-auto">
+                <span className=" text-xs bg-white/20 rounded-full px-3 py-1 border border-white/30">
                     Advanced Wastewater Treatment Technology
                 </span>
-                <h2 className="w-2/3 md:w-full text-[38px] leading-[42px] md:leading-normal md:text-[50px]">
+                <h2 className="w-full text-[38px] leading-[42px] md:leading-normal md:text-[50px]">
                     C-Tech <span className="text-[rgba(0,89,69,1)]">Technology</span>
                 </h2>
+                <h3 className="text-[23px]">India’s most preferred SBR (Sequencing Batch Reactor) technology </h3>
                 <p className="text-lg text-white/90 font-normal md:pt-2">
-                    Revolutionary biological wastewater treatment system engineered for India's growing infrastructure needs. Delivering 99.5% efficiency with smart monitoring and sustainable operations.
+                    C-Tech is an advanced technology for treating sewage and effluents. The latest generation SBR process, employed extensively for treating both domestic sewage and industrial effluents to achieve recyclable quality water with low life cycle cost. Offers high efficiency, operational simplicity, and compact design.
+
                 </p>
                 <div className="w-full md:w-10/12 flex flex-col md:flex-row items-center gap-3 pt-4 text-center md:text-start">
                     <OrangeButton text="Download Technical Specs" fullWidth/>
@@ -72,10 +106,52 @@ export const Hero = () => {
                         <ArrowRightSvg/>
                     </button>
                 </div>
+
+                  <div className="w-full sm:w-10/12  flex pt-8 mx-auto text-white overflow-hidden">
+        <div className="carousel-container w-fit sm:w-full flex items-center justify-between">
+          <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
+            <span className="font-semibold text-2xl">20+</span>
+            <span className="font-normal text-sm">Years of Experience</span>
+          </div>
+          <div className="w-[1px] shrink-0 h-10 bg-gradient-to-b from-white/0 via-white to-white/0"></div>
+          <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
+            <span className="font-semibold text-2xl">1,200+</span>
+            <span className="font-normal text-sm">reference plants</span>
+          </div>
+          <div className="w-[1px] shrink-0 h-10 bg-gradient-to-b from-white/0 via-white to-white/0"></div>
+          <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
+            <span className="font-semibold text-2xl">650 </span>
+            <span className="font-normal text-sm">commissioned plants</span>
+          </div>
+          <div className="w-[1px] shrink-0 h-10 bg-gradient-to-b from-white/0 via-white to-white/0"></div>
+          <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
+            <span className="font-semibold text-2xl">12,000+</span>
+            <span className="font-normal text-sm">MLD Cumulative Capacity</span>
+          </div>
+        </div>
+        <div className="carousel-container sm:hidden w-fit flex items-center justify-between">
+          <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
+            <span className="font-semibold text-2xl">20+</span>
+            <span className="font-normal text-sm">Years of Experience</span>
+          </div>
+          <div className="w-[1px] shrink-0 h-10 bg-gradient-to-b from-white/0 via-white to-white/0"></div>
+          <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
+            <span className="font-semibold text-2xl">1,200+ </span>
+            <span className="font-normal text-sm">reference plants</span>
+          </div>
+          <div className="w-[1px] shrink-0 h-10 bg-gradient-to-b from-white/0 via-white to-white/0"></div>
+          <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
+            <span className="font-semibold text-2xl">650</span>
+            <span className="font-normal text-sm">commissioned plants</span>
+          </div>
+          <div className="w-[1px] shrink-0 h-10 bg-gradient-to-b from-white/0 via-white to-white/0"></div>
+          <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
+            <span className="font-semibold text-2xl">12,000+</span>
+            <span className="font-normal text-sm">MLD Cumulative Capacity</span>
+          </div>
+        </div>
+      </div>
             </div>
-            <div className="tech-border-1 hidden md:block absolute -bottom-8 -right-8 w-[120%] h-full rounded-br-[260px] border-8 border-[rgba(0,168,73,0.5)]"></div>
-            <div className="tech-border-2 hidden md:block absolute -bottom-16 -right-16 w-[120%] h-full rounded-br-[260px] border-8 border-[rgba(0,168,73,0.3)]"></div>
-            <div className="tech-border-3 hidden md:block absolute -bottom-24 -right-24 w-[120%] h-full rounded-br-[260px] border-8 border-[rgba(0,168,73,0.1)]"></div>
         </section>
     )
 }

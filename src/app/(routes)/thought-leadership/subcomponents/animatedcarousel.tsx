@@ -52,7 +52,7 @@ export const AnimatedCarousel = ({ cards }: AnimatedCarouselProps) => {
                     width={100}
                     height={60}
                     />
-                    <span className={`absolute top-4 right-4 font-inter text-white text-[13.5px] px-2.5 py-0.5 rounded-full z-20 ${ tagColor }`}>
+                    <span className={`absolute top-4 right-4  text-white text-[13.5px] px-2.5 py-0.5 rounded-full z-20 ${ tagColor }`}>
                         { tag }
                     </span>
                 </div>
@@ -65,7 +65,7 @@ export const AnimatedCarousel = ({ cards }: AnimatedCarouselProps) => {
                             { desc }
                         </p>
                     </div>
-                    <span className="flex items-center gap-2 font-inter text-[rgba(0,168,73,1)]">
+                    <span className="flex items-center gap-2  text-[rgba(0,168,73,1)]">
                         <AdvantageSvg/>
                         { advantage }
                     </span>

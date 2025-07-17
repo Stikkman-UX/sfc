@@ -5,16 +5,16 @@ import Image from "next/image"
 export const Footer = () => {
     return (
         <footer className="">
-            <div className=" md:max-h-[200px] flex justify-center bg-[url('/footer-bg.jpg')] bg-cover bg-no-repeat bg-center py-12">
+<div className="md:max-h-[200px] flex justify-center bg-[linear-gradient(90deg,#005945,#00A849)] bg-cover bg-no-repeat bg-center py-12">
                 <div className="w-11/12 md:w-10/12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4 mx-auto">
-                    <span className="text-[28px] md:text-4xl lg:text-[42px] text-white">
+                    <h4 className="text-[28px] md:text-4xl lg:text-[42px] text-white">
                         Get in touch with us   
-                    </span>
+                    </h4>
                     <div className="w-fit md:w-[400px] flex gap-3">
                         <OrangeButton text="Call now"/>
                         <button
                         type="button"
-                        className="flex-1 flex justify-center items-center gap-2 text-white border border-white rounded-full px-4 md:px-5 py-2.5">
+                        className="flex-1 flex  justify-center items-center gap-2 text-white border border-white rounded-full px-4 md:px-5 py-2.5">
                             Send a message
                             <ArrowRightSvg/>
                         </button>
@@ -43,7 +43,7 @@ export const Footer = () => {
                             </div>
                         </div>
                         <div className="flex flex-col gap-2.5 whitespace-nowrap">
-                            <span className="font-inter font-semibold text-[rgba(0,168,73,1)]">
+                            <span className=" font-semibold text-[rgba(0,168,73,1)]">
                                 Solutions
                             </span>
                             <span>C-Tech Technology</span>
@@ -53,7 +53,7 @@ export const Footer = () => {
                             <span>Smart Monitoring</span>
                         </div>
                         <div className="flex flex-col gap-2.5 whitespace-nowrap">
-                            <span className="font-inter font-semibold text-[rgba(0,168,73,1)]">
+                            <span className=" font-semibold text-[rgba(0,168,73,1)]">
                                 Company
                             </span>
                             <span>About Us</span>
@@ -65,7 +65,7 @@ export const Footer = () => {
                         </div>
                         <div className="max-w-[280px] md:divide-y-2 divide-white/20">
                             <div className="flex flex-col gap-2.5 md:pb-8">
-                                <span className="font-inter font-semibold text-[rgba(0,168,73,1)]">
+                                <span className=" font-semibold text-[rgba(0,168,73,1)]">
                                     Contact
                                 </span>
                                 <span>SFC House, Industrial Area Gurugram, Haryana 122015</span>
@@ -73,7 +73,7 @@ export const Footer = () => {
                                 <span>info@ssfcenvirotech.com</span>
                             </div>
                             <div className="flex flex-col gap-2.5 whitespace-nowrap pt-8">
-                                <span className="font-inter font-semibold text-[rgba(0,168,73,1)]">
+                                <span className=" font-semibold text-[rgba(0,168,73,1)]">
                                     Investor Relations
                                 </span>
                                 <span>Financial Reports</span>
