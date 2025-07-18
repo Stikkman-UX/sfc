@@ -186,7 +186,7 @@ export const Knowledge = () => {
     }
 
     return (
-        <section className="mx-auto py-20">
+        <section className="gsap-fade-in mx-auto py-20">
             <div className="w-full md:w-10/12 flex flex-col lg:flex-row justify-between gap-10 mx-auto">
                 <div className="w-11/12 lg:flex-1 md:space-y-4 mx-auto md:mx-0">
                     <h4 className="w-full lg:w-1/2 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">

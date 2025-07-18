@@ -1,7 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import { OrangeButton } from "../common/orangebutton";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger)
 
 interface AreaCard {
   id: string;
@@ -130,7 +134,7 @@ export const Join = () => {
 
   return (
     <section className="space-y-32 pb-8 md:pb-20 pt-20 join-section">
-      <div className="space-y-6 md:space-y-10 faded">
+      <div className="gsap-fade-in space-y-6 md:space-y-10 faded">
         <p className="scroll-text w-10/12 text-2xl md:text-[32px] font-medium text-start md:text-center mx-auto">
           SFC relentlessly strives to enable your vision of a successful
           wastewater business that also is committed to safeguarding the
@@ -152,7 +156,7 @@ export const Join = () => {
         </div>
       </div>
 
-      <div className="space-y-10">
+      <div className="gsap-fade-in space-y-10">
         <h4 className="w-11/12 md:w-2/3 lg:w-1/2 text-start md:text-center mx-auto text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-7 md:leading-9">
           Treating over{" "}
           <span className="text-[rgba(25,169,72,1)]">

@@ -78,7 +78,7 @@ export const Certification = () => {
     }
 
     return (
-        <section className="my-10 md:my-20 md:py-10">
+        <section className="gsap-fade-in my-10 md:my-20 md:py-10">
             <div className="w-11/12 md:w-10/12 mx-auto">
                 <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
                     Certifications <span className="text-[rgba(0,89,67,1)]">and case studies</span>

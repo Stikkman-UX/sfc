@@ -33,7 +33,7 @@ export const Showcase = () => {
     ]
 
     return (
-        <section className=" sm:mb-20">
+        <section className="gsap-fade-in sm:mb-20">
             <div className="w-11/12 md:w-10/12 flex flex-col items-center text-center mx-auto">
                 <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
                     Innovation {" "}

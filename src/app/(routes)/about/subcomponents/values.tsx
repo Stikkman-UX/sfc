@@ -52,7 +52,7 @@ export const Values = () => {
         }
 
     return (
-        <div className="w-11/12 sm:w-10/12 flex flex-col items-center gap-8 text-start md:text-center mx-auto pb-20">
+        <div className="gsap-fade-in w-11/12 sm:w-10/12 flex flex-col items-center gap-8 text-start md:text-center mx-auto pb-20">
             <div className="lg:w-3/5 max-w-[1000px] md:space-y-2 mx-auto pt-20">
                 <h4 className="w-full text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                     Our{" "}

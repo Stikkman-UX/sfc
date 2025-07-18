@@ -58,7 +58,7 @@ export const Advanced = () => {
 
   return (
     <section>
-      <div className="bg-[url(/landing/advanced.jpg),linear-gradient(180deg,rgba(0,0,0,0)_9.35%,#000000_100%)] bg-blend-multiply bg-cover bg-no-repeat bg-center font-medium pt-40 pb-16 md:pb-28">
+      <div className="gsap-fade-in bg-[url(/landing/advanced.jpg),linear-gradient(180deg,rgba(0,0,0,0)_9.35%,#000000_100%)] bg-blend-multiply bg-cover bg-no-repeat bg-center font-medium pt-40 pb-16 md:pb-28">
         <div className="w-11/12 lg:w-[900px] flex flex-col items-center space-y-2 md:space-y-8 text-center mx-auto">
           <h3 className="text-[22px] md:text-4xl lg:text-[56px] leading-10 text-white">
             Introducing C-Tech technology
@@ -79,8 +79,8 @@ export const Advanced = () => {
           </button>
         </div>
       </div>
-     <div className="bg-[linear-gradient(to_right,_#B7D433_0%,_#00A849_100%)] py-12">
-        <h4 className="text-center text-white/80 text-[22px] md:mb-[120px]">
+     <div className="gsap-fade-in bg-[linear-gradient(to_right,_#005945_0%,_#00A849_100%)] py-12">
+        <h4 className="text-center text-white/80 text-[22px] md:mb-[160px]">
           C-Tech <span className="text-white">Features</span> 
         </h4>
         <VerticalCarousel cards={cards} />

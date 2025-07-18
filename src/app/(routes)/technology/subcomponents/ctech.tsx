@@ -87,7 +87,7 @@ export const Ctech = () => {
     }
 
     return (
-        <section className="ctech-section  my-10 md:my-40 md:text-center ">
+        <section className="ctech-section gsap-fade-in  my-10 md:my-40 md:text-center ">
             <h2 className="w-fit text-[32px] text-[rgba(25,169,72,1)] mx-auto mb-5">
                 The <span className="text-[rgba(0,89,67,1)]">C-Tech</span> Edge
             </h2>

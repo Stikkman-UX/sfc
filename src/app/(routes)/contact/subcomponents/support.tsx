@@ -66,7 +66,7 @@ export const Support = () => {
     }
 
     return (
-        <section className="w-11/12 sm:w-10/12 grid sm:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto my-16">
+        <section className="gsap-fade-in w-11/12 sm:w-10/12 grid sm:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto my-16">
             <SupportCard
             logo={ <ContactCallSvg/> }
             title="Sales Hotline"

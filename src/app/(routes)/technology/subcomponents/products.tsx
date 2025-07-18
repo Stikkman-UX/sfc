@@ -44,7 +44,7 @@ export const Product = () => {
     const { icon, title, description } = data;
 
     return (
-      <div className="w-[200px] shrink-0 md:flex-1 md:w-full h-full md:min-h-[250px] flex flex-col  gap-2 bg-[rgba(249,249,249,1)] rounded-2xl px-4 py-6 product-wrap">
+      <div className="gsap-fade-in w-[200px] shrink-0 md:flex-1 md:w-full h-full md:min-h-[250px] flex flex-col  gap-2 bg-[rgba(249,249,249,1)] rounded-2xl px-4 py-6 product-wrap">
         <div className="bg-[#005943ff] rounded-full p-3 w-[50px] h-[50px] flex items-center justify-center">{icon}</div>
         <h4 className=" font-bold text-[rgba(0,89,69,1)] mt-2">
           {title}

@@ -23,23 +23,23 @@ export const Header = () => {
     ]
 
     return (
-        <nav className="fixed top-0 w-full bg-white/60 backdrop-blur-[35px] py-8 md:py-4 font-medium text-sm z-[999]">
+        <nav className="fixed top-0 w-full bg-white/60 backdrop-blur-[35px] py-8 md:py-4 text-[15px] z-[999]">
             <div className="w-11/12 md:w-full flex justify-between md:justify-around items-center mx-auto md:mx-0 header-logo">
                 <Link href="/">
-                <Image
-                    className="w-20 md:w-auto object-cover"
-                    src="/header/sfc-logo.png"
-                    alt="SFC"
-                    width={100}
-                    height={60}
-                />
-        </Link>
+                    <Image
+                        className="w-20 md:w-auto object-cover"
+                        src="/header/sfc-logo.png"
+                        alt="SFC"
+                        width={100}
+                        height={60}
+                    />
+                </Link>
                 <div className="hidden md:flex md:gap-6 lg:gap-10 header-items">
                     {navItems.map(item => (
                         <Link
                             key={item.path}
                             href={item.path}
-                            className={`${pathname === item.path ? 'text-[#00A849] font-bold' : ''}`}
+                            className={`${pathname === item.path ? 'text-[#00A849] font-bold' : 'font-medium'}`}
                         >
                             {item.label}
                         </Link>

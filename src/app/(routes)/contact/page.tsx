@@ -1,6 +1,11 @@
+'use client'
 import Image from "next/image"
 import { Hero } from "./subcomponents/hero"
 import { Support } from "./subcomponents/support"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
     return (
@@ -8,7 +13,7 @@ const Contact = () => {
             <Hero/>
             <Support/>
             <Image
-            className="w-11/12 sm:w-10/12 min-h-[260px] mx-auto object-cover rounded-xl"
+            className="gsap-fade-in w-11/12 sm:w-10/12 min-h-[260px] mx-auto object-cover rounded-xl"
             width={400}
             height={300}
             src="/contact/map.png"

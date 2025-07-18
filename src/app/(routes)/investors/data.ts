@@ -1,5 +1,5 @@
 
-export const data = {
+export const data = { 
     finance: {
         'Financial Statements of SFC': [
             {

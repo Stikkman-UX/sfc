@@ -207,7 +207,7 @@ export const News = () => {
     }
 
     return (
-        <section className="md:w-10/12 mx-auto md:pt-20 md:py-20">
+        <section className="gsap-fade-in md:w-10/12 mx-auto md:pt-20 md:py-20">
             <div className="md:w-full  flex flex-col lg:flex-row justify-between gap-4">
                 <div className="w-11/12 md:w-2/3 lg:w-1/2 space-y-2 md:space-y-4 mx-auto md:mx-0">
                     <h4 className="w-2/3 lg:w-1/2 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">

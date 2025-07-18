@@ -4,7 +4,7 @@ import { ArrowRightSvg, DropSvg, StatsSvg, TreeSvg } from "./commonsvg";
 
 export const Impact = () => {
   return (
-    <section className="bg-[rgba(0,89,67,1)] py-8 md:py-14">
+    <section className="gsap-fade-in bg-[rgba(0,89,67,1)] py-8 md:py-14">
       <div className="w-11/12 md:w-10/12 flex flex-col-reverse lg:flex-row justify-between items-stretch gap-4 md:gap-12 lg:gap-20 mx-auto">
         
         {/* Content: 70% */}

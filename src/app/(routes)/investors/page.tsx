@@ -92,15 +92,17 @@ const Investor = () => {
                 <FilterBtn id="name" text="Name change certificate"/>
                 <FilterBtn id="grievance" text="Grievance contact"/>
             </div>
-            {
-                activeFilter === 'overview'
-                ? <Overview/>
-                : (
-                    activeFilter === 'grievance'
-                    ? <ContactCard/>
-                    : <ReportPanel key={activeFilter} data={ data[activeFilter as keyof typeof data] }/>
-                )
-            }
+            <div className="gsap-fade-in">
+                {
+                    activeFilter === 'overview'
+                    ? <Overview/>
+                    : (
+                        activeFilter === 'grievance'
+                        ? <ContactCard/>
+                        : <ReportPanel key={activeFilter} data={ data[activeFilter as keyof typeof data] }/>
+                    )
+                }
+            </div>
         </div>
     )
 }

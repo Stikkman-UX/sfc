@@ -72,7 +72,7 @@ const timelineData = [
 
 const Timeline = () => {
   return (
-    <div className="relative w-full flex flex-col items-center py-16 bg-white mt-10">
+    <div className="gsap-fade-in relative w-full flex flex-col items-center py-16 bg-white mt-10">
       <div className="w-full max-w-[1152px] flex flex-col items-center lg:mt-20 relative">
         {/* Vertical timeline line */}
         <div className="absolute top-[-7%] bottom-0 left-1/2 -translate-x-1/2 w-[4px] bg-[linear-gradient(to_bottom,_#ffffff00_2%,_#00A84933_10%,_#00A84933_100%)] z-0" />

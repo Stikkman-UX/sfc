@@ -4,8 +4,6 @@ import gsap from "gsap";
 
 import { ContactCallSvg } from "@/app/common/commonsvg";
 
-
-
 interface PerkCardProps {
   data: {
     id: string;
@@ -16,69 +14,103 @@ interface PerkCardProps {
 }
 
 export const PerksCarousel = () => {
+
   useEffect(() => {
-    const mm = gsap.matchMedia();
+        const mm = gsap.matchMedia();
+    
+        mm.add(
+          {
+            isMobile: "(min-width: 360px) and (max-width: 1023px)",
+            isDesktop: "(min-width: 1024px)",
+          },
+          (context) => {
+            const conditions = context.conditions || {};
+            const isMobile = conditions.isMobile ?? false;
+            const isDesktop = conditions.isDesktop ?? false;
+    
+            if (isDesktop) {
+              const inactive2 = document.querySelectorAll('.perk-inactive-2') as NodeListOf<HTMLDivElement>;
+              const inactive1 = document.querySelectorAll('.perk-inactive-1') as NodeListOf<HTMLDivElement>;
+              const active = document.querySelectorAll('.perk-active') as NodeListOf<HTMLDivElement>;
+              const inactive3 = document.querySelectorAll('.perk-inactive-3') as NodeListOf<HTMLDivElement>;
+              const inactive4 = document.querySelectorAll('.perk-inactive-4') as NodeListOf<HTMLDivElement>;
 
-    mm.add(
-      {
-        isMobile: "(min-width: 360px) and (max-width: 640px)",
-        isDesktop: "(min-width: 640px)",
-      },
-      (context) => {
-        const { isDesktop } = context.conditions || {};
+              const tl1 = gsap.timeline({ repeat: -1 });
+              const tl2 = gsap.timeline({ repeat: -1 });
 
-        if (isDesktop) {
-          const container1 = document.querySelector(".slide-container-1") as HTMLElement;
-          const container2 = document.querySelector(".slide-container-2") as HTMLElement;
+              const container1 = document.querySelector('.slide-container-1') as HTMLDivElement;
+              // const container2 = document.querySelector('.slide-container-2') as HTMLDivElement;
+              const width1 = container1.clientWidth / 5;
+              // const width2 = container2.clientWidth / 5;
 
-          const slideWidth = container1.scrollWidth;
+              function changeclass() {
+                  inactive2.forEach(el => {
+                    console.log('wtf1', el)
+                      el.classList.remove('perk-inactive-2');
+                      el.classList.add('perk-inactive-4');
+                  });
+                  inactive1.forEach(el => {
+                    console.log('wtf2', el)
+                      el.classList.remove('perk-inactive-1');
+                      el.classList.add('perk-inactive-2');
+                  });
+                  active.forEach(el => {
+                    console.log('wtf3', el)
+                      el.classList.remove('perk-active');
+                      el.classList.add('perk-inactive-1');
+                  });
+                  inactive3.forEach(el => {
+                    console.log('wtf4', el)
+                      el.classList.remove('perk-inactive-3');
+                      el.classList.add('perk-active');
+                  });
+                  inactive4.forEach(el => {
+                    console.log('wtf5', el)
+                      el.classList.remove('perk-inactive-4');
+                      el.classList.add('perk-inactive-3');
+                  });
+              }
 
-          gsap.set(container2, { x: slideWidth });
+              tl1
+              .to('.slide-container-1', {
+                  x: `-=${width1}`,
+                  onStart: () => { changeclass() },
+                  duration: 1
+              }, '+=1.5')
+              .to('.slide-container-1', {
+                  x: `-=${width1}`,
+                  onStart: () => { changeclass() },
+                  duration: 1
+              }, '+=1.5')
+              .to('.slide-container-1', {
+                  x: `-=${width1}`,
+                  onStart: () => { changeclass() },
+                  duration: 1
+              }, '+=1.5')
+              .to('.slide-container-1', {
+                  x: `-=${width1}`,
+                  onStart: () => { changeclass() },
+                  duration: 1
+              }, '+=1.5')
+              .to('.slide-container-1', {
+                  x: `-=${width1}`,
+                  onStart: () => {
+                      changeclass()
+                  },
+                  duration: 1
+              }, '+=1.5')
+              .to('.slide-container-1', { x: 0, duration: 0 });
 
-          const loop = gsap.timeline({ repeat: -1, defaults: { ease: "none" } });
-
-          loop.to([container1, container2], {
-            x: `-=${slideWidth}`,
-            duration: 10,
-            modifiers: {
-              x: gsap.utils.unitize((x) => parseFloat(x) % slideWidth),
-            },
-            onRepeat: () => {
-              changeclass();
-            },
-          });
-        }
-      }
-    );
-
-    function changeclass() {
-      const inactive2 = document.querySelectorAll('.perk-inactive-2');
-      const inactive1 = document.querySelectorAll('.perk-inactive-1');
-      const active = document.querySelectorAll('.perk-active');
-      const inactive3 = document.querySelectorAll('.perk-inactive-3');
-      const inactive4 = document.querySelectorAll('.perk-inactive-4');
-
-      inactive2.forEach(el => {
-        el.classList.remove('perk-inactive-2');
-        el.classList.add('perk-inactive-4');
-      });
-      inactive1.forEach(el => {
-        el.classList.remove('perk-inactive-1');
-        el.classList.add('perk-inactive-2');
-      });
-      active.forEach(el => {
-        el.classList.remove('perk-active');
-        el.classList.add('perk-inactive-1');
-      });
-      inactive3.forEach(el => {
-        el.classList.remove('perk-inactive-3');
-        el.classList.add('perk-active');
-      });
-      inactive4.forEach(el => {
-        el.classList.remove('perk-inactive-4');
-        el.classList.add('perk-inactive-3');
-      });
-    }
+              tl2
+              .to('.slide-container-2', { x: `-=${width1}`, duration: 1 }, '+=1.5')
+              .to('.slide-container-2', { x: `-=${width1}`, duration: 1 }, '+=1.5')
+              .to('.slide-container-2', { x: `-=${width1}`, duration: 1 }, '+=1.5')
+              .to('.slide-container-2', { x: `-=${width1}`, duration: 1 }, '+=1.5')
+              .to('.slide-container-2', { x: `-=${width1}`, duration: 1 }, '+=1.5')
+              .to('.slide-container-2', { x: 0, duration: 0 })
+              }
+            }
+          );
   }, []);
 
   const PerkCard = ({ data }: PerkCardProps) => {
@@ -86,7 +118,7 @@ export const PerksCarousel = () => {
 
     return (
       <div
-        className={`${id} perk-shadow w-[300px] shrink-0 flex flex-col items-center gap-6 bg-[rgba(249,249,249,1)] text-[15px] text-center rounded-tl-[22px] rounded-br-[22px] px-8 py-6`}
+        className={`${id} perk-shadow w-[250px] lg:w-[300px] shrink-0 flex flex-col items-center gap-6 bg-[rgba(249,249,249,1)] text-[15px] text-center rounded-tl-[22px] rounded-br-[22px] px-6 lg:px-8 py-4 lg:py-6`}
       >
         <div className="bg-[rgba(0,168,73,0.1)] rounded-[21px] p-3">
           {logo}
@@ -101,8 +133,8 @@ export const PerksCarousel = () => {
     return (
       <div
         className={`${id} ${
-          id === "slide-container-2" ? "hidden sm:flex" : ""
-        } disable-scrollbar min-w-fit w-full shrink-0 flex justify-between gap-4`}
+          id === "slide-container-2" ? "hidden lg:flex" : ""
+        } disable-scrollbar perks-carousel-container min-w-fit w-full shrink-0 flex justify-between gap-4 lg:gap-0`}
       >
         <PerkCard
           data={{
@@ -149,9 +181,11 @@ export const PerksCarousel = () => {
   };
 
   return (
-    <div className="flex pt-20 pb-10 overflow-x-auto sm:overflow-hidden">
-      <SlideContainer id="slide-container-1" />
-      <SlideContainer id="slide-container-2" />
-    </div>
+    <>
+      <div className="disable-scrollbar flex py-10 sm:py-16 lg:py-24 overflow-x-auto px-4 sm:px-10 lg:px-0 lg:overflow-hidden">
+        <SlideContainer id="slide-container-1" />
+        <SlideContainer id="slide-container-2" />
+      </div>
+    </>
   );
 };

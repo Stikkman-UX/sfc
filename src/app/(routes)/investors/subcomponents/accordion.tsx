@@ -4,24 +4,30 @@ import { useEffect, useRef, useState } from "react";
 import { ReportCard } from "./reportcard";
 import gsap from "gsap";
 
-interface AccordionProps {
-    data: {
+interface DesktopAccProps {
+    title: string;
+    cards: {
         title: string;
-        cards: {
-            title: string;
-            size: string;
-            desc?: string;
-            date: string;
-            isVideo?: boolean;
-        }[];
-    };
+        size: string;
+        desc?: string;
+        date: string;
+        isVideo?: boolean;
+    }[]
+};
+
+interface MobileAccProps {
+    title: string;
+    accordions: DesktopAccProps[]
+}
+
+interface AccordionProps {
+    data: DesktopAccProps;
     expanded?: boolean;
 }
 
 export const Accordion = ({ data, expanded }: AccordionProps) => {
         const [isExpanded, setIsExpanded] = useState(expanded);
         const AccordionRef = useRef<HTMLDivElement | null>(null);
-        const { title, cards } = data;
 
         const toggleAccordion = () => {
             setIsExpanded(prev => {
@@ -47,16 +53,18 @@ export const Accordion = ({ data, expanded }: AccordionProps) => {
                 <div
                 className="flex justify-between items-center gap-2 pb-4"
                 onClick={toggleAccordion}>
-                    <h3 className={`${ isExpanded ? 'text-[rgba(0,89,69,1)]' : 'text-[rgba(106,114,130,0.7)]' } transition-all`}>{ title }</h3>
+                    <h3 className={`${ isExpanded ? 'text-[rgba(0,89,69,1)]' : 'text-[rgba(106,114,130,0.7)]' } transition-all`}>
+                        { data.title }
+                    </h3>
                     { isExpanded ? <ArrowUpSvg/> : <ArrowDownSvg/> }
                 </div>
                 <div
                 ref={AccordionRef}
-                className="grid grid-cols-2 gap-3"
+                className="grid lg:grid-cols-2 gap-3"
                 style={{ height: 0, minHeight: 'none', overflow: "hidden" }}
                 >
                     {
-                        cards.map((card, i) => {
+                        data.cards.map((card, i) => {
                             return <ReportCard key={'rep'+i} data={card}/>
                         })
                     }

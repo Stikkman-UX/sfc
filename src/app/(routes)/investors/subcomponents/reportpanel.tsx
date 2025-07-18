@@ -28,8 +28,8 @@ export const ReportPanel = ({ data }: ReportPanelProps) => {
 
     return (
         <div className="w-full flex items-start bg-[rgba(249,249,249,1)] py-12">
-            <div className="w-10/12 max-w-[1240px] min-h-[400px] flex gap-10 mx-auto">
-                <div className="w-[30%] shrink-0 flex flex-col gap-6">
+            <div className="w-10/12 max-w-[1240px] min-h-[400px] flex flex-col md:flex-row gap-10 mx-auto">
+                <div className=" md:w-[30%] shrink-0 flex flex-col gap-6">
                     {
                         Object.keys(data).map(category => {
                             return (

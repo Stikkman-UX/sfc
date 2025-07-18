@@ -13,7 +13,33 @@ interface Card {
 
 export const HorizontalCarousel = () => {
 
-    useEffect(() => {
+useEffect(() => {
+        const mm = gsap.matchMedia();
+    
+        mm.add(
+          {
+            isMobile: "(min-width: 360px) and (max-width: 1024px)",
+            isDesktop: "(min-width: 1025px)",
+          },
+          (context) => {
+            const conditions = context.conditions || {};
+            const isMobile = conditions.isMobile ?? false;
+            const isDesktop = conditions.isDesktop ?? false;
+    
+            const el = document.querySelector(
+              ".feature-carousel-container"
+            ) as HTMLDivElement;
+            const width = el.scrollWidth;
+    
+            if (isMobile) {
+              const tl = gsap.timeline({ repeat: -1 });
+              tl.to(".feature-carousel-container", {
+                x: "-100%",
+                duration: 10,
+                ease: "linear",
+              });
+            }
+            else{
         const tl1 = gsap.timeline({ repeat: -1 });
         const tl2 = gsap.timeline({ repeat: -1 });
 
@@ -88,19 +114,22 @@ export const HorizontalCarousel = () => {
         .to('.slide-container-2', { x: `-=${width1}`, duration: 1 }, '+=1.5')
         .to('.slide-container-2', { x: `-=${width1}`, duration: 1 }, '+=1.5')
         .to('.slide-container-2', { x: 0, duration: 0 })
-    }, [])
+            }
+          }
+        );
+      }, []);
 
     const Card = ({ id, icon, value, title, subtitle }: Card) => {
         return (
-            <div className={`${ id } w-full flex flex-col items-center gap-3 text-center text-white px-2`}>
-                <div className="w-fit bg-[rgba(243,244,246,0.17)] rounded-[17px] p-4">
+            <div className={`${ id } min-w-[100px] sm:min-w-[200px] w-fit flex flex-col items-center gap-3 text-center text-white px-2`}>
+                <div className="w-fit bg-[rgba(243,244,246,0.17)] rounded-[17px] p-3 sm:p-4">
                     { icon }
                 </div>
-                <span className="font-bold text-[39px]">
+                <span className="font-bold text-2xl sm:text-[39px]">
                     { value }
                 </span>
                 <div className="grid">
-                    <span className="font-semibold text-[17.5]">
+                    <span className="font-semibold sm:text-[17.5]">
                         { title }
                     </span>
                     <span className="font-normal text-[15px]">
@@ -113,7 +142,7 @@ export const HorizontalCarousel = () => {
 
     const SlideContainer = ({ id }: { id: string }) => {
         return (
-            <div className={`${id} w-full shrink-0 flex justify-between`}>
+            <div className={`${id} feature-carousel-container min-w-fit w-full shrink-0 flex justify-between gap-2 sm:gap-4 md:gap-0 px-1 sm:px-2 md:px-0`}>
                 <Card
                 id="inactive-slide-2"
                 icon={<NewsSvg1/>}

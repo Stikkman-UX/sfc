@@ -26,7 +26,7 @@ export const ChangeMakers = () => {
     }
 
     return (
-        <div className="w-11/12 sm:w-10/12 flex flex-col items-center gap-8 md:text-center mx-auto md:pt-6 md:pb-20 pt-4 pb-8">
+        <div className="gsap-fade-in w-11/12 sm:w-10/12 flex flex-col items-center gap-8 md:text-center mx-auto md:pt-6 md:pb-20 pt-4 pb-8">
             <div className="lg:w-3/5 max-w-[1000px] md:space-y-2 mx-auto">
                 <h4 className="w-full text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                     Meet the{" "}

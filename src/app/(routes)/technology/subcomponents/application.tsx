@@ -89,7 +89,7 @@ export const Application = () => {
     }
 
     return (
-        <section className="mb-20">
+        <section className="gsap-fade-in mb-20">
             <div className="w-11/12 md:w-10/12 mx-auto">
                 <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
                     <span className="text-[rgba(0,89,67,1)]">Application & </span> Use Cases

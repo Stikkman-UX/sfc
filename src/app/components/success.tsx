@@ -130,7 +130,7 @@ export const Success = () => {
     }
 
     return (
-        <section className="space-y-6 md:space-y-16 pt-20 pb-6">
+        <section className="gsap-fade-in space-y-6 md:space-y-16 pt-20 pb-6">
             <div className="w-11/12 md:w-10/12 mx-auto">
                 <div className="md:w-2/3 lg:w-1/2 space-y-4">
                     <h4 className="w-11/12 md:w-2/3 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-6 md:leading-9">
