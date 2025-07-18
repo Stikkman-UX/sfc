@@ -3,8 +3,8 @@ import { ArrowRightGreenSvg } from "@/app/components/commonsvg"
 
 export const Hero = () => {
     return (
-        <div className="w-11/12 sm:w-10/12 max-w-[600px] lg:max-w-[700px] flex flex-col items-center gap-4 sm:gap-6 text-start sm:text-center mt-48 mb-20 sm:mt-52 sm:mb-40 mx-auto">
-            <h2 className="font-medium text-[38px] lg:text-[50px] text-[rgba(0,89,69,1)] leading-[50px] lg:leading-[56px] lg:text-center mx-auto">
+        <div className="w-11/12 sm:w-10/12 max-w-[600px] lg:max-w-[700px] flex flex-col items-center gap-4 sm:gap-6 text-start sm:text-center mt-30 md:mt-48 mb-20 sm:mt-52 sm:mb-40 mx-auto">
+            <h2 className="font-medium text-[30px] lg:text-[50px] text-[rgba(0,89,69,1)] leading-[50px] lg:leading-[56px] lg:text-center mx-auto">
                 <span className="text-[rgba(0,168,73,1)]">
                     Perspectives{" "}
                 </span>

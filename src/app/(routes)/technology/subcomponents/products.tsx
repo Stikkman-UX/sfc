@@ -61,11 +61,11 @@ export const Product = () => {
   return (
     <>
     <section
-      className="relative space-y-12 my-20 lg:py-20 sm:py-10 bg-cover bg-center bg-no-repeat"
+      className="relative space-y-12 md:my-20 lg:py-20 py-10 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/technology/hero-bg.png')" }}
     >
       <div className="w-11/12 md:w-[900px] md:space-y-2 md:text-center mx-auto">
-        <h2 className="md:w-fit text-[22px] md:text-[32px] text-[#fff] mx-auto">
+        <h2 className="md:w-fit text-[22px] md:text-[32px] text-[#fff] mx-auto text-center">
           <span className="text-[#b7d433]">C-Tech </span>Products
         </h2>
       </div>

@@ -231,9 +231,15 @@ button:hover{
     border-color: #00a849;
     transition: .2s ease-in;
 }
-
+.header-logo img {
+    width: 80px;
+}
 @media(max-width:767px)
 {
+  .product-wrap {
+    min-width: 80%;
+    min-height: 250px;
+}
   .vertical-carousel
   {
   display: none !important;

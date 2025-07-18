@@ -70,8 +70,8 @@ const Investor = () => {
     }
 
     return (
-        <div className="w-full mt-48 mb-20 sm:my-40">
-            <h2 className="w-11/12 sm:w-10/12 font-medium text-[38px] lg:text-[50px] text-[rgba(0,89,69,1)] leading-[56px] text-start lg:text-center mx-auto">
+        <div className="w-full mt-30 md:mt-48 mb-20 sm:my-40">
+            <h2 className="w-11/12 sm:w-10/12 font-medium text-[30px] lg:text-[50px] text-[rgba(0,89,69,1)] leading-[56px] text-start lg:text-center mx-auto">
                 Backing the Technology <br/>
                 <span className="text-[rgba(0,168,73,1)]">
                     Powering Tomorrow's Cities
