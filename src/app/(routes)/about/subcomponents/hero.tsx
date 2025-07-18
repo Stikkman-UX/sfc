@@ -12,8 +12,8 @@ export const Hero = () => {
             <span className=" font-normal text-lg leading-7 text-[rgba(77,77,77,0.7)]">
                 We are the invisible infrastructure behind India's water treatment revolution. Focused on biological treatment, we empower leaders to deliver future-ready utilities.
             </span>
-            <div className="w-full max-w-[1000px] flex items-center justify-between py-14 mx-auto text-white overflow-hidden">
-                <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
+            <div className="carousel-container-about w-full max-w-[1000px] flex items-center justify-between py-5 md:py-14 mx-auto text-white overflow-hidden">
+                <div className="flex flex-col items-center ms:px-16 sm:px-4 whitespace-nowrap">
                     <span className="font-semibold text-[rgba(0,168,73,1)] text-2xl">
                         120+
                     </span>

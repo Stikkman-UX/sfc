@@ -55,33 +55,6 @@ export const Hero = () => {
                 scrollTrigger
             }
         );
-        gsap.to(
-            '.tech-border-1',
-            {
-                bottom: 0,
-                borderRadius: 0,
-                duration: 1,
-                scrollTrigger
-            }
-        );
-        gsap.to(
-            '.tech-border-2',
-            {
-                bottom: 0,
-                borderRadius: 0,
-                duration: 1,
-                scrollTrigger
-            }
-        );
-        gsap.to(
-            '.tech-border-3',
-            {
-                bottom: 0,
-                borderRadius: 0,
-                duration: 1,
-                scrollTrigger
-            }
-        );
     }, [])
 
     return (

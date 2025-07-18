@@ -87,7 +87,7 @@ export const Ctech = () => {
     }
 
     return (
-        <section className="ctech-section  my-40 md:text-center ">
+        <section className="ctech-section  my-10 md:my-40 md:text-center ">
             <h2 className="w-fit text-[32px] text-[rgba(25,169,72,1)] mx-auto mb-5">
                 The <span className="text-[rgba(0,89,67,1)]">C-Tech</span> Edge
             </h2>
@@ -127,7 +127,7 @@ export const Ctech = () => {
                     width={100}
                     height={60}
                     />
-                    <div className="absolute bottom-0 lg:bottom-auto lg:top-1/2 lg:-translate-y-1/2 lg:right-0 h-[110%] flex lg:flex-col lg:justify-between items-end gap-2 z-20">
+                    <div className="absolute bottom-0 lg:bottom-auto lg:top-1/2 lg:-translate-y-1/2 lg:right-0 h-[110%] flex lg:flex-col lg:justify-between items-end gap-2 z-20 left-0 right-0 md:left-auto md:right-auto">
                         <FeatureCard text="Energy generation"/>
                         <FeatureCard text="Full automation"/>
                         <FeatureCard text="Substantial land saving"/>

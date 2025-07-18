@@ -46,9 +46,9 @@ export const Awards = () => {
     }
 
     return (
-        <section className="space-y-10 my-20">
-            <div className="lg:w-3/5 max-w-[1000px] md:space-y-2 md:text-center mx-auto">
-                <h4 className="w-full md:w-fit text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9 mx-auto">
+        <section className="space-y-10 my-5 md:my-20">
+            <div className="w-11/12 lg:w-3/5 max-w-[1000px] md:space-y-2 md:text-center mx-auto">
+                <h4 className="w-full md:w-fit text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9 md:mx-auto">
                     <span className="text-[rgba(25,169,72,1)]">
                         Recognitions {" "}
                     </span>
