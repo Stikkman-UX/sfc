@@ -6,12 +6,12 @@ export const Story = () => {
     return (
         <div className="w-11/12 sm:w-10/12 flex flex-col items-center gap-8 md:text-center mx-auto">
             <Image
-            className="w-full min-h-[200px] object-cover"
+            className="w-full md:min-h-[200px] object-cover"
             width={400}
             height={300}
             src="/about/about.png"
             alt="About the team"/>
-            <div className="lg:w-3/5 max-w-[1000px] md:space-y-2 mx-auto pt-20">
+            <div className="lg:w-3/5 max-w-[1000px] md:space-y-2 mx-auto md:pt-20">
                 <h4 className="w-full text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                     Our{" "}
                     <span className="text-[rgba(25,169,72,1)]">

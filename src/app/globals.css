@@ -231,3 +231,38 @@ button:hover{
     border-color: #00a849;
     transition: .2s ease-in;
 }
+
+@media(max-width:767px)
+{
+  .vertical-carousel
+  {
+  display: none !important;
+  }
+}
+@media(min-width:1300px)
+{
+.main-banner
+{
+    background-position: 100% 45%;
+        transition: .2s ease-in;
+
+}
+}
+@media(min-width:1600px)
+{
+ .main-banner {
+        background-position: 100% 61%;
+        padding-top: 108px;
+            transition: .2s ease-in;
+
+    }
+}
+@media(min-width:1800px)
+{
+       .main-banner {
+        background-position: 100% 52%;
+        padding-top: 108px;
+           transition: .2s ease-in;
+
+    }
+}

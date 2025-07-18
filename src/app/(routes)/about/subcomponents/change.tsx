@@ -26,7 +26,7 @@ export const ChangeMakers = () => {
     }
 
     return (
-        <div className="w-11/12 sm:w-10/12 flex flex-col items-center gap-8 md:text-center mx-auto pt-6 pb-20">
+        <div className="w-11/12 sm:w-10/12 flex flex-col items-center gap-8 md:text-center mx-auto md:pt-6 md:pb-20 pt-4 pb-8">
             <div className="lg:w-3/5 max-w-[1000px] md:space-y-2 mx-auto">
                 <h4 className="w-full text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                     Meet the{" "}
@@ -38,14 +38,14 @@ export const ChangeMakers = () => {
                     Experienced leaders driving innovation and excellence in India's water infrastructure sector.
                 </p>
             </div>
-            <div className="w-full flex items-center gap-8 lg:gap-14 bg-[linear-gradient(107.11deg,#00A849_0.83%,#005945_87.94%)] rounded-tl-[150px] rounded-br-[150px] text-start px-6 py-5">
+            <div className="w-full flex flex-col md:flex-row items-center gap-8 lg:gap-14 bg-[linear-gradient(107.11deg,#00A849_0.83%,#005945_87.94%)] rounded-tl-[112px] rounded-br-[112px] md:rounded-tl-[150px] md:rounded-br-[150px] text-start px-6 py-5">
                 <Image
                 className="w-[500px] shrink-0 min-h-[200px] object-cover"
                 width={400}
                 height={300}
                 src="/about/change.png"
                 alt="Amit Patel"/>
-                <p className="font-normal text-[28px] text-white">
+                <p className="font-normal text-[22px] md:text-[28px] text-white">
                     "When we founded SFC in 2008, India was facing an unprecedented water crisis. Traditional treatment technologies were failing to meet the scale and complexity of our nation's needs.
                     <br/>
                     <br/>
