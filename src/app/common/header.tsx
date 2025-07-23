@@ -46,7 +46,7 @@ export const Header = () => {
                     ))}
                 </div>
                 <Link
-                    className="hidden md:inline text-[#00A849] bg-[#fff] border rounded-full px-6 py-2 bordered-btn"
+                    className="hidden md:inline text-[#F57E25] border rounded-full px-6 py-2 bordered-btn"
                     style={{ borderColor: "#F57E25" }}
                     href="/contact"
                 >

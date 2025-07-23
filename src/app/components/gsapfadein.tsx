@@ -1,11 +1,13 @@
 'use client'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export const GsapFadeIn = () => {
+    const pathname = usePathname();
 
     useEffect(() => {
         gsap.utils.toArray<HTMLElement>('.gsap-fade-in').forEach((section) => {
@@ -27,7 +29,7 @@ export const GsapFadeIn = () => {
                 }
             );
         });
-    }, [])
+    }, [pathname])
 
     return null;
 }

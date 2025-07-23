@@ -33,13 +33,13 @@ export const Showcase = () => {
     ]
 
     return (
-        <section className="gsap-fade-in sm:mb-20">
+        <section className="gsap-fade-in">
             <div className="w-11/12 md:w-10/12 flex flex-col items-center text-center mx-auto">
                 <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
                     Innovation {" "}
                     <span className="text-[rgba(0,89,67,1)]">showcase</span>
                 </h2>
-                <p className=" sm:w-[420px] lg:w-[500px] font-normal md:text-lg text-[rgba(74,85,101,1)] pb-10">
+                <p className=" sm:w-[420px] lg:w-[500px] font-normal md:text-lg text-[rgba(74,85,101,1)]">
                     Cutting-edge technologies and breakthrough innovations that are transforming the water treatment industry.
                 </p>
             </div>

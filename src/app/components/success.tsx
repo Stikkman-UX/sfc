@@ -77,7 +77,8 @@ export const Success = () => {
                         <span className="font-normal text-[10.5px] md:text-xs">Daily capacity</span>
                     </div>
                 </div>
-                <div className="space-y-8 px-4 md:px-6 py-4">
+                {/* <div className="space-y-8 px-4 md:px-6 py-4"> */}
+                <div className="space-y-8 px-6 md:px-8 py-5 md:py-7">
                     <div className="flex gap-1.5">
                         <div className="h-fit bg-[rgba(0,89,69,0.1)] rounded-lg p-2">
                             <DropSvg/>

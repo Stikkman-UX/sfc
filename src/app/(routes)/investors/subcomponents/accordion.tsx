@@ -12,7 +12,7 @@ interface DesktopAccProps {
         desc?: string;
         date: string;
         isVideo?: boolean;
-    }[]
+    }[];
 };
 
 interface MobileAccProps {
@@ -29,7 +29,7 @@ export const Accordion = ({ data, expanded }: AccordionProps) => {
         const [isExpanded, setIsExpanded] = useState(expanded);
         const AccordionRef = useRef<HTMLDivElement | null>(null);
 
-        const toggleAccordion = () => {
+        const toggleAccordion = (e: React.MouseEvent) => {
             setIsExpanded(prev => {
                 if(prev === false) {
                 // Animate expanding

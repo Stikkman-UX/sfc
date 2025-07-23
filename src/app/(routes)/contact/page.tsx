@@ -10,6 +10,12 @@ gsap.registerPlugin(ScrollTrigger);
 const Contact = () => {
     return (
         <div className="w-full mt-44 mb-20 sm:mt-48 sm:mb-40">
+            <Image
+            className="absolute top-0 w-full h-screen object-cover -z-10"
+            width={1000}
+            height={700}
+            src="/white-bg.png"
+            alt="White Background"/>
             <Hero/>
             <Support/>
             <Image

@@ -116,7 +116,8 @@ export const Insights = () => {
                         <div className="bg-black/20 backdrop-blur-sm rounded-full p-2"><EyeSvg/></div>
                     </div>
                 </div>
-                <div className="space-y-5 md:space-y-8 px-4 md:px-6 py-6">
+                {/* <div className="space-y-5 md:space-y-8 px-4 md:px-6 py-6"> */}
+                <div className="space-y-5 md:space-y-8 px-6 md:px-8 py-5 md:py-7">
                     <div className="flex items-center justify-between text-[rgba(106,114,130,1)] font-normal text-sm">
                         <div className="flex items-center gap-1.5">
                             <span className="flex items-center gap-1">
@@ -160,7 +161,7 @@ export const Insights = () => {
     }
 
     return (
-        <section className="gsap-fade-in sm:mb-20">
+        <section className="gsap-fade-in mt-28 sm:mb-20">
             <div className="w-11/12 md:w-10/12 flex flex-col sm:items-center gap-1 sm:gap-0 text-start sm:text-center mx-auto">
                 <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
                     Featured {" "}

@@ -5,8 +5,8 @@ import Image from "next/image"
 export const Footer = () => {
     return (
         <footer className="">
-<div className="md:max-h-[200px] flex justify-center bg-[linear-gradient(90deg,#005945,#00A849)] bg-cover bg-no-repeat bg-center py-12">
-                <div className="w-11/12 md:w-10/12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4 mx-auto">
+            <div className="md:max-h-[200px] flex justify-center bg-[url('/getintouch.png')] bg-cover bg-no-repeat bg-center py-10 sm:py-16">
+                <div className="w-11/12 md:w-10/12 max-w-[1280px] flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4 mx-auto">
                     <h4 className="text-[28px] md:text-4xl lg:text-[42px] text-white">
                         Get in touch with us   
                     </h4>

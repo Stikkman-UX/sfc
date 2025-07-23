@@ -160,7 +160,8 @@ export const News = () => {
                         { icon }
                     </div>
                 </div>
-                <div className={`${ isLarge ? 'p-6 md:px-8 md:py-6' : 'p-6' }`}>
+                {/* <div className={`${ isLarge ? 'p-6 md:px-8 md:py-6' : 'p-6' }`}> */}
+                <div className="px-6 md:px-8 py-5 md:py-7">
                     <div className="space-y-2 md:space-y-4">
                         <h6 className="md:text-xl leading-6 text-[rgba(16,24,40,1)] font-bold">
                             { title }

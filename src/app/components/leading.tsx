@@ -123,7 +123,7 @@ export const Leading = () => {
         const { tag, title, desc, date, views } = cardData;
 
         return (
-            <div className="w-[290px] shrink-0 border md:w-[400px] lg:w-auto space-y-6 bg-[rgba(249,249,249,1)] rounded-tl-xl md:rounded-tl-2xl rounded-br-xl md:rounded-br-2xl px-6 md:px-8 py-6">
+            <div className="w-[290px] shrink-0 border border-transparent hover:border-[rgba(0,168,73,1)] md:w-[400px] lg:w-auto space-y-6 bg-[rgba(249,249,249,1)] rounded-tl-xl md:rounded-tl-2xl rounded-br-xl md:rounded-br-2xl px-6 md:px-8 py-5 md:py-7 transition-all duration-300">
                 <div className="flex justify-between items-start">
                     <div className=" bg-[rgba(0,89,69,0.1)] p-2 md:p-3 rounded-xl md:rounded-2xl">
                         {

@@ -56,7 +56,8 @@ export const AnimatedCarousel = ({ cards }: AnimatedCarouselProps) => {
                         { tag }
                     </span>
                 </div>
-                <div className="space-y-4 px-4 md:px-6 pt-10 pb-6">
+                {/* <div className="space-y-4 px-4 md:px-6 pt-10 pb-6"> */}
+                <div className="space-y-4 px-6 md:px-8 pt-10 pb-5 md:pb-7">
                     <div className="space-y-3">
                         <h4 className="font-semibold md:text-base text-[rgba(0,89,69,1)]">
                             { title }
@@ -110,7 +111,7 @@ export const AnimatedCarousel = ({ cards }: AnimatedCarouselProps) => {
     // }, [])
 
     return (
-        <div className="disable-scrollbar w-full lg:w-auto flex lg:justify-center px-4 sm:px-7 md:px-16 lg:px-0 lg:py-20 overflow-x-auto">
+        <div className="disable-scrollbar w-full lg:w-auto flex lg:justify-center px-4 sm:px-7 md:px-16 lg:px-0 lg:pt-20 lg:pb-10 overflow-x-auto">
             <div className="w-fit showcase-container flex lg:justify-center gap-6">
                 {
                     cards.map((cardData, i) => {

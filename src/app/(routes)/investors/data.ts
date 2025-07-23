@@ -194,32 +194,32 @@ export const data = {
             }
         ],
     },
-    shareholders: {
-        'Financial Statements of SFC': [
-            {
-                title: '',
-                accordions: [
-                    {
-                        title: 'Annual report',
-                        cards: [
-                            {
-                                title: 'Annual Report 2023-24',
-                                size: '12.5',
-                                desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
-                            },
-                            {
-                                title: 'Quaterly Review Q1 24',
-                                size: '3.4',
-                                desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
-                            },
-                        ]
-                    },
-                ]
-            }
-        ],
-    },
+    // shareholders: {
+    //     'Financial Statements of SFC': [
+    //         {
+    //             title: '',
+    //             accordions: [
+    //                 {
+    //                     title: 'Annual report',
+    //                     cards: [
+    //                         {
+    //                             title: 'Annual Report 2023-24',
+    //                             size: '12.5',
+    //                             desc: "Comprehensive overview of financial performance and strategic initiatives",
+    //                             date: "March 2024"
+    //                         },
+    //                         {
+    //                             title: 'Quaterly Review Q1 24',
+    //                             size: '3.4',
+    //                             desc: "Highlights from the first quarter and future outlook",
+    //                             date: "April 2024"
+    //                         },
+    //                     ]
+    //                 },
+    //             ]
+    //         }
+    //     ],
+    // },
     governance: {
         'Policies': [
             {
@@ -293,6 +293,72 @@ export const data = {
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
                                 date: "April 2024"
+                            },
+                        ]
+                    },
+                ]
+            }
+        ],
+        'Code of Conduct': [
+            {
+                title: '',
+                accordions: [
+                    {
+                        title: 'Code of Conduct',
+                        cards: [
+                            {
+                                title: 'Code of Conduct To Regulate, Monitor and Report Trading By Designated Persons',
+                                size: '12.5',
+                                desc: "Comprehensive overview of financial performance and strategic initiatives",
+                                date: "March 2024"
+                            },
+                            {
+                                title: 'Code of Practices and Procedures For Fair Disclosure of UPSI',
+                                size: '3.4',
+                                desc: "Highlights from the first quarter and future outlook",
+                                date: "April 2024"
+                            },
+                            {
+                                title: 'COC for Director and Senior Management',
+                                size: '3.4',
+                                desc: "Highlights from the first quarter and future outlook",
+                                date: "April 2024"
+                            },
+                        ]
+                    },
+                ]
+            }
+        ],
+        'Terms and Conditions of Appointment of Independent Directors': [
+            {
+                title: '',
+                accordions: [
+                    {
+                        title: 'Terms and Conditions of Appointment of Independent Directors',
+                        cards: [
+                            {
+                                title: 'NRC Policy - ID Appointment Terms & Conditions',
+                                size: '12.5',
+                                desc: "Comprehensive overview of financial performance and strategic initiatives",
+                                date: "March 2024"
+                            },
+                        ]
+                    },
+                ]
+            }
+        ],
+        'Familiarization Programmes For Independent Directors': [
+            {
+                title: '',
+                accordions: [
+                    {
+                        title: 'Familiarization Programmes For Independent Directors',
+                        cards: [
+                            {
+                                title: 'Policy for Familiarisation Programme for Independent Directors',
+                                size: '12.5',
+                                desc: "Comprehensive overview of financial performance and strategic initiatives",
+                                date: "March 2024"
                             },
                         ]
                     },

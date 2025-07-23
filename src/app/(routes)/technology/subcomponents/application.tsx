@@ -13,7 +13,7 @@ export const Application = () => {
 
     const cards = [
         {
-            image: "/landing/success.jpg",
+            image: "/landing/impact.jpg",
             title: "Bangalore Tech Park Facility",
             tag: '1-100 MLD',
             desc: "Advanced treatment system for major IT corridor, enabling sustainable development in India's Silicon Valley.",
@@ -24,7 +24,7 @@ export const Application = () => {
             ]
         },
         {
-            image: "/landing/success.jpg",
+            image: "/landing/impact.jpg",
             title: "Delhi Industrial Complex",
             tag: '1-100 MLD',
             desc: "Advanced treatment system for major IT corridor, enabling sustainable development in India's Silicon Valley.",
@@ -35,7 +35,7 @@ export const Application = () => {
             ]
         },
         {
-            image: "/landing/success.jpg",
+            image: "/landing/impact.jpg",
             title: "Bangalore Tech Park Facility",
             tag: '1-100 MLD',
             desc: "Advanced treatment system for major IT corridor, enabling sustainable development in India's Silicon Valley.",

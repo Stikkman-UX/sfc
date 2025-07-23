@@ -95,7 +95,7 @@ export const VerticalCarousel = ({ cards, styling }: VerticalCarouselProps) => {
     }, []);
 
     return (
-        <div className="vertical-carousel relative w-11/12 lg:w-10/12 h-[400px] flex flex-col items-center gap-6 mx-auto mt-20 md:my-20">
+        <div className="vertical-carousel relative w-11/12 lg:w-10/12 max-w-[1280px] h-[400px] flex flex-col items-center gap-6 mx-auto mt-20 md:my-20">
             {
                 cards.map((card, i) => {
                     const { cardNo, icon, title, desc } = card;
@@ -117,7 +117,7 @@ export const VerticalCarousel = ({ cards, styling }: VerticalCarouselProps) => {
                                     <span className={`${ styling ? styling.titleColor : 'text-[rgba(25,169,72,1)]' } font-semibold`}>
                                         { title }
                                     </span>
-                                    <span className={`w-full lg:w-2/3 font-normal text-sm ${ styling ? styling.descColor : 'text-[rgba(74,85,101,1)]' } leading-6 mx-auto`}>
+                                    <span className={`w-full lg:w-[700px] shrink-0 font-normal text-sm ${ styling ? styling.descColor : 'text-[rgba(74,85,101,1)]' } leading-6 mx-auto`}>
                                         { desc }
                                     </span>
                                 </div>

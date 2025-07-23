@@ -9,37 +9,35 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const Hero = () => {
 
-
-
-      useEffect(() => {
-        const mm = gsap.matchMedia();
-    
-        mm.add(
-          {
-            isMobile: "(min-width: 360px) and (max-width: 640px)",
-            isDesktop: "(min-width: 640px)",
-          },
-          (context) => {
-            const conditions = context.conditions || {};
-            const isMobile = conditions.isMobile ?? false;
-            const isDesktop = conditions.isDesktop ?? false;
-    
-            const el = document.querySelector(
-              ".carousel-container"
-            ) as HTMLDivElement;
-            const width = el.scrollWidth;
-    
-            if (isMobile) {
-              const tl = gsap.timeline({ repeat: -1 });
-              tl.to(".carousel-container", {
-                x: "-100%",
-                duration: 10,
-                ease: "linear",
-              });
-            }
+    useEffect(() => {
+      const mm = gsap.matchMedia();
+  
+      mm.add(
+        {
+          isMobile: "(min-width: 360px) and (max-width: 640px)",
+          isDesktop: "(min-width: 640px)",
+        },
+        (context) => {
+          const conditions = context.conditions || {};
+          const isMobile = conditions.isMobile ?? false;
+          const isDesktop = conditions.isDesktop ?? false;
+  
+          const el = document.querySelector(
+            ".carousel-container"
+          ) as HTMLDivElement;
+          const width = el.scrollWidth;
+  
+          if (isMobile) {
+            const tl = gsap.timeline({ repeat: -1 });
+            tl.to(".carousel-container", {
+              x: "-100%",
+              duration: 10,
+              ease: "linear",
+            });
           }
-        );
-      }, []);
+        }
+      );
+    }, []);
 
     useEffect(() => {
         const scrollTrigger = {
@@ -58,13 +56,13 @@ export const Hero = () => {
     }, [])
 
     return (
-        <section className="tech-hero relative bg-[rgba(0,168,73,1)] text-white md:rounded-br-[260px] pt-52 pt-35 pb-20 md:pt-48 md:pb-25">
+        <section className="tech-hero relative bg-[url('/careers/hero-bg.png')] bg-cover bg-no-repeat text-white md:rounded-br-[260px] pb-20 md:pt-48 md:pb-25">
             <div className="w-11/12 md:w-[1000px] flex flex-col items-start md:items-center gap-4 text-start md:text-center mx-auto">
                 <span className=" text-xs bg-white/20 rounded-full px-3 py-1 border border-white/30">
                     Advanced Wastewater Treatment Technology
                 </span>
                 <h2 className="w-full text-[38px] leading-[42px] md:leading-normal md:text-[50px]">
-                    C-Tech <span className="text-[rgba(0,89,69,1)]">Technology</span>
+                    <span className="text-white">C-Tech</span>
                 </h2>
                 <h3 className="text-[23px]">India’s most preferred SBR (Sequencing Batch Reactor) technology </h3>
                 <p className="text-lg text-white/90 font-normal md:pt-2">

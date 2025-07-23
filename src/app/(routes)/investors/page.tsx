@@ -43,7 +43,7 @@ const Investor = () => {
 
     const ContactCard = () => {
         return (
-            <div className="w-10/12 max-w-[1240px] flex flex-col justify-between gap-3 border rounded-2xl bg-white px-8 py-6 mx-auto">
+            <div className="w-10/12 max-w-[1240px] flex flex-col justify-between gap-3 border border-[rgba(229,231,235,1)] rounded-2xl bg-white px-8 py-6 mx-auto">
                 <div className="grid gap-2 text-[rgba(15,23,42,1)]">
                     <span className="font-semibold">
                         Shweta Deshpande
@@ -70,23 +70,25 @@ const Investor = () => {
     }
 
     return (
-        <div className="w-full mt-30 md:mt-48 mb-20 sm:my-40">
-            <h2 className="w-11/12 sm:w-10/12 font-medium text-[30px] lg:text-[50px] text-[rgba(0,89,69,1)] leading-[56px] text-start lg:text-center mx-auto">
-                Backing the Technology <br/>
-                <span className="text-[rgba(0,168,73,1)]">
-                    Powering Tomorrow's Cities
-                </span>
-            </h2>
-            <div className="disable-scrollbar w-full lg:w-fit xl:w-fit max-w-[940px] flex gap-4 sm:mx-auto mt-10 px-6 sm:px-14 overflow-x-auto">
-                <MiniCard amount={2850} text="Revenue (FY 2024)" percent={24}/>
-                <MiniCard amount={685} text="EBITDA" percent={18}/>
-                <MiniCard amount={425} text="Net Profit" percent={22}/>
-                <MiniCard amount={4200} text="Order Book" percent={35}/>
+        <div className="w-full mb-20 sm:mb-40">
+            <div className="bg-[url('/white-bg.png')] bg-no-repeat bg-cover pt-30 sm:pt-52 md:pt-48 pb-20">
+                <h2 className="w-11/12 sm:w-10/12 font-medium text-[30px] lg:text-[50px] text-[rgba(0,89,69,1)] leading-[56px] text-start lg:text-center mx-auto">
+                    Backing the Technology <br/>
+                    <span className="text-[rgba(0,168,73,1)]">
+                        Powering Tomorrow's Cities
+                    </span>
+                </h2>
+                <div className="disable-scrollbar w-full lg:w-fit xl:w-fit max-w-[940px] flex gap-4 sm:mx-auto mt-10 px-6 sm:px-14 overflow-x-auto">
+                    <MiniCard amount={2850} text="Revenue (FY 2024)" percent={24}/>
+                    <MiniCard amount={685} text="EBITDA" percent={18}/>
+                    <MiniCard amount={425} text="Net Profit" percent={22}/>
+                    <MiniCard amount={4200} text="Order Book" percent={35}/>
+                </div>
             </div>
-            <div className="disable-scrollbar w-full flex gap-2 px-6 sm:px-14 lg:px-32 xl:px-40 mx-auto mt-12 sm:mt-20 mb-10 overflow-x-auto">
+            <div className="disable-scrollbar w-full flex lg:justify-center gap-2 px-6 sm:px-14 lg:px-32 xl:px-40 mx-auto mt-12 sm:mt-20 mb-10 overflow-x-auto">
                 <FilterBtn id="overview" text="Overview"/>
                 <FilterBtn id="finance" text="Financial highlights"/>
-                <FilterBtn id="shareholders" text="Shareholders"/>
+                {/* <FilterBtn id="shareholders" text="Shareholders"/> */}
                 <FilterBtn id="governance" text="Governance"/>
                 <FilterBtn id="draft" text="Draft red herring prospectus"/>
                 <FilterBtn id="name" text="Name change certificate"/>

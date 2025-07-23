@@ -134,15 +134,15 @@ export const Join = () => {
 
   return (
     <section className="space-y-32 pb-8 md:pb-20 pt-20 join-section">
-      <div className="gsap-fade-in space-y-6 md:space-y-10 faded">
-        <p className="scroll-text w-10/12 text-2xl md:text-[32px] font-medium text-start md:text-center mx-auto">
+      <div className="gsap-fade-in w-10/12 max-w-[800px] space-y-6 md:space-y-10 faded mx-auto">
+        <p className="scroll-text text-2xl md:text-[32px] font-medium text-start md:text-center">
           SFC relentlessly strives to enable your vision of a successful
           wastewater business that also is committed to safeguarding the
           environment. Trusted by customers across the nation, we embed
           simplicity, adaptability, and long-term reliability into every
           wastewater system.
         </p>
-        <p className="scroll-text w-10/12 text-2xl md:text-[32px] font-medium text-start md:text-center mx-auto">
+        <p className="scroll-text text-2xl md:text-[32px] font-medium text-start md:text-center">
           Our innovative technologies are designed for precision and optimised
           performance, making operations seamless even in the most complex
           environments, be it any region, any shape, or any scale.
@@ -165,12 +165,12 @@ export const Join = () => {
           of sewage every single day across geographies.
         </h4>
 
-        <div className="flex flex-col lg:flex-row justify-center gap-6 lg:w-[80%] mx-auto">
+        <div className="w-full lg:w-10/12 flex flex-col lg:flex-row justify-center gap-10 lg:gap-6 mx-auto">
           {/* Left Image (50%) */}
-          <div className="w-full lg:w-1/2 flex justify-center items-center">
-            <div className="relative w-11/12 h-[400px] lg:h-full">
+          <div className="w-full flex justify-center items-center">
+            <div className="relative shrink-0 w-full max-w-[900px] h-[400px] sm:h-[600px] lg:h-full">
               <Image
-                className="object-contain rounded-tl-[125px] rounded-br-[125px]"
+                className="w-full object-contain"
                 src="/landing/map.png"
                 alt="SFC"
                 fill
@@ -180,7 +180,7 @@ export const Join = () => {
           </div>
 
           {/* Right Cards (50%) */}
-          <div className="w-full lg:w-1/2 flex flex-col items-center gap-2 mx-auto">
+          <div className="w-fit flex flex-col items-center gap-2 mx-auto px-10 ps-6 lg:ps-0 xl:ps-10 pe-10 lg:pe-0 xl:pe-20">
             {["area1", "area2", "area3", "area4", "area5", "area6"].map(
               (id, i) => (
                 <AreaCard
