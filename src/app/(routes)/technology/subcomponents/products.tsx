@@ -66,7 +66,7 @@ export const Product = () => {
     >
       <div className="w-11/12 md:w-[900px] md:space-y-2 md:text-center mx-auto">
         <h2 className="md:w-fit text-[22px] md:text-[32px] text-[#fff] mx-auto text-center">
-          <span className="text-[#b7d433]">C-Tech </span>Products
+          <span className="text-[#b7d433]">C-Tech </span>products
         </h2>
       </div>
       <div className="disable-scrollbar w-11/12 md:w-10/12 flex items-stretch justify-between gap-4 md:gap-6 mx-auto overflow-x-auto">

@@ -73,7 +73,7 @@ export const Resources = () => {
         <section className="gsap-fade-in space-y-12 my-20 sm:py-10">
             <div className="w-11/12 md:w-[900px] md:space-y-2 md:text-center mx-auto">
                 <h2 className="md:w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)] mx-auto">
-                    <span className="text-[rgba(0,89,67,1)]">Resources &</span> Downloads
+                    <span className="text-[rgba(0,89,67,1)]">Resources &</span> downloads
                 </h2>
                 <p className="font-normal md:text-lg text-[rgba(74,85,101,1)] mx-auto">
                     Access technical documentation, case studies, and implementation guides.

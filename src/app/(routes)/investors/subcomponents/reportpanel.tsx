@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Accordion } from "./accordion";
 import { MasterAccordion } from "./masteraccordion";
+import { useMediaQuery } from "react-responsive";
 
 interface ReportPanelProps {
     data: {
@@ -22,22 +23,16 @@ interface ReportPanelProps {
 
 export const ReportPanel = ({ data }: ReportPanelProps) => {
     const [activeCatergory, setActiveCategory] = useState(Object.keys(data)[0]);
+    const isDesktop = useMediaQuery({ query: '(min-width: 769px)' })
 
     const handleCategory = (category: string) => {
         setActiveCategory(category);
     }
 
-    // const handleHeight = (e: React.MouseEvent) => {
-    //     const target = e.target as HTMLDivElement;
-
-    //     target.style.height = target.scrollHeight + 'px';
-    //     console.log('test', target, target.style.height, target.scrollHeight)
-    // }
-
     return (
-        <div className="w-full flex items-start bg-[rgba(249,249,249,1)] py-12">
+        <div className="w-full min-h-[400px] flex items-start bg-[rgba(249,249,249,1)] py-12">
             {/* desktop */}
-            <div className="w-11/12 sm:w-10/12 max-w-[1240px] min-h-[400px] hidden md:flex flex-row gap-4 lg:gap-10 mx-auto">
+            <div className="w-11/12 sm:w-10/12 max-w-[1280px] min-h-[400px] hidden md:flex flex-row gap-4 lg:gap-10 mx-auto">
                 <div className=" md:w-[30%] shrink-0 flex flex-col gap-4 lg:gap-6">
                     {
                         Object.keys(data).map(category => {
@@ -79,7 +74,6 @@ export const ReportPanel = ({ data }: ReportPanelProps) => {
                         Object.keys(data).map(category => {
                             return (
                                 <MasterAccordion
-                                // callback={handleHeight}
                                 key={category}
                                 title={category}
                                 children={
@@ -92,7 +86,7 @@ export const ReportPanel = ({ data }: ReportPanelProps) => {
                                                     {
                                                         sub.accordions.map((accordionData, j) => {
                                                             return (
-                                                                <Accordion key={`acc-${j}`} data={accordionData} expanded={i===0 && j===0}/>
+                                                                <Accordion key={`acc-${j}`} data={accordionData} expanded={ isDesktop && (i===0 && j===0) }/>
                                                             )
                                                         })
                                                     }

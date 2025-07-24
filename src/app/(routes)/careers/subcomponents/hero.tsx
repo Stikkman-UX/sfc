@@ -36,7 +36,7 @@ export const Hero = () => {
 
   return (
     <div className="bg-[url('/careers/hero-bg.png')] bg-cover bg-no-repeat pt-52">
-      <div className="w-11/12 lg:w-1/2 flex flex-col items-center gap-8 mx-auto text-start sm:text-center">
+      <div className="w-11/12 lg:w-[700px] flex flex-col items-center gap-8 mx-auto text-start sm:text-center">
         <h2 className="text-[38px] lg:text-[50px] text-white leading-[50px] lg:leading-[56px] mx-auto">
           Join the <span className="text-[rgba(183,212,51,1)]">SFC Tribe</span>
         </h2>

@@ -100,7 +100,7 @@ export const VerticalCarousel = ({ cards, styling }: VerticalCarouselProps) => {
                 cards.map((card, i) => {
                     const { cardNo, icon, title, desc } = card;
 
-                    // if(i === 0){
+                    // if(i === 3 || i === 4){
                         return (
                             <div
                             id={'card-' + i}

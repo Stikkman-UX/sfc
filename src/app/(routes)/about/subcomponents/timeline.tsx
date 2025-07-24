@@ -114,7 +114,7 @@ const Timeline = () => {
               {isLeft ? (
                 <div className="w-full md:w-1/2 px-4 text-center md:text-right">
                   <div className="inline-block bg-[#F9F9F9] w-full max-w-[520.35px] rounded-xl p-6 mx-auto md:mx-0">
-                    <p className="text-[#00A849] font-semibold text-lg">
+                    <p className="text-[#00A849] font-semibold text-lg pb-2">
                       {item.year}
                     </p>
                     {content}
@@ -131,7 +131,7 @@ const Timeline = () => {
               {!isLeft ? (
                 <div className="w-full md:w-1/2 px-4 text-center md:text-left">
                   <div className="inline-block bg-[#F9F9F9] w-full max-w-[520.35px] rounded-xl p-6 mx-auto md:mx-0">
-                    <p className="text-[#00A849] font-semibold text-lg">
+                    <p className="text-[#00A849] font-semibold text-lg pb-2">
                       {item.year}
                     </p>
                     {content}

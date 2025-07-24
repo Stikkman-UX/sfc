@@ -43,7 +43,7 @@ const Investor = () => {
 
     const ContactCard = () => {
         return (
-            <div className="w-10/12 max-w-[1240px] flex flex-col justify-between gap-3 border border-[rgba(229,231,235,1)] rounded-2xl bg-white px-8 py-6 mx-auto">
+            <div className="w-10/12 max-w-[1280px] flex flex-col justify-between gap-3 border border-[rgba(229,231,235,1)] rounded-2xl bg-white px-8 py-6 mx-auto">
                 <div className="grid gap-2 text-[rgba(15,23,42,1)]">
                     <span className="font-semibold">
                         Shweta Deshpande
@@ -73,9 +73,9 @@ const Investor = () => {
         <div className="w-full mb-20 sm:mb-40">
             <div className="bg-[url('/white-bg.png')] bg-no-repeat bg-cover pt-30 sm:pt-52 md:pt-48 pb-20">
                 <h2 className="w-11/12 sm:w-10/12 font-medium text-[30px] lg:text-[50px] text-[rgba(0,89,69,1)] leading-[56px] text-start lg:text-center mx-auto">
-                    Backing the Technology <br/>
+                    Backing the technology <br/>
                     <span className="text-[rgba(0,168,73,1)]">
-                        Powering Tomorrow's Cities
+                        powering tomorrow's cities
                     </span>
                 </h2>
                 <div className="disable-scrollbar w-full lg:w-fit xl:w-fit max-w-[940px] flex gap-4 sm:mx-auto mt-10 px-6 sm:px-14 overflow-x-auto">

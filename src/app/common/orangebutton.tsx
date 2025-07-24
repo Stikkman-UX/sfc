@@ -8,14 +8,14 @@ interface OrangeBtn {
 
 export const OrangeButton = ({ text, callback, fullWidth }: OrangeBtn) => {
 
-    // const ArrowRightSvg = () => {
-    //     return (
-    //         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //         <path d="M3.5755 7H11.4244" stroke="none" strokeWidth="1.12127" strokeLinecap="round" strokeLinejoin="round"/>
-    //         <path d="M7.49988 3.07553L11.4243 6.99997L7.49988 10.9244" stroke="none" strokeWidth="1.12127" strokeLinecap="round" strokeLinejoin="round"/>
-    //         </svg>
-    //     )
-    // }
+    const ArrowRightSvg = () => {
+        return (
+            <svg className="stroke-white group-hover:stroke-[rgba(245,126,37,1)] duration-200" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.5755 7H11.4244" strokeWidth="1.12127" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M7.49988 3.07553L11.4243 6.99997L7.49988 10.9244" strokeWidth="1.12127" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+        )
+    }
 
     return (
         <button

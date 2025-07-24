@@ -1,32 +1,81 @@
+'use client'
 import Image from "next/image"
+import gsap from "gsap";
 
 interface TeamCardProps {
     src: string;
     name: string;
-    desg: string;
 }
 
 export const ChangeMakers = () => {
 
-    const TeamCard = ({ src, name, desg }: TeamCardProps) => {
+    const cards = [
+        {
+            src: "/about/team-1.webp",
+            name: "Chandrakant Vallabhaji Gogri"
+        },
+        {
+            src: "/about/team-2.webp",
+            name: "Dilip Damodar Karambelkar"
+        },
+        {
+            src: "/about/team-3.webp",
+            name: "Nandkishor Trivikram Joshi"
+        },
+        {
+            src: "/about/team-4.webp",
+            name: "Neha Rajen Gada"
+        },
+        {
+            src: "/about/team-5.webp",
+            name: "Saketchandrasingh Pratapsingh Dhandoriya"
+        },
+        {
+            src: "/about/team-6.webp",
+            name: "Sandeep Sudhakar Asolkar"
+        },
+        {
+            src: "/about/team-7.webp",
+            name: "Sarvesh Kumar Garg"
+        },
+        {
+            src: "/about/team-8.webp",
+            name: "Satish Chandrashekhar Deshpande"
+        },
+    ];
+
+    const TeamCard = ({ src, name }: TeamCardProps) => {
         return (
-            <div className="min-w-[180px] rounded-tl-xl rounded-br-xl overflow-hidden">
+            <div className="relative min-w-[280px] rounded-tl-xl rounded-br-xl overflow-hidden">
                 <Image
                 className="w-[500px] shrink-0 min-h-[200px] object-cover"
                 width={400}
                 height={300}
                 src={src}
                 alt={name}/>
-                {/* <div className="absolute border border-red-500 bottom-0 w-full flex justify-center items-center gap-3 h-10 text-white z-20">
+                <div className="absolute bottom-0 w-full h-16 flex justify-center items-end gap-3 bg-gradient-to-t from-black to-black/0 text-white leading-5 px-2 pb-3 z-20">
                     <span className="">{name}</span>
-                    <span className="">{desg}</span>
-                </div> */}
+                </div>
+            </div>
+        )
+    }
+
+    const TeamCarousel = () => {
+        return (
+            <div className="disable-scrollbar w-full flex gap-4 lg:gap-7 mt-8 overflow-x-auto px-4 sm:px-16 lg:px-28">
+                {cards.map((card, index) => (
+                    <TeamCard
+                        key={index}
+                        src={card.src}
+                        name={card.name}
+                    />
+                ))}
             </div>
         )
     }
 
     return (
-        <div className="gsap-fade-in w-11/12 sm:w-10/12 flex flex-col items-center gap-8 md:text-center mx-auto md:pt-6 md:pb-20 pt-4 pb-8">
+        <div className="gsap-fade-in flex flex-col items-center gap-8 md:text-center md:pt-6 md:pb-20 pt-4 pb-8">
             <div className="lg:w-3/5 max-w-[1000px] md:space-y-2 mx-auto">
                 <h4 className="w-full text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                     Meet the{" "}
@@ -38,7 +87,7 @@ export const ChangeMakers = () => {
                     Experienced leaders driving innovation and excellence in India's water infrastructure sector.
                 </p>
             </div>
-            <div className="w-full flex flex-col md:flex-row items-center gap-8 lg:gap-14 bg-[linear-gradient(107.11deg,#00A849_0.83%,#005945_87.94%)] rounded-tl-[112px] rounded-br-[112px] md:rounded-tl-[150px] md:rounded-br-[150px] text-start px-6 py-5">
+            <div className="w-11/12 sm:w-10/12 max-w-[1280px] flex flex-col md:flex-row items-center gap-8 lg:gap-14 bg-[linear-gradient(107.11deg,#00A849_0.83%,#005945_87.94%)] rounded-tl-[112px] rounded-br-[112px] md:rounded-tl-[150px] md:rounded-br-[150px] text-start px-6 py-5">
                 <Image
                 className="w-[500px] shrink-0 min-h-[200px] object-cover"
                 width={400}
@@ -52,28 +101,11 @@ export const ChangeMakers = () => {
                     We knew that <span className="font-semibold">revolutionary change required revolutionary thinking.</span>"
                 </p>
             </div>
-            <div>
-                <h4 className="w-fit text-[rgba(61,61,61,1)] text-lg md:mx-auto mt-4">
-                    Leadership Team
+            <div className="w-full">
+                <h4 className="w-fit text-[rgba(61,61,61,1)] text-lg md:mx-auto px-4 md:px-0 mt-4">
+                    Board of Directors
                 </h4>
-                <div className="w-full flex gap-4 lg:gap-7 mt-8">
-                    <TeamCard
-                    src="/about/team.png"
-                    name="Rajesh Kumar"
-                    desg="Chief Executive officer"/>
-                    <TeamCard
-                    src="/about/team.png"
-                    name="Rajesh Kumar"
-                    desg="Chief Executive officer"/>
-                    <TeamCard
-                    src="/about/team.png"
-                    name="Rajesh Kumar"
-                    desg="Chief Executive officer"/>
-                    <TeamCard
-                    src="/about/team.png"
-                    name="Rajesh Kumar"
-                    desg="Chief Executive officer"/>
-                </div>
+                <TeamCarousel/>
             </div>
         </div>
     )

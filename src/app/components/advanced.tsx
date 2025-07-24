@@ -81,7 +81,7 @@ export const Advanced = () => {
       </div>
      <div className="gsap-fade-in bg-[linear-gradient(to_right,_#005945_0%,_#00A849_100%)] py-12">
         <h4 className="text-center text-white/80 text-[22px] md:mb-[160px]">
-          C-Tech <span className="text-white">Features</span> 
+          C-Tech <span className="text-white">features</span> 
         </h4>
         <VerticalCarousel cards={cards} />
         <HorizontalCarousel />

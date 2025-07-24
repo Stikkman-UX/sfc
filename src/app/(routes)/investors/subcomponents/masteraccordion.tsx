@@ -73,8 +73,8 @@ export const MasterAccordion = ({ title, children }: MasterAccordionProps) => {
                 </div>
                 <div
                 ref={AccordionRef}
-                className={`border grid lg:grid-cols-2 gap-3 ${ !toggleAccordion && 'pointer-events-none' }`}
-                style={{ height: 0, minHeight: 'none', overflow: "hidden" }}
+                className={`${ isExpanded ? 'min-h-fit h-auto max-h-auto' : 'h-0 min-h-0 max-h-fit' } grid lg:grid-cols-2 gap-3 ${ !toggleAccordion && 'pointer-events-none' } overflow-hidden`}
+                // style={{ height: 0, minHeight: 'none', overflow: "hidden" }}
                 >
                     { children }
                 </div>

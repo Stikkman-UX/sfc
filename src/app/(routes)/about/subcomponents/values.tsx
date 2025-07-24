@@ -53,14 +53,14 @@ export const Values = () => {
 
     return (
         <div className="gsap-fade-in w-11/12 sm:w-10/12 flex flex-col items-center gap-8 text-start md:text-center mx-auto pb-20">
-            <div className="lg:w-3/5 max-w-[1000px] md:space-y-2 mx-auto pt-20">
+            <div className="lg:w-4/5 max-w-[800px] md:space-y-2 mx-auto pt-20">
                 <h4 className="w-full text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                     Our{" "}
                     <span className="text-[rgba(25,169,72,1)]">
-                        Values
+                        values
                     </span>
                 </h4>
-                <p className="w-11/12 md:w-[550px] md:text-lg font-normal text-[rgba(74,85,101,1)] md:mx-auto">
+                <p className="w-11/12 md:w-[700px] md:text-lg font-normal text-[rgba(74,85,101,1)] md:mx-auto">
                     The principles that guide our decisions and drive our commitment to excellence.
                 </p>
             </div>

@@ -146,8 +146,8 @@ export const News = () => {
         const { tag, title, desc, date, icon, min, source } = cardData;
 
         return (
-            <div className={`${ isLarge ? 'md:w-auto md:row-span-2 md:col-span-2' : 'md:w-auto md:col-span-1' } w-full sm:w-[340px] shrink-0  flex flex-col bg-[rgba(249,249,249,1)] rounded-2xl overflow-hidden`}>
-                <div className="relative  min-h-[200px] h-[240px] flex-1 flex justify-center items-center bg-[linear-gradient(135deg,rgba(0,89,69,0.1)_0%,rgba(0,168,73,0.1)_100%)] text-xs">
+            <div className={`${ isLarge && 'md:max-w-[60%]' } w-full sm:w-[340px] md:w-auto shrink-0  flex flex-col bg-[rgba(249,249,249,1)] rounded-2xl overflow-hidden`}>
+                <div className="relative  min-h-[200px] h-[240px] md:flex-1 flex justify-center items-center bg-[linear-gradient(135deg,rgba(0,89,69,0.1)_0%,rgba(0,168,73,0.1)_100%)] text-xs">
                     <div className="absolute top-0 w-full flex justify-between items-center p-4">
                         <span className="bg-[rgba(0,168,73,1)] text-white rounded-full px-4 py-2">
                             { tag }
@@ -208,8 +208,8 @@ export const News = () => {
     }
 
     return (
-        <section className="gsap-fade-in md:w-10/12 mx-auto md:pt-20 md:py-20">
-            <div className="md:w-full  flex flex-col lg:flex-row justify-between gap-4">
+        <section className="gsap-fade-in md:w-10/12 max-w-[1280px] mx-auto md:pt-20 md:py-20">
+            <div className="md:w-full flex flex-col lg:flex-row justify-between gap-4">
                 <div className="w-11/12 md:w-2/3 lg:w-1/2 space-y-2 md:space-y-4 mx-auto md:mx-0">
                     <h4 className="w-2/3 lg:w-1/2 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                         <span className="text-[rgba(25,169,72,1)]">Latest</span> news & updates
@@ -226,12 +226,17 @@ export const News = () => {
                     }
                 </div>
             </div>
-            <div className="disable-scrollbar flex items-stretch md:grid md:grid-rows-2 gap-8 px-4 sm:px-7 md:px-0 pt-10 md:pt-20 pb-10 overflow-x-auto">
-                {
+            <div className="disable-scrollbar flex items-stretch gap-6 md:gap-4 lg:gap-8 px-4 sm:px-7 md:px-0 pt-10 md:pt-20 pb-10 overflow-x-auto">
+                <NewsCard cardData={cards[ActiveFilter as keyof typeof cards][0]} isLarge/>
+                <div className="w-full flex md:flex-col gap-6 md:gap-4 lg:gap-8">
+                    <NewsCard cardData={cards[ActiveFilter as keyof typeof cards][1]}/>
+                    <NewsCard cardData={cards[ActiveFilter as keyof typeof cards][2]}/>
+                </div>
+                {/* {
                     cards[ActiveFilter as keyof typeof cards].map((cardData, i) => {
                         return <NewsCard key={i} cardData={cardData} isLarge={i === 0}/>
                     })
-                }
+                } */}
             </div>
         </section>
     )

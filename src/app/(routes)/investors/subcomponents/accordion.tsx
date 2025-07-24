@@ -15,11 +15,6 @@ interface DesktopAccProps {
     }[];
 };
 
-interface MobileAccProps {
-    title: string;
-    accordions: DesktopAccProps[]
-}
-
 interface AccordionProps {
     data: DesktopAccProps;
     expanded?: boolean;

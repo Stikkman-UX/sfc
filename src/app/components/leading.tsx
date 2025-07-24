@@ -189,10 +189,10 @@ export const Leading = () => {
         <section className="gsap-fade-in mx-auto py-20">
             <div className="w-full md:w-10/12 flex flex-col lg:flex-row justify-between gap-4 mx-auto">
                 <div className="w-11/12 lg:flex-1 md:space-y-4 mx-auto md:mx-0">
-                    <h4 className="w-full lg:w-1/2 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
+                    <h4 className="w-full lg:w-[300px] text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                         <span className="text-[rgba(25,169,72,1)]">Leading</span> industry conversations
                     </h4>
-                    <p className=" md:text-lg font-normal text-[rgba(74,85,101,1)]">
+                    <p className="max-w-[600px] md:text-lg font-normal text-[rgba(74,85,101,1)]">
                         Expert insights, research, and analysis on wastewater treatment innovation, sustainability, and the future of water infrastructure in India.
                     </p>
                 </div>

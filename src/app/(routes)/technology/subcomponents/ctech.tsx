@@ -89,7 +89,7 @@ export const Ctech = () => {
     return (
         <section className="ctech-section gsap-fade-in  my-10 md:my-40 md:text-center ">
             <h2 className="w-fit text-[32px] text-[rgba(25,169,72,1)] mx-auto mb-5">
-                The <span className="text-[rgba(0,89,67,1)]">C-Tech</span> Edge
+                The <span className="text-[rgba(0,89,67,1)]">C-Tech</span> edge
             </h2>
             <p className="w-full font-normal md:text-lg text-[rgba(74,85,101,1)] pb-20 d-flex">
                 Distinguished by its Exceptional 98% Treatment Efficiency, Surpassing Conventional Methods.</p>
