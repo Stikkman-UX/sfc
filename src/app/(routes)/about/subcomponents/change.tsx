@@ -89,10 +89,10 @@ export const ChangeMakers = () => {
             </div>
             <div className="w-11/12 sm:w-10/12 max-w-[1280px] flex flex-col md:flex-row items-center gap-8 lg:gap-14 bg-[linear-gradient(107.11deg,#00A849_0.83%,#005945_87.94%)] rounded-tl-[112px] rounded-br-[112px] md:rounded-tl-[150px] md:rounded-br-[150px] text-start px-6 py-5">
                 <Image
-                className="w-[500px] shrink-0 min-h-[200px] object-cover"
+                className="w-[500px] shrink-0 min-h-[200px] rounded-tl-[112px] rounded-br-[112px] md:rounded-tl-[140px] md:rounded-br-[140px] object-cover"
                 width={400}
                 height={300}
-                src="/about/change.png"
+                src="/about/team-6.webp"
                 alt="Amit Patel"/>
                 <p className="font-normal text-[22px] md:text-[28px] text-white pe-8">
                     "When we founded SFC in 2008, India was facing an unprecedented water crisis. Traditional treatment technologies were failing to meet the scale and complexity of our nation's needs.

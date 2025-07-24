@@ -14,6 +14,7 @@ interface ReportPanelProps {
                     size: string;
                     desc?: string;
                     date: string;
+                    src: string;
                     isVideo?: boolean;
                 }[];
             }[]

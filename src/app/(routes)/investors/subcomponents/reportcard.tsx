@@ -7,6 +7,7 @@ interface ReportCardProps {
         size: string;
         desc?: string;
         date: string;
+        src: string;
         isVideo?: boolean;
     }
 }

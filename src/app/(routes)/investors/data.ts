@@ -12,13 +12,15 @@ export const data = {
                                 title: 'Annual Report 2023-24',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'Quaterly Review Q1 24',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -29,13 +31,15 @@ export const data = {
                                 title: 'Annual Report 2023-24',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'Quaterly Review Q1 24',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -46,13 +50,15 @@ export const data = {
                                 title: 'Annual Report 2023-24',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'Quaterly Review Q1 24',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -70,19 +76,22 @@ export const data = {
                                 title: 'Financial Statement 2023-24',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'Financial Statement 2022-23',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'Financial Statement 2021-22',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -93,19 +102,22 @@ export const data = {
                                 title: 'HWT Financial Statement 2023-24',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'HWT Financial Statement 2022-23',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'HWT Financial Statement 2021-22',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -116,19 +128,22 @@ export const data = {
                                 title: 'VWT Financial Statement 2023-24',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'VWT Financial Statement 2022-23',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'VWT Financial Statement 2021-22',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -144,13 +159,15 @@ export const data = {
                                 title: 'Group Company - Turbomax',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'Group Company - Crest IT',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -168,7 +185,8 @@ export const data = {
                                 title: 'Industry report',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -186,7 +204,8 @@ export const data = {
                                 title: 'Amounts due to Material Creditors as at June 30',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -232,67 +251,78 @@ export const data = {
                                 title: 'CSR policy sfc',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'Policy on material Subsidiaries',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'Policy whistleblower sfc',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'Archival Policy',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'Dividend distribution policy',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'Materiality policy',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'Policy on determination of materiality for disclosure of events or imitation',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'Nrc policy',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'Policy on board diversity',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'Policy on related party transactions',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'POSH policy',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -310,19 +340,22 @@ export const data = {
                                 title: 'Code of Conduct To Regulate, Monitor and Report Trading By Designated Persons',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'Code of Practices and Procedures For Fair Disclosure of UPSI',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                             {
                                 title: 'COC for Director and Senior Management',
                                 size: '3.4',
                                 desc: "Highlights from the first quarter and future outlook",
-                                date: "April 2024"
+                                date: "April 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -340,7 +373,8 @@ export const data = {
                                 title: 'NRC Policy - ID Appointment Terms & Conditions',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -358,7 +392,8 @@ export const data = {
                                 title: 'Policy for Familiarisation Programme for Independent Directors',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                         ]
                     },
@@ -378,19 +413,22 @@ export const data = {
                                 title: 'DRHP',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                             {
                                 title: 'SFC ENG SEBI (English)',
                                 size: '3.4',
                                 date: "April 2024",
-                                isVideo: true
+                                isVideo: true,
+                                src: "",
                             },
                             {
                                 title: 'SFC HIN SEBI (Hindi)',
                                 size: '3.4',
                                 date: "April 2024",
-                                isVideo: true
+                                isVideo: true,
+                                src: "",
                             },
                         ]
                     },
@@ -410,7 +448,8 @@ export const data = {
                                 title: 'Name change pursuant to conversion',
                                 size: '12.5',
                                 desc: "Comprehensive overview of financial performance and strategic initiatives",
-                                date: "March 2024"
+                                date: "March 2024",
+                                src: "",
                             },
                         ]
                     },

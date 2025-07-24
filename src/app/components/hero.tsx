@@ -19,10 +19,10 @@ export const Hero = () => {
             width={1000}
             height={900}
             />
-            <div className="w-[480px] absolute left-1/2 -translate-x-1/2 bottom-20">
+            <div className="w-[480px] absolute left-1/2 -translate-x-1/2 bottom-16">
                 <Image
                 className={`w-full object-cover`}
-                src="/leaf.png"
+                src="/leaf-2.png"
                 alt="SFC"
                 width={1000}
                 height={900}
