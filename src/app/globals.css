@@ -6,8 +6,29 @@
 
 @import "tailwindcss";
 
+@theme {
+  --font-basic: "Basic", sans-serif;
+  --font-work: "Work Sans", sans-serif;
+}
 
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-basic;
+    font-weight: bold;
+  }
+  h1 > span, h2 > span, h3 > span, h4 > span, h5 > span, h6 > span
+  {
+    @apply font-basic;
+    font-weight: bold;
+  }
+  a {
+    @apply font-basic;
+  }
 
+  p, span, li {
+    @apply font-work;
+  } 
+}
 
 :root {
   --background: #ffffff;
@@ -18,7 +39,7 @@
   --body-font: "Work Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font) !important;
   font-weight: bold;
 }
@@ -34,7 +55,7 @@ a {
 
 p, span, li {
   font-family: var(--body-font);
-}
+} */
 
 
 @theme inline {
