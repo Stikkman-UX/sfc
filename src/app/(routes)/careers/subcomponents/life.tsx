@@ -14,16 +14,35 @@ export const Life = () => {
           enables you to find your own identity.
         </p>
       </div>
-      <div className="w-full h-[380px] flex gap-6 overflow-x-scroll border">
-        <div className="flex gap-6">
-          <Image
-            className="w-full min-h-[200px] object-cover"
-            width={400}
-            height={300}
-            src="/careers/team.png"
-            alt="Life at SFC"
-          />
-        </div>
+      <div className="w-full h-[380px] flex gap-6 overflow-x-scroll">
+        <Image
+          className="w-full min-h-[200px] object-cover rounded-xl sm:rounded-2xl"
+          width={400}
+          height={300}
+          src="/careers/team-1.jpg"
+          alt="Life at SFC"
+        />
+        <Image
+          className="w-full min-h-[200px] object-cover rounded-xl sm:rounded-2xl"
+          width={400}
+          height={300}
+          src="/careers/team-1.jpg"
+          alt="Life at SFC"
+        />
+        <Image
+          className="w-full min-h-[200px] object-cover rounded-xl sm:rounded-2xl"
+          width={400}
+          height={300}
+          src="/careers/team-1.jpg"
+          alt="Life at SFC"
+        />
+        <Image
+          className="w-full min-h-[200px] object-cover rounded-xl sm:rounded-2xl"
+          width={400}
+          height={300}
+          src="/careers/team-1.jpg"
+          alt="Life at SFC"
+        />
       </div>
     </div>
   );
