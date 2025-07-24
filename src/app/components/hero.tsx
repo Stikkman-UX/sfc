@@ -14,19 +14,17 @@ export const Hero = () => {
         <div className="absolute h-screen top-0 left-0 w-full overflow-hidden -z-10">
             <Image
             className={`w-full h-screen object-cover`}
-            src="/landing/final-banner.jpg"
+            src="/landing/hero-bg.jpg"
             alt="SFC"
             width={1000}
             height={900}
             />
             <div className="w-[480px] absolute left-1/2 -translate-x-1/2 bottom-16">
-                <Image
-                className={`w-full object-cover`}
-                src="/leaf-2.png"
+                <img
+                className="w-full object-cover"
+                src="/leaf.png"
                 alt="SFC"
-                width={1000}
-                height={900}
-            />
+                />
             </div>
         </div>   
         <div className="relative w-11/12 md:w-auto flex flex-col items-start md:items-center space-y-6 md:space-y-8 pt-30 md:pt-0 z-20 mx-auto md:mx-0">
