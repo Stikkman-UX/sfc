@@ -94,7 +94,7 @@ export const ChangeMakers = () => {
                 height={300}
                 src="/about/change.png"
                 alt="Amit Patel"/>
-                <p className="font-normal text-[22px] md:text-[28px] text-white">
+                <p className="font-normal text-[22px] md:text-[28px] text-white pe-8">
                     "When we founded SFC in 2008, India was facing an unprecedented water crisis. Traditional treatment technologies were failing to meet the scale and complexity of our nation's needs.
                     <br/>
                     <br/>

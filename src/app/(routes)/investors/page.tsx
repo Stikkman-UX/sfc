@@ -73,9 +73,9 @@ const Investor = () => {
         <div className="w-full mb-20 sm:mb-40">
             <div className="bg-[url('/white-bg.png')] bg-no-repeat bg-cover pt-30 sm:pt-52 md:pt-48 pb-20">
                 <h2 className="w-11/12 sm:w-10/12 font-medium text-[30px] lg:text-[50px] text-[rgba(0,89,69,1)] leading-[56px] text-start lg:text-center mx-auto">
-                    Backing the technology <br/>
+                    Powering the Backbone of <br/>
                     <span className="text-[rgba(0,168,73,1)]">
-                        powering tomorrow's cities
+                        Wastewater Systems. Quietly. Relentlessly.
                     </span>
                 </h2>
                 <div className="disable-scrollbar w-full lg:w-fit xl:w-fit max-w-[940px] flex gap-4 sm:mx-auto mt-10 px-6 sm:px-14 overflow-x-auto">

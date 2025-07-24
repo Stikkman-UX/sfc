@@ -116,7 +116,7 @@ export const Features = () => {
                             width={100}
                             height={60}
                             />
-                            <div className="absolute bottom-2 right-2 w-full h-fit flex flex-col gap-2 bg-gradient-to-t from-black to-black/0 text-white rounded-br-[115px] md:rounded-br-[125px] font-normal ps-6 md:ps-8 pe-8 pb-8 md:pb-4">
+                            <div className="absolute bottom-2 right-2 w-full h-fit flex flex-col gap-2 bg-gradient-to-t from-black to-black/0 text-white rounded-br-[115px] md:rounded-br-[125px] font-normal ps-6 md:ps-8 pe-14 pb-8 md:pb-6">
                                 <div className="w-fit bg-[rgba(0,168,73,1)] rounded-full p-4">{ data[activeBtn as keyof typeof data].icon }</div>
                                 <span>{ data[activeBtn as keyof typeof data].title }</span>
                                 <p className="text-xs">{ data[activeBtn as keyof typeof data].desc }</p>

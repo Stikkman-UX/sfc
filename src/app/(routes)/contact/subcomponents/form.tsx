@@ -49,7 +49,7 @@ export const FormComp = () => {
     return (
         <form
         ref={ formRef }
-        className="shrink-0 max-w-[700px] grid grid-cols-2 gap-x-5 gap-y-6 bg-[rgba(184,184,184,0.02)] rounded-tl-[120px] sm:rounded-tl-[140px] rounded-br-[120px] sm:rounded-br-[140px] backdrop-blur-[85px] shadow-[0px_4px_250px_0px_rgba(0,0,0,0.08)] px-8 sm:px-12 py-16 sm:py-20">
+        className="shrink-0 max-w-[700px] grid grid-cols-2 gap-x-5 gap-y-6 bg-[rgba(184,184,184,0.02)] rounded-tl-[80px] sm:rounded-tl-[100px] rounded-br-[80px] sm:rounded-br-[100px] backdrop-blur-[85px] shadow-[0px_4px_250px_0px_rgba(0,0,0,0.08)] px-8 sm:px-12 py-16 sm:py-20">
             <InputField
             label="First name"
             placeholder="First name"/>
