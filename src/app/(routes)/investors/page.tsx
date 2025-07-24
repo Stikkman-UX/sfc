@@ -21,7 +21,7 @@ const Investor = () => {
     const MiniCard = ({ amount, text, percent }: MiniCardProps) => {
         return (
             <div className="min-w-[200px] flex-1 flex flex-col items-center gap-2 bg-[rgba(249,249,249,1)] text-[rgba(75,75,75,1)] rounded-tl-2xl rounded-br-2xl px-4 py-6">
-                <span className="font-bold text-2xl leading-6">&#8377;{`${ amount } Cr`}</span>
+                <span className="font-bold !font-basic text-2xl leading-6">&#8377;{`${ amount } Cr`}</span>
                 <span className="text-sm text-[rgba(121,121,121,0.8)]">{ text }</span>
                 <span className="w-fit font-medium text-xs rounded-full bg-[rgba(245,126,37,0.8)] px-2 py-1">{`+${ percent }%`}</span>
             </div>
@@ -73,9 +73,9 @@ const Investor = () => {
         <div className="w-full mb-20 sm:mb-40">
             <div className="bg-[url('/white-bg.png')] bg-no-repeat bg-cover pt-30 sm:pt-52 md:pt-48 pb-20">
                 <h2 className="w-11/12 sm:w-10/12 font-medium text-[30px] lg:text-[50px] text-[rgba(0,89,69,1)] leading-[56px] text-start lg:text-center mx-auto">
-                    Powering the Backbone of <br/>
+                    Powering the backbone of <br/>
                     <span className="text-[rgba(0,168,73,1)]">
-                        Wastewater Systems. Quietly. Relentlessly.
+                        wastewater systems. Quietly. Relentlessly.
                     </span>
                 </h2>
                 <div className="disable-scrollbar w-full lg:w-fit xl:w-fit max-w-[940px] flex gap-4 sm:mx-auto mt-10 px-6 sm:px-14 overflow-x-auto">

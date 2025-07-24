@@ -43,7 +43,7 @@ export const Footer = () => {
                             </div>
                         </div>
                         <div className="flex flex-col gap-2.5 whitespace-nowrap">
-                            <span className=" font-semibold text-[rgba(0,168,73,1)]">
+                            <span className="!font-basic font-semibold text-[rgba(0,168,73,1)]">
                                 Solutions
                             </span>
                             <span>C-Tech Technology</span>
@@ -53,7 +53,7 @@ export const Footer = () => {
                             <span>Smart Monitoring</span>
                         </div>
                         <div className="flex flex-col gap-2.5 whitespace-nowrap">
-                            <span className=" font-semibold text-[rgba(0,168,73,1)]">
+                            <span className="!font-basic font-semibold text-[rgba(0,168,73,1)]">
                                 Company
                             </span>
                             <span>About Us</span>
@@ -65,7 +65,7 @@ export const Footer = () => {
                         </div>
                         <div className="max-w-[280px] md:divide-y-2 divide-white/20">
                             <div className="flex flex-col gap-2.5 md:pb-8">
-                                <span className=" font-semibold text-[rgba(0,168,73,1)]">
+                                <span className="!font-basic font-semibold text-[rgba(0,168,73,1)]">
                                     Contact
                                 </span>
                                 <span>SFC House, Industrial Area Gurugram, Haryana 122015</span>
@@ -73,7 +73,7 @@ export const Footer = () => {
                                 <span>info@ssfcenvirotech.com</span>
                             </div>
                             <div className="flex flex-col gap-2.5 whitespace-nowrap pt-8">
-                                <span className=" font-semibold text-[rgba(0,168,73,1)]">
+                                <span className="!font-basic font-semibold text-[rgba(0,168,73,1)]">
                                     Investor Relations
                                 </span>
                                 <span>Financial Reports</span>

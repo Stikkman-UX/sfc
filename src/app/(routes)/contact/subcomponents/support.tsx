@@ -46,7 +46,7 @@ export const Support = () => {
                 <div className=" bg-[rgba(0,168,73,0.1)] rounded-full p-4">
                     { logo }
                 </div>
-                <span className="text-black text-lg pt-3">
+                <span className="!font-basic text-black text-lg pt-3">
                     { title }
                 </span>
                 <span className="text-[rgba(0,168,73,1)] pt-3">

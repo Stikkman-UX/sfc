@@ -121,7 +121,7 @@ useEffect(() => {
 
     const Card = ({ id, icon, value, title, subtitle }: Card) => {
         return (
-            <div className={`${ id } min-w-[100px] sm:min-w-[200px] w-fit flex flex-col items-center gap-3 text-center text-white px-2`}>
+            <div className={`${ id } min-w-[100px] border sm:min-w-[200px] w-fit flex flex-col items-center gap-3 text-center text-white px-2`}>
                 <div className="w-fit bg-[rgba(243,244,246,0.17)] rounded-[17px] p-3 sm:p-4">
                     { icon }
                 </div>
@@ -142,7 +142,7 @@ useEffect(() => {
 
     const SlideContainer = ({ id }: { id: string }) => {
         return (
-            <div className={`${id} feature-carousel-container min-w-fit w-full shrink-0 flex justify-between gap-2 sm:gap-4 md:gap-0 px-1 sm:px-2 md:px-0`}>
+            <div className={`${id} feature-carousel-container min-w-fit w-full shrink-0 flex justify-between gap-2 sm:gap-4 md:gap-0 border px-1 sm:px-2 md:px-0`}>
                 <Card
                 id="inactive-slide-2"
                 icon={<NewsSvg1/>}

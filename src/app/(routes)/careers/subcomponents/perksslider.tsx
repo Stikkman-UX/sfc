@@ -34,7 +34,7 @@ export const PerksSlider = () => {
         <div className="bg-[rgba(0,168,73,0.1)] rounded-[21px] p-3">
           {logo}
         </div>
-        <span className="text-[rgba(0,89,69,1)]">{title}</span>
+        <span className="text-[rgba(0,89,69,1)] !font-basic">{title}</span>
         <span className="text-[rgba(74,85,101,1)]">{desc}</span>
       </div>
     );

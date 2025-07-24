@@ -1,6 +1,7 @@
 import { VerticalCarousel } from "./verticalcarousel";
 import { HorizontalCarousel } from "./HorizontalCarousel";
 import { DropSvg } from "./commonsvg";
+import { SwiperCarousel } from "./swiperCarousel";
 
 export const Advanced = () => {
   const cards = [
@@ -84,7 +85,10 @@ export const Advanced = () => {
           C-Tech <span className="text-white">features</span> 
         </h4>
         <VerticalCarousel cards={cards} />
-        <HorizontalCarousel />
+        {/* <HorizontalCarousel /> */}
+        <div className="pt-52 sm:pt-40 lg:pt-20 pb-10">
+          <SwiperCarousel/>
+        </div>
       </div>
     </section>
   );

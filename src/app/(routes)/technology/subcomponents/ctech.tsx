@@ -93,7 +93,7 @@ export const Ctech = () => {
                     The <span className="text-[rgba(0,89,67,1)]">C-Tech</span> edge
                 </h2>
                 <p className="w-full font-normal md:text-lg text-[rgba(74,85,101,1)] d-flex">
-                    Distinguished by its Exceptional 98% Treatment Efficiency, Surpassing Conventional Methods.
+                    Distinguished by its exceptional 98% treatment efficiency, surpassing conventional methods.
                 </p>
             </div>
             {/* <div className="w-11/12 md:w-10/12 flex flex-col lg:flex-row justify-center items-center mx-auto">

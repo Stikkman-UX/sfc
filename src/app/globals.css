@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --font-basic: "Basic", sans-serif;
+  --font-work: "Work Sans", sans-serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -223,6 +228,22 @@ button:hover{
 .header-logo img {
     width: 80px;
 }
+
+/* swiperjs  */
+.swiper-slide{
+  opacity: 0.3;
+  scale: 0.75;
+}
+.swiper-slide-active {
+  scale: 1 !important;
+  opacity: 1 !important;
+}
+.swiper-slide-prev, .swiper-slide-next {
+  scale: 0.85 !important;
+  opacity: 0.6 !important;
+}
+
+
 @media(max-width:767px)
 {
   .product-wrap {

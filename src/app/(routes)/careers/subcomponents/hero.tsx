@@ -51,22 +51,22 @@ export const Hero = () => {
       <div className="w-full sm:w-10/12 max-w-[1000px] flex pt-16 sm:pt-28 pb-28 sm:pb-36 mx-auto text-white overflow-hidden">
         <div className="carousel-container w-fit sm:w-full flex items-center justify-between">
           <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
-            <span className="font-semibold text-2xl">500+</span>
+            <span className="!font-basic font-semibold text-2xl">500+</span>
             <span className="font-normal text-sm">Team Members</span>
           </div>
           <div className="w-[1px] shrink-0 h-10 bg-gradient-to-b from-white/0 via-white to-white/0"></div>
           <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
-            <span className="font-semibold text-2xl">8</span>
+            <span className="!font-basic font-semibold text-2xl">8</span>
             <span className="font-normal text-sm">Office Locations</span>
           </div>
           <div className="w-[1px] shrink-0 h-10 bg-gradient-to-b from-white/0 via-white to-white/0"></div>
           <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
-            <span className="font-semibold text-2xl">4.2 years</span>
+            <span className="!font-basic font-semibold text-2xl">4.2 years</span>
             <span className="font-normal text-sm">Average Tenure</span>
           </div>
           <div className="w-[1px] shrink-0 h-10 bg-gradient-to-b from-white/0 via-white to-white/0"></div>
           <div className="flex flex-col items-center px-16 sm:px-4 whitespace-nowrap">
-            <span className="font-semibold text-2xl">85%</span>
+            <span className="!font-basic font-semibold text-2xl">85%</span>
             <span className="font-normal text-sm">Internal Promotions</span>
           </div>
         </div>

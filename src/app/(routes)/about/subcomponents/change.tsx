@@ -31,10 +31,6 @@ export const ChangeMakers = () => {
             name: "Saketchandrasingh Pratapsingh Dhandoriya"
         },
         {
-            src: "/about/team-6.webp",
-            name: "Sandeep Sudhakar Asolkar"
-        },
-        {
             src: "/about/team-7.webp",
             name: "Sarvesh Kumar Garg"
         },
@@ -94,12 +90,19 @@ export const ChangeMakers = () => {
                 height={300}
                 src="/about/team-6.webp"
                 alt="Amit Patel"/>
-                <p className="font-normal text-[22px] md:text-[28px] text-white pe-8">
-                    "When we founded SFC in 2008, India was facing an unprecedented water crisis. Traditional treatment technologies were failing to meet the scale and complexity of our nation's needs.
-                    <br/>
-                    <br/>
-                    We knew that <span className="font-semibold">revolutionary change required revolutionary thinking.</span>"
-                </p>
+                <div className="flex flex-col">
+                    <p className="font-normal text-[22px] md:text-[28px] text-white pe-8">
+                        "When we founded SFC in 2008, India was facing an unprecedented water crisis. Traditional treatment technologies were failing to meet the scale and complexity of our nation's needs.
+                        <br/>
+                        We knew that <span className="font-semibold">revolutionary change required revolutionary thinking.</span>"
+                    </p>
+                    <span className="block text-white text-2xl font-bold pt-4">
+                        -Sandeep Sudhakar Asolkar
+                    </span>
+                    <span className="block text-white text-xl font-normal">
+                        Chairman, SFC
+                    </span>
+                </div>
             </div>
             <div className="w-full">
                 <h4 className="w-fit text-[rgba(61,61,61,1)] text-lg md:mx-auto px-4 md:px-0 mt-4">

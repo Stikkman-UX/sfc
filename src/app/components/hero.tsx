@@ -9,17 +9,17 @@ export const Hero = () => {
     //             bg-no-repeat bg-cover bg-top min-h-screen main-banner bg-[url('/landing/banner.jpg')] xl-py-10"
     // >         
     <div
-    className="relative text-black font-medium space-y-20 md:space-y-40 pb-20 md:py-40 min-h-screen main-banner xl-py-10"
+    className="relative text-black font-medium space-y-20 md:space-y-40 pb-20 md:py-40 min-h-[80vh] sm:min-h-screen main-banner xl-py-10"
     >
-        <div className="absolute h-screen top-0 left-0 w-full overflow-hidden -z-10">
+        <div className="absolute h-[80vh] sm:h-screen top-0 left-0 w-full overflow-hidden -z-10">
             <Image
-            className={`w-full h-screen object-cover`}
+            className={`w-full h-[80vh] sm:h-screen object-cover`}
             src="/landing/hero-bg.jpg"
             alt="SFC"
             width={1000}
             height={900}
             />
-            <div className="w-[480px] absolute left-1/2 -translate-x-1/2 bottom-16">
+            <div className="w-[340px] sm:w-[360px] lg:w-[480px] absolute left-1/2 -translate-x-1/2 bottom-32 sm:bottom-16">
                 <img
                 className="w-full object-cover"
                 src="/leaf.png"

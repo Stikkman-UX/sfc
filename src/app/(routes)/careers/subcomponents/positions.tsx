@@ -112,7 +112,7 @@ export const Positions = () => {
         return (
             <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-6 border-b border-[rgba(218,218,218,1)] px-6 pt-12 pb-8">
                 <div className="flex flex-col gap-3">
-                    <span className="text-[rgba(0,89,69,1)] text-[22px]">
+                    <span className="!font-basic text-[rgba(0,89,69,1)] text-[22px]">
                         { title }
                     </span>
                     <div className="flex items-center gap-3 text-sm font-normal text-[rgba(74,85,101,1)]">

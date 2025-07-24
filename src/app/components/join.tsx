@@ -135,14 +135,14 @@ export const Join = () => {
   return (
     <section className="space-y-32 pb-8 md:pb-20 pt-20 join-section">
       <div className="gsap-fade-in w-10/12 max-w-[800px] space-y-6 md:space-y-10 faded mx-auto">
-        <p className="scroll-text text-2xl md:text-[32px] font-medium text-start md:text-center">
+        <p className="scroll-text !font-basic text-2xl md:text-[32px] font-medium text-start md:text-center">
           SFC relentlessly strives to enable your vision of a successful
           wastewater business that also is committed to safeguarding the
           environment. Trusted by customers across the nation, we embed
           simplicity, adaptability, and long-term reliability into every
           wastewater system.
         </p>
-        <p className="scroll-text text-2xl md:text-[32px] font-medium text-start md:text-center">
+        <p className="scroll-text !font-basic text-2xl md:text-[32px] font-medium text-start md:text-center">
           Our innovative technologies are designed for precision and optimised
           performance, making operations seamless even in the most complex
           environments, be it any region, any shape, or any scale.

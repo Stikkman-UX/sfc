@@ -105,7 +105,7 @@ export const VerticalCarousel = ({ cards, styling }: VerticalCarouselProps) => {
                             <div
                             id={'card-' + i}
                             key={i}
-                            className={`absolute max-h-[460px] sm:max-h-[360px] md:max-h-[400px] overflow-hidden flex flex-col items-center gap-6 ${ styling ? styling.background : 'bg-white' } rounded-2xl pt-6 md:pt-10 pb-10 px-6 md:px-10`}>
+                            className={`absolute max-h-[500px] sm:max-h-[360px] md:max-h-[400px] overflow-hidden flex flex-col items-center gap-6 ${ styling ? styling.background : 'bg-white' } rounded-2xl pt-6 md:pt-10 pb-10 px-6 md:px-10`}>
                                 <div className="relative bg-[rgba(25,169,72,1)] text-white  font-bold text-sm rounded-tl-2xl rounded-br-2xl px-6 py-5">
                                     <div className="absolute -top-1 -right-1 w-4 h-4 bg-[rgba(245,126,37,1)] rounded-full"></div>
                                     { cardNo }
@@ -114,7 +114,7 @@ export const VerticalCarousel = ({ cards, styling }: VerticalCarouselProps) => {
                                     { icon }
                                 </div>
                                 <div className="flex flex-col gap-2 text-center">                              
-                                    <span className={`${ styling ? styling.titleColor : 'text-[rgba(25,169,72,1)]' } font-semibold`}>
+                                    <span className={`${ styling ? styling.titleColor : 'text-[rgba(25,169,72,1)]' } !font-basic font-semibold`}>
                                         { title }
                                     </span>
                                     <span className={`w-full lg:w-[700px] shrink-0 font-normal text-sm ${ styling ? styling.descColor : 'text-[rgba(74,85,101,1)]' } leading-6 mx-auto`}>

@@ -32,17 +32,17 @@ export const Impact = () => {
           <div className="w-full flex justify-start gap-16  text-center md:text-start mx-auto lg:mx-0">
             <div className="flex flex-col items-center md:items-start gap-2">
               <StatsSvg />
-              <span className="text-lg md:text-2xl font-bold text-[#B7D433]">Zero</span>
+              <span className="text-lg md:text-2xl font-bold !font-basic text-[#B7D433]">Zero</span>
               <span className="text-white font-normal text-sm">Environment violations</span>
             </div>
             <div className="flex flex-col items-center md:items-start gap-2">
               <LightDropSvg/>
-              <span className="text-lg md:text-2xl font-bold text-[#B7D433]">3.6B</span>
+              <span className="text-lg md:text-2xl font-bold !font-basic text-[#B7D433]">3.6B</span>
               <span className="text-white font-normal text-sm">Liters treated annually</span>
             </div>
             <div className="flex flex-col items-center md:items-start gap-2">
               <TreeSvg />
-              <span className="text-lg md:text-2xl font-bold text-[#B7D433]">15</span>
+              <span className="text-lg md:text-2xl font-bold !font-basic text-[#B7D433]">15</span>
               <span className="text-white font-normal text-sm">Green certifications</span>
             </div>
           </div>
