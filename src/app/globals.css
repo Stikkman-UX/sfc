@@ -1,17 +1,17 @@
 /* font Basic */
-@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Basic&display=swap'); */
 /* font work */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 @import "tailwindcss";
 
-@theme {
+/* @theme {
   --font-basic: "Basic", sans-serif;
   --font-work: "Work Sans", sans-serif;
-}
+} */
 
 /* @layer base { */
-  h1, h2, h3, h4, h5, h6 {
+  /* h1, h2, h3, h4, h5, h6 {
     @apply font-basic;
     font-weight: bold;
   }
@@ -26,7 +26,7 @@
 
   p, span, li {
     @apply font-work;
-  } 
+  }  */
 /* } */
 
 
@@ -39,30 +39,30 @@
   --body-font: "Work Sans", sans-serif;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font) !important;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Basic", sans-serif;
   font-weight: bold;
 }
 
 h1 > span, h2 > span, h3 > span, h4 > span, h5 > span, h6 > span
 {
-    font-family: var(--heading-font) !important;
+  font-family: "Basic", sans-serif;
   font-weight: bold;
 }
 a {
-  font-family: var(--heading-font);
+  font-family: "Basic", sans-serif;
 }
 
 p, span, li {
-  font-family: var(--body-font);
-} */
+  font-family: "Work Sans", sans-serif;
+}
 
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
   /* --: "Work Sans", sans-serif; */
 
 }
@@ -76,7 +76,7 @@ p, span, li {
 
 body {
   background: white;
-  /* font-family: "Basic", sans-serif; */
+  font-family: "Basic", sans-serif;
   font-weight: 500;
 }
 
