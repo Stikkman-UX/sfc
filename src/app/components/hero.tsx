@@ -22,7 +22,7 @@ export const Hero = () => {
             <div className="w-[480px] absolute left-1/2 -translate-x-1/2 bottom-20">
                 <Image
                 className={`w-full object-cover`}
-                src="/landing/pngbanner.png"
+                src="/leaf.png"
                 alt="SFC"
                 width={1000}
                 height={900}
