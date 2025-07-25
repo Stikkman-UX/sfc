@@ -9,11 +9,11 @@ export const Hero = () => {
     //             bg-no-repeat bg-cover bg-top min-h-screen main-banner bg-[url('/landing/banner.jpg')] xl-py-10"
     // >         
     <div
-    className="relative text-black font-medium space-y-20 md:space-y-40 pb-20 md:py-40 min-h-[80vh] sm:min-h-screen main-banner xl-py-10"
+    className="relative text-black font-medium space-y-20 md:space-y-40 pb-20 md:py-40 min-h-[800px] sm:min-h-screen main-banner xl-py-10"
     >
-        <div className="absolute h-[80vh] sm:h-screen top-0 left-0 w-full overflow-hidden -z-10">
+        <div className="absolute h-[800px] sm:h-screen top-0 left-0 w-full overflow-hidden -z-10">
             <Image
-            className={`w-full h-[80vh] sm:h-screen object-cover`}
+            className={`w-full h-[800px] sm:h-screen object-cover`}
             src="/landing/hero-bg.jpg"
             alt="SFC"
             width={1000}
@@ -27,7 +27,7 @@ export const Hero = () => {
                 />
             </div>
         </div>   
-        <div className="relative w-11/12 md:w-auto flex flex-col items-start md:items-center space-y-6 md:space-y-8 pt-30 md:pt-0 z-20 mx-auto md:mx-0">
+        <div className="relative w-11/12 md:w-auto flex flex-col items-start md:items-center space-y-6 md:space-y-8 pt-40 md:pt-0 z-20 mx-auto md:mx-0">
             <h1 className=" md:w-[600px] mx-auto text-start md:text-center text-[32px] md:text-[50px] leading-12 md:leading-14 text-[rgba(0,89,67,1)]">
                 Your wastewater vision is our <span className="text-[rgba(25,169,72,1)]">responsibility</span>
             </h1>

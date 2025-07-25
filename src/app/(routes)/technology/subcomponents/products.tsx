@@ -44,9 +44,11 @@ export const Product = () => {
     const { icon, title, description } = data;
 
     return (
-      <div className="gsap-fade-in w-[200px] shrink-0 md:flex-1 md:w-full h-full md:min-h-[250px] flex flex-col  gap-2 bg-[rgba(249,249,249,1)] rounded-2xl px-4 py-6 product-wrap">
-        <div className="bg-[#005943ff] rounded-full p-3 w-[50px] h-[50px] flex items-center justify-center">{icon}</div>
-        <h4 className=" font-bold text-[rgba(0,89,69,1)] mt-2">
+      <div className="gsap-fade-in w-[280px] shrink-0 md:flex-1 md:w-full h-full md:min-h-[250px] flex flex-col gap-2 bg-[rgba(249,249,249,1)] rounded-2xl px-4 py-6 product-wrap">
+        <div className="bg-[#005943ff] rounded-full p-3 w-[50px] h-[50px] flex items-center justify-center">
+          {icon}
+        </div>
+        <h4 className="font-bold text-[rgba(0,89,69,1)] mt-2">
           {title}
         </h4>
         <ul className="list-disc list-inside font-normal text-sm text-[rgba(74,85,101,1)] mb-2 text-left w-full px-4 product-list">
@@ -59,7 +61,6 @@ export const Product = () => {
   };
 
   return (
-    <>
     <section
       className="relative space-y-12 md:my-20 lg:py-20 py-10 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/technology/hero-bg.png')" }}
@@ -69,12 +70,11 @@ export const Product = () => {
           <span className="text-[#b7d433]">C-Tech </span>products
         </h2>
       </div>
-      <div className="disable-scrollbar w-11/12 md:w-10/12 flex items-stretch justify-between gap-4 md:gap-6 mx-auto overflow-x-auto">
+      <div className="disable-scrollbar w-full md:w-10/12 h-full flex justify-between gap-4 md:gap-6 px-4 sm:px-8 md:px-0 mx-auto overflow-x-auto">
         {cards.map((card, i) => {
-          return <ResCard key={i} data={card} />;
+          return <ResCard key={i} data={card} />
         })}
       </div>
     </section>
-    </>
   );
 };

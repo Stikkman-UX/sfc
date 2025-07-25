@@ -20,7 +20,7 @@ export const Hero = () => {
         const el = document.querySelector(
           ".carousel-container"
         ) as HTMLDivElement;
-        const width = el.scrollWidth;
+        // const width = el.scrollWidth;
 
         if (isMobile) {
           const tl = gsap.timeline({ repeat: -1 });

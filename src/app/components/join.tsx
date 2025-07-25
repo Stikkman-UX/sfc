@@ -134,7 +134,7 @@ export const Join = () => {
 
   return (
     <section className="space-y-32 pb-8 md:pb-20 pt-20 join-section">
-      <div className="gsap-fade-in w-10/12 max-w-[800px] space-y-6 md:space-y-10 faded mx-auto">
+      <div className="gsap-fade-in w-11/12 sm:w-10/12 max-w-[800px] space-y-6 md:space-y-10 faded mx-auto">
         <p className="scroll-text !font-basic text-2xl md:text-[32px] font-medium text-start md:text-center">
           SFC relentlessly strives to enable your vision of a successful
           wastewater business that also is committed to safeguarding the
@@ -149,7 +149,7 @@ export const Join = () => {
         </p>
         <div className="flex justify-center items-center gap-4">
           <OrangeButton text="Join the tribe" />
-          <button className="flex items-center gap-2 text-[rgba(0,168,73,1)] border border-[rgba(0,168,73,1)] rounded-full px-6 py-3 g-bordered-btn">
+          <button className="flex items-center gap-2 text-[rgba(0,168,73,1)] border border-[rgba(0,168,73,1)] rounded-full px-6 py-3 whitespace-nowrap g-bordered-btn">
             <AboutSvg />
             More about us
           </button>

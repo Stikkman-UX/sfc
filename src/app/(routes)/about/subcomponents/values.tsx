@@ -37,14 +37,14 @@ export const Values = () => {
         const { logo, title, desc } = data;
 
             return (
-                <div className="shrink-0 md:flex-1 md:w-full min-h-full h-full flex flex-col items-center gap-2 bg-[rgba(249,249,249,1)] rounded-2xl px-4 py-6">
+                <div className="shrink-0 md:flex-1 md:w-full max-w-[240px] sm:max-w-[300px] min-h-full h-full flex flex-col items-center gap-2 bg-[rgba(249,249,249,1)] rounded-2xl px-4 py-6">
                     <div className="bg-[rgba(0,168,73,0.1)] rounded-full p-3">
                         { logo }
                     </div>
                     <span className="!font-basic font-normal text-[rgba(0,89,69,1)] mt-2">
                         { title }
                     </span>
-                    <span className=" font-normal text-[rgba(0,89,69,1)] mt-2">
+                    <span className="text-center font-normal text-[rgba(0,89,69,1)] mt-2">
                         { desc }
                     </span>
                 </div>

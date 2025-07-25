@@ -49,9 +49,9 @@ export const Impact = () => {
         </div>
 
         {/* Image: 30% */}
-        <div className="relative w-full h-[300px] min-w-[400px] lg:w-[50%] lg:h-auto ">
+        <div className="relative w-full h-[300px] sm:min-w-[400px] lg:w-[50%] lg:h-auto ">
           <Image
-            className="object-cover rounded-xl curve-image"
+            className="w-full object-cover rounded-xl curve-image"
             src="/landing/impact.jpg"
             alt="SFC"
             fill

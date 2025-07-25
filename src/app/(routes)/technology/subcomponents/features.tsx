@@ -93,12 +93,12 @@ export const Features = () => {
 
     
     return (
-        <section className="gsap-fade-in mb-10 md:mb-40">
-            <div className="w-11/12 md:w-10/12 mx-auto">
+        <section className="gsap-fade-in mt-10 md:mt-0 mb-10 md:mb-40">
+            <div className="w-11/12 md:w-10/12 max-w-[1280px] mx-auto">
                 <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
                     <span className="text-[rgba(0,89,67,1)]">Key components </span> of C-Tech
                 </h2>
-                <p className="w-full md:w-[500px] font-normal md:text-lg text-[rgba(74,85,101,1)]">
+                <p className="w-full md:w-[500px] font-normal md:text-lg text-[rgba(74,85,101,1)] pb-8 md:pb-0">
                     Comprehensive equipment package designed for optimal performance and longevity.
                 </p>
                 <div className="flex-1 flex flex-col-reverse md:flex-row justify-between items-center gap-2 md:pe-10">

@@ -94,7 +94,7 @@ export const Application = () => {
                 <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
                     <span className="text-[rgba(0,89,67,1)]">Application & </span> use cases
                 </h2>
-                <p className=" md:w-[500px] font-normal md:text-lg text-[rgba(74,85,101,1)] pb-20">
+                <p className=" md:w-[500px] font-normal md:text-lg text-[rgba(74,85,101,1)] pb-8 md:pb-20">
                     C-Tech technology adapts to diverse wastewater treatment needs across industries and communities.
                 </p>
             </div>

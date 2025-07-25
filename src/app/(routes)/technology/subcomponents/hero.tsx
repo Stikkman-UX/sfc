@@ -56,7 +56,7 @@ export const Hero = () => {
     }, [])
 
     return (
-        <section className="tech-hero relative bg-[url('/careers/hero-bg.png')] bg-cover bg-no-repeat text-white md:rounded-br-[260px] pb-20 md:pt-48 md:pb-25">
+        <section className="tech-hero relative bg-[url('/careers/hero-bg.png')] bg-cover bg-no-repeat text-white md:rounded-br-[260px] pb-20 pt-44 md:pt-48 md:pb-25">
             <div className="w-11/12 md:w-[1000px] flex flex-col items-start md:items-center gap-4 text-start md:text-center mx-auto">
                 <span className=" text-xs bg-white/20 rounded-full px-3 py-1 border border-white/30">
                     Advanced Wastewater Treatment Technology

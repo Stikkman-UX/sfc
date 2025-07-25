@@ -45,7 +45,7 @@ export const PerksSlider = () => {
       <div
         className={`${id} ${
           id === "slide-container-2" ? "hidden lg:flex" : ""
-        } disable-scrollbar perks-carousel-container min-w-fit w-full shrink-0 flex justify-between gap-4 lg:gap-8 px-4 lg:px-4 py-20 overflow-x-auto`}
+        } disable-scrollbar perks-carousel-container min-w-fit w-full shrink-0 flex justify-between gap-4 lg:gap-8 px-4 lg:px-4 py-10 sm:py-20 overflow-x-auto`}
       >
         <PerkCard
           data={{

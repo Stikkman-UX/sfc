@@ -72,7 +72,7 @@ export const ChangeMakers = () => {
 
     return (
         <div className="gsap-fade-in flex flex-col items-center gap-8 md:text-center md:pt-6 md:pb-20 pt-4 pb-8">
-            <div className="lg:w-3/5 max-w-[1000px] md:space-y-2 mx-auto">
+            <div className="w-11/12 lg:w-3/5 max-w-[1000px] md:space-y-2 mx-auto">
                 <h4 className="w-full text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                     Meet the{" "}
                     <span className="text-[rgba(25,169,72,1)]">
@@ -83,9 +83,9 @@ export const ChangeMakers = () => {
                     Experienced leaders driving innovation and excellence in India's water infrastructure sector.
                 </p>
             </div>
-            <div className="w-11/12 sm:w-10/12 max-w-[1280px] flex flex-col md:flex-row items-center gap-8 lg:gap-14 bg-[linear-gradient(107.11deg,#00A849_0.83%,#005945_87.94%)] rounded-tl-[112px] rounded-br-[112px] md:rounded-tl-[150px] md:rounded-br-[150px] text-start px-6 py-5">
+            <div className="w-11/12 sm:w-10/12 max-w-[1280px] flex flex-col md:flex-row items-center gap-8 lg:gap-14 bg-[linear-gradient(107.11deg,#00A849_0.83%,#005945_87.94%)] rounded-tl-[112px] rounded-br-[112px] md:rounded-tl-[150px] md:rounded-br-[150px] text-start px-5 sm:px-6 py-5">
                 <Image
-                className="w-[500px] shrink-0 min-h-[200px] rounded-tl-[112px] rounded-br-[112px] md:rounded-tl-[140px] md:rounded-br-[140px] object-cover"
+                className="w-full sm:w-[500px] shrink-0 min-h-[200px] rounded-tl-[112px] rounded-br-[112px] md:rounded-tl-[140px] md:rounded-br-[140px] object-cover"
                 width={400}
                 height={300}
                 src="/about/team-6.webp"

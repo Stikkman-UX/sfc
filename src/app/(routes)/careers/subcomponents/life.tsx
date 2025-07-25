@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Life = () => {
   return (
-    <div className="gsap-fade-in w-11/12 sm:w-10/12 max-w-[1280px] space-y-10 mx-auto">
+    <div className="gsap-fade-in w-11/12 sm:w-10/12 max-w-[1280px] space-y-10 mx-auto mt-10 sm:mt-0">
       <div className="lg:w-[500px] md:space-y-2 mx-auto md:mx-0">
         <h4 className="w-full lg:w-1/2 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
           <span className="text-[rgba(25,169,72,1)]">Life </span>

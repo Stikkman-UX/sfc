@@ -166,7 +166,7 @@ export const Positions = () => {
     }
 
     return (
-        <div className="gsap-fade-in w-11/12 sm:w-10/12 max-w-[1240px] space-y-10 py-28 mx-auto">
+        <div className="gsap-fade-in w-11/12 sm:w-10/12 max-w-[1240px] space-y-10 py-20 sm:py-28 mx-auto">
             <div className="w-11/12 lg:w-[500px] md:space-y-2 mx-auto md:mx-0">
                 <h4 className="w-full lg:w-1/2 text-[rgba(0,89,67,1)] text-[22px] md:text-[32px] leading-9">
                     <span className="text-[rgba(25,169,72,1)]">

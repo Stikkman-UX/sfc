@@ -4,7 +4,7 @@ import { PerksSlider } from "./perksslider";
 
 export const Join = () => {
   return (
-    <div className="gsap-fade-in py-20">
+    <div className="gsap-fade-in pt-20 pb-0 sm:py-20">
       <div className="w-11/12 sm:w-10/12 lg:w-[760px] flex flex-col sm:items-center gap-1 text-start sm:text-center mx-auto">
         <h2 className="w-fit text-[22px] md:text-[32px] text-[rgba(25,169,72,1)]">
           <span className="text-[rgba(0,89,67,1)]">Why</span> join SFC?

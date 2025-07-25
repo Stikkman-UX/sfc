@@ -247,7 +247,7 @@ button:hover{
 @media(max-width:767px)
 {
   .product-wrap {
-    min-width: 80%;
+    /* min-width: 80%; */
     min-height: 250px;
 }
 }
